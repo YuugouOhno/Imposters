@@ -12,11 +12,7 @@
         <div class='posts'>
             @foreach($posts as $post)
                 <div class='post'>
-                    <h2 class='title'>
-                        タイトル：<a href="/posts/{{ $post->id }}">{{ $post->title }}</a>
-                    </h2>
-                    <p class='body'>本文：{{ $post->body}}</p>
-                    <p>カテゴリー:<a href="/categories/{{ $post->category->id }}">{{ $post->category->name }}</a></p>
+                    <p class='text'>{{ $post->text}}</p>
                     <form action="/posts/{{ $post->id }}" id="form_{{ $post->id }}"  method="post" style="display:inline">
                         @csrf
                         @method('DELETE')
@@ -24,9 +20,6 @@
                     </form>
                 </div>
             @endforeach
-        </div>
-        <div class='paginate'>
-            {{ $posts->links() }}
         </div>
         <div>
             [<a href='/posts/create'>新規作成</a>]

@@ -5,27 +5,14 @@
         <title>Blog</title>
     </head>
     <body>
-        <h1>レバテックチーム開発</h1>
-        <h2>投稿作成ページ</h2>
-        <form action="/posts" method="POST">
+        <h1>一言日記を1日で終わらせよう</h1>
+        <p>1日分の日記を埋めると夏休み中の一言日記が完成するよ</p>
+        <form action="/posts/1day" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="title">
-                <h2>Title</h2>
-                <input type="text" name="post[title]" placeholder="タイトル"/>
-                <p class="title__error" style="color:red">{{ $errors->first('post.title') }}</p>
-            </div>
-            <div class="body">
-                <h2>Body</h2>
-                <textarea name="post[body]" placeholder="今日も1日お疲れさまでした。"></textarea>
-                <p class="body__error" style="color:red">{{ $errors->first('post.body') }}</p>
-            </div>
-            <div class="category">
-                <h2>Category</h2>
-                <select name="post[category_id]">
-                    @foreach($categories as $category)
-                        <option value="{{ $category->id }}">{{ $category->name }}</option>
-                    @endforeach
-                </select>
+                <h2>日記</h2>
+                <input type="text" name="post[text]" placeholder="内容"/>
+                <p class="text__error" style="color:red">{{ $errors->first('post.text') }}</p>
             </div>
             <input type="submit" value="保存"/>
         </form>
