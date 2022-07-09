@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{asset('/CSS/style.css')}}">
+
     <script src="{{asset('JS/math.js')}}" defer></script>
   </head>
   
@@ -49,6 +50,9 @@
       
       <div class="equal" id="result">=</div>
     </div>
+  </div>
+  <div class="coment">
+    <p>ちょうどよくまちがえようか？</p>
   </div>
   
 </body>

@@ -84,7 +84,6 @@ result.addEventListener("click", function() {
     add = operators.indexOf("+");
   }
 
-
 //結果の表示
   let random = Math.floor(Math.random() * 4); //0~5の中からランダム Math.floor()で小数点以下切り捨て
   input.innerHTML = numbers[0] + random;
