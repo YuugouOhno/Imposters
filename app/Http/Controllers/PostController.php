@@ -50,4 +50,9 @@ class PostController extends Controller
         return redirect('/');
     }
     
+    public function math()
+    {
+        return view('math/index');
+    }
+    
 }
