@@ -1,72 +1,142 @@
-<script type="text/javascript"><!--
-myTotal = 0;	// 現在の合計値
-myInput = "";	// 現在入力している値
-myCalc = "+";	// 合計と入力値の演算子
-myFlg = 1;	// １回前に入力したもの 0:数字 1:演算子
- 	
-function myValue(myData){	// 0～9または小数点ボタンを押した
-myFlg = 0;	// １回前に入力したものは数値
-myInput += myData;	// 現在入力している値に追加
-document.myForm.myLine.value = myInput;	// 現在入力している値表示
-}	
- 	
-function myCalculate(myData){	// 演算ボタンを押した
-if (myFlg==0){	// １回前に入力したものは数値か？
-myFlg = 1;	// １回前に入力したものは演算子
-myWork = myTotal + myCalc + myInput;	// 一連の計算式を作る
-myTotal = eval(myWork);	// 計算式を計算させる
-myInput = "";	// 現在入力している値をクリア
-document.myForm.myLine.value = myTotal;	// 合計を表示
-}	
-if (myData == "="){	// 演算ボタンは[＝]か？
-myTotal = 0;	// 合計をクリア
-myCalc = "+";	// 演算子を[+]とする
-}else{	// 演算ボタンは[＝]以外である
-myCalc = myData;	// 演算子を退避させておく
-}	
-}	
- 	
-function myC(){	// クリアボタン[C]を押した
-myTotal = 0;	// 合計クリア
-myCalc = "+";	// 演算子クリア
-myInput = "";	// 現在入力している値をクリア
-document.myForm.myLine.value = myTotal;	// つまり、０を表示
-}	
-// --></script>	
- 	
-<form name="myForm">
-<table border="1" bgcolor="#BDB76B">
-<tr>
-<td align="center" colspan="4" bgcolor="#d2691e"><font color="#FFFFFF">
-<strong> 電　卓</font></strong></td>
-</tr>
-<tr>
-<td colspan="3"><input type="text" size="12" name="myLine" value="0"></td>
-<td align="center"><input type="button" value="Ｃ" onclick="myC()"></td>
-</tr>
-<tr>
-<td align="center"><input type="button" value=" ７ " onclick="myValue(7)"></td>
-<td align="center"><input type="button" value=" ８ " onclick="myValue(8)"></td>
-<td align="center"><input type="button" value=" ９ " onclick="myValue(9)"></td>
-<td align="center"><input type="button" value="÷" onclick="myCalculate('/')"></td>
-</tr>
-<tr>
-<td align="center"><input type="button" value=" ４ " onclick="myValue(4)"></td>
-<td align="center"><input type="button" value=" ５ " onclick="myValue(5)"></td>
-<td align="center"><input type="button" value=" ６ " onclick="myValue(6)"></td>
-<td align="center"><input type="button" value="×" onclick="myCalculate('*')"></td>
-</tr>
-<tr>
-<td align="center"><input type="button" value=" １ " onclick="myValue(1)"></td>
-<td align="center"><input type="button" value=" ２ " onclick="myValue(2)"></td>
-<td align="center"><input type="button" value=" ３ " onclick="myValue(3)"></td>
-<td align="center"><input type="button" value="－" onclick="myCalculate('-')"></td>
-</tr>
-<tr>
-<td align="center"><input type="button" value=" ０ " onclick="myValue(0)"></td>
-<td align="center"><input type="button" value=" ・ " onclick="myValue('.')"></td>
-<td align="center"><input type="button" value=" ＋ " onclick="myCalculate('+')"></td>
-<td align="center"><input type="button" value="＝" onclick="myCalculate('=')"></td>
-</tr>
-</table>
-</form>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sample002</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{asset('/CSS/style.css')}}">
+  </head>
+<body>
+  <div class="calculator">
+    <div class="input" id="input"></div>
+    <div class="buttons">
+      <div class="operators">
+        <div>+</div>
+        <div>-</div>
+        <div>×</div>
+        <div>÷</div>
+      </div>
+      <div class="leftPanel">
+        <div class="numbers">
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+        </div>
+        <div class="numbers">
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+        </div>
+        <div class="numbers">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+        <div class="numbers">
+          <div>0</div>
+          <div>.</div>
+          <div id="clear">C</div>
+        </div>
+      </div>
+      <div class="equal" id="result">=</div>
+    </div>
+  </div>
+  <script src="sample002.js"></script>
+  
+  
+  <script>
+  "use strict";
+
+var input = document.getElementById('input');
+var number = document.querySelectorAll('.numbers div');
+var operator = document.querySelectorAll('.operators div');
+var result = document.getElementById('result'); 
+var clear = document.getElementById('clear');
+var resultDisplayed = false;
+
+// 数字ボタンをクリックした時の処理
+for (var i = 0; i < number.length; i++) {
+  number[i].addEventListener("click", function(e) {
+
+    var currentString = input.innerHTML;
+    var lastChar = currentString[currentString.length - 1];
+    if (resultDisplayed === false) {
+      input.innerHTML += e.target.innerHTML;
+    } else if (resultDisplayed === true && lastChar === "+" || lastChar === "-" || lastChar === "×" || lastChar === "÷") {
+      resultDisplayed = false;
+      input.innerHTML += e.target.innerHTML;
+    } else {
+      resultDisplayed = false;
+      input.innerHTML = "";
+      input.innerHTML += e.target.innerHTML;
+    }
+  });
+}
+
+// 「＋」「ー」「x」「÷」をクリックした時の処理
+for (var i = 0; i < operator.length; i++) {
+  operator[i].addEventListener("click", function(e) {
+
+    var currentString = input.innerHTML;
+    var lastChar = currentString[currentString.length - 1];
+
+    if (lastChar === "+" || lastChar === "-" || lastChar === "×" || lastChar === "÷") {
+      var newString = currentString.substring(0, currentString.length - 1) + e.target.innerHTML;
+      input.innerHTML = newString;
+    } else if (currentString.length == 0) {
+      console.log("enter a number first");
+    } else {
+      input.innerHTML += e.target.innerHTML;
+    }
+
+  });
+}
+
+result.addEventListener("click", function() {
+
+  var inputString = input.innerHTML;
+  var numbers = inputString.split(/\+|\-|\×|\÷/g);
+  var operators = inputString.replace(/[0-9]|\./g, "").split("");
+
+  var divide = operators.indexOf("÷");
+  while (divide != -1) {
+    numbers.splice(divide, 2, numbers[divide] / numbers[divide + 1]);
+    operators.splice(divide, 1);
+    divide = operators.indexOf("÷");
+  }
+
+  var multiply = operators.indexOf("×");
+  while (multiply != -1) {
+    numbers.splice(multiply, 2, numbers[multiply] * numbers[multiply + 1]);
+    operators.splice(multiply, 1);
+    multiply = operators.indexOf("×");
+  }
+
+  var subtract = operators.indexOf("-");
+  while (subtract != -1) {
+    numbers.splice(subtract, 2, numbers[subtract] - numbers[subtract + 1]);
+    operators.splice(subtract, 1);
+    subtract = operators.indexOf("-");
+  }
+
+  var add = operators.indexOf("+");
+  while (add != -1) {
+    numbers.splice(add, 2, parseFloat(numbers[add]) + parseFloat(numbers[add + 1]));
+    operators.splice(add, 1);
+    add = operators.indexOf("+");
+  }
+
+  input.innerHTML = numbers[0];
+  resultDisplayed = true; 
+});
+
+clear.addEventListener("click", function() {
+  input.innerHTML = "";
+})
+
+  </script>
+  
+</body>
+</html>
