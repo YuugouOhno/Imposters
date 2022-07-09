@@ -15,8 +15,10 @@ Route::get('/diaries', 'DiaryController@index')->name('diaries'); //日記の一
 Route::get('/diary/create', 'DiaryController@create')->name('diary.create'); //日記の作成
 Route::post('/diary/store', 'DiaryController@store')->name('diary.store'); //日記の投稿
 
-// Route::get('/posts/{post}/edit', 'PostController@edit'); //投稿編集画面
-// Route::put('/posts/{post}', 'PostController@update'); //編集操作
-// Route::get('/posts/{post}', 'PostController@show'); //投稿詳細画面
-// Route::delete('/posts/{post}', 'PostController@delete'); //投稿削除
-// Route::get('/categories/{category}', 'CategoryController@index'); //カテゴリー一覧画面
+
+
+//Route::get('/math', 'PostController@math'); //一覧画面
+
+Route::get('/math', function(){
+    return view('math/index');
+}); 
