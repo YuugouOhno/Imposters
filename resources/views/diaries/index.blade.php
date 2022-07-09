@@ -9,25 +9,29 @@
     <body>
         <h1>レバテックチーム開発</h1>
         <h2>投稿一覧ページ</h2>
-        <div class='posts'>
-            @foreach($posts as $post)
+        <form action='{{ route("diaries") }}' method="GET">
+            @csrf
+            <div class="days">
+                <h2>日数</h2>
+                <input type="text" name="num_of_days" placeholder="日数"/>
+                <p class="text__error" style="color:red">{{ $errors->first('diary.text') }}</p>
+            </div>
+            <input type="submit" value="保存"/>
+        </form>
+        <div class='diaries'>
+            @foreach($diaries as $diary)
                 <div class='post'>
-                    <p class='text'>{{ $post->text}}</p>
-                    <form action="/posts/{{ $post->id }}" id="form_{{ $post->id }}"  method="post" style="display:inline">
-                        @csrf
-                        @method('DELETE')
-                        <button type="button" onClick="deletePost({{$post->id}});">削除</button> {{--script内に定義したdeletePostを使用している--}}
-                    </form>
+                    <p class='text'>{{ $diary}}</p>
                 </div>
             @endforeach
         </div>
         <div>
-            [<a href='/posts/create'>新規作成</a>]
+            <a href='{{ route("diary.create") }}'>日記を投稿する</a>
         </div>
     </body>
     <script>
-        function deletePost(post_id) {
-            form = document.getElementById('form_' + post_id);  //各投稿ごとのdeleteのformを取得
+        function deleteDiary(diary_id) {
+            form = document.getElementById('form_' + diary_id);  //各投稿ごとのdeleteのformを取得
             is_submit = confirm('本当に削除してもよろしいですか？'); //はいの場合true,いいえの場合falseをis_submitに格納
             
             if(is_submit) {  //is_submitがtrueの場合のみ、{}の中の処理が行われる
