@@ -78,7 +78,7 @@ result.addEventListener("click", function() {
     operators.splice(add, 1);
     add = operators.indexOf("+");
   }
-
+  console.log(numbers);
   input.innerHTML = numbers[0];
   resultDisplayed = true; 
 });
