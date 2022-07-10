@@ -8,6 +8,10 @@ use App\Diary;
 
 class DiaryController extends Controller
 {
+    public function aa(){
+        return view('homes/index');
+    }
+    
     public function index(Request $request, Diary $diary)
     {
         $num_of_days = $request->input('num_of_days');

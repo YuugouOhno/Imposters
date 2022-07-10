@@ -60,13 +60,7 @@ result.addEventListener("click", function() {
     div = operators.indexOf("÷");
   }
 
-//掛け算
-  let mul = operators.indexOf("×");
-  while (mul != -1) {
-    numbers.splice(mul, 2, numbers[mul] * numbers[mul + 1]);
-    operators.splice(mul, 1);
-    mul = operators.indexOf("×");
-  }
+
 
 //引き算
   let sub = operators.indexOf("-");
@@ -83,15 +77,21 @@ result.addEventListener("click", function() {
     operators.splice(add, 1);
     add = operators.indexOf("+");
   }
-<<<<<<< HEAD
-  console.log(numbers);
-  input.innerHTML = numbers[0];
-=======
+
+  
+  //掛け算
+  let mul = operators.indexOf("×");
+  while (mul != -1) {
+    numbers.splice(mul, 2, numbers[mul] * numbers[mul + 1]);
+    operators.splice(mul, 1);
+    mul = operators.indexOf("×");
+  }
+
 
 //結果の表示
   let random = Math.floor(Math.random() * 4); //0~5の中からランダム Math.floor()で小数点以下切り捨て
   input.innerHTML = numbers[0] + random;
->>>>>>> 09e673e6ac7d5af46868e61eb54b12252a4156e9
+
   resultDisplayed = true; 
 });
 
