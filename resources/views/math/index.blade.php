@@ -16,6 +16,16 @@
     <img src="{{ asset('/CSS/img/img_maniau.png') }}"
   </div>
   
+  <div class="click">
+    <form action="/math.js" method="POST">
+      <br>
+      正答率:
+      <input class="input_num" type="number" id="probability" placeholder="何点とりたい？" />
+      
+      <h2 id="p"></h2>
+    </form>
+  </div>
+  
   <div class="calculator">
     <div class="input" id="input"></div>
     <div class="buttons">
@@ -57,32 +67,18 @@
   </div>
   <div class="coment">
     <p>ちょうどよくまちがえようか？</p>
+    <p>答えを確認したらCボタンを押してね！</p>
   </div>
   
   
-  <div class="click">
-    <form action="/math.js" method="POST">
-      <br>
-      正答率:
-      <input class="input_num" type="number" id="probability" placeholder="何点とりたい？" />
-      <input class="input_button" type="button" value="実行" onclick = "buttonClick()"/>
-      <h2 id="p"></h2>
-    </form>
-  </div>
+  
   
   <div class="img2">
     <br>
     <img src="{{ asset('/CSS/img/img_chodoyoku.png') }}"
->>>>>>> 26e31759cdbba930216b92de0fc5508afcf990ae
   </div>
   
-  
-  <script>
-    function buttonClick(){
-      const num_correct = document.getElementById("proability").value;
-      console.log(num_correct);
-    } 
-  </script>
+
   
 </body>
 </html>

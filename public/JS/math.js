@@ -60,9 +60,10 @@ result.addEventListener("click", function() {
   
   
   let random = Math.floor(Math.random() * 101);
-  // const probability = document.getElementById('button');
-  const probability = 0;
-  if(random<=probability){
+  const probability = document.getElementById('probability').value;
+  console.log(probability);
+  // const probability = 0;
+  if(random<probability){
     math_correct(operators,numbers);
   }else{
     math_wrong(operators,numbers);
@@ -73,7 +74,7 @@ result.addEventListener("click", function() {
 
 function math_correct(operators,numbers){ //関数1
 //割り算
-//console.log('correct');
+  console.log('correct');
 
   let div = operators.indexOf("÷");
   while (div != -1) {
@@ -82,7 +83,13 @@ function math_correct(operators,numbers){ //関数1
     div = operators.indexOf("÷");
   }
 
-
+//掛け算
+  let mul = operators.indexOf("×");
+  while (mul != -1) {
+    numbers.splice(mul, 2, numbers[mul] * numbers[mul + 1]);
+    operators.splice(mul, 1);
+    mul = operators.indexOf("×");
+  }
 
 //引き算
   let sub = operators.indexOf("-");
@@ -108,9 +115,8 @@ function math_correct(operators,numbers){ //関数1
 
 
 function math_wrong(operators, numbers){ //関数2
-//console.log("wrong");
+  console.log("wrong");
 //console.log(operators);
-  console.log('aaa')
 //引き算
   let sub = operators.indexOf("-");
   while (sub != -1) {
@@ -153,5 +159,10 @@ function math_wrong(operators, numbers){ //関数2
 clear.addEventListener("click", function() {
   input.innerHTML = "";
 })
+
+// function buttonClick(){
+//   const num_correct = document.getElementById("proability").value;
+//   console.log(num_correct);
+// } 
 
 
