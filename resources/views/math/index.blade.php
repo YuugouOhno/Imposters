@@ -7,11 +7,15 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{asset('/CSS/style.css')}}">
-
     <script src="{{asset('JS/math.js')}}" defer></script>
   </head>
   
 <body>
+  
+  <div class="img">
+    <img src="{{ asset('/CSS/img/img_maniau.png') }}"
+  </div>
+  
   <div class="calculator">
     <div class="input" id="input"></div>
     <div class="buttons">
@@ -51,9 +55,29 @@
       <div class="equal" id="result">=</div>
     </div>
   </div>
-  <div class="coment">
-    <p>ちょうどよくまちがえようか？</p>
+  
+  <div class="click">
+    <form action="/math.js" method="POST">
+      <br>
+      正答率:
+      <input class="input_num" type="number" id="probability" placeholder="何点とりたい？" />
+      <input class="input_button" type="button" value="実行" onclick = "buttonClick()"/>
+      <h2 id="p"></h2>
+    </form>
   </div>
+  
+  <div class="img2">
+    <br>
+    <img src="{{ asset('/CSS/img/img_chodoyoku.png') }}"
+  </div>
+  
+  
+  <script>
+    function buttonClick(){
+      const num_correct = document.getElementById("proability").value;
+      console.log(num_correct);
+    } 
+  </script>
   
 </body>
 </html>

@@ -77,6 +77,7 @@ result.addEventListener("click", function() {
     operators.splice(add, 1);
     add = operators.indexOf("+");
   }
+
   
   //掛け算
   let mul = operators.indexOf("×");
@@ -86,9 +87,11 @@ result.addEventListener("click", function() {
     mul = operators.indexOf("×");
   }
 
+
 //結果の表示
   let random = Math.floor(Math.random() * 4); //0~5の中からランダム Math.floor()で小数点以下切り捨て
   input.innerHTML = numbers[0] + random;
+
   resultDisplayed = true; 
 });
 
