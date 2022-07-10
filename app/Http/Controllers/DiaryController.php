@@ -39,8 +39,4 @@ class DiaryController extends Controller
         return view('math/index');
     }
     
-    public function homes()
-    {
-        return view('homes/index');
-    }
 }
