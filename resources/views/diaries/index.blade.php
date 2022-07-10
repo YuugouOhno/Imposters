@@ -29,14 +29,4 @@
             <a href='{{ route("diary.create") }}'>日記を投稿する</a>
         </div>
     </body>
-    <script>
-        function deleteDiary(diary_id) {
-            form = document.getElementById('form_' + diary_id);  //各投稿ごとのdeleteのformを取得
-            is_submit = confirm('本当に削除してもよろしいですか？'); //はいの場合true,いいえの場合falseをis_submitに格納
-            
-            if(is_submit) {  //is_submitがtrueの場合のみ、{}の中の処理が行われる
-                form.submit();  //deleteするformをsubmitする（投稿を削除している）
-            }
-        }
-    </script>
 </html>

@@ -60,13 +60,7 @@ result.addEventListener("click", function() {
     div = operators.indexOf("÷");
   }
 
-//掛け算
-  let mul = operators.indexOf("×");
-  while (mul != -1) {
-    numbers.splice(mul, 2, numbers[mul] * numbers[mul + 1]);
-    operators.splice(mul, 1);
-    mul = operators.indexOf("×");
-  }
+
 
 //引き算
   let sub = operators.indexOf("-");
@@ -82,6 +76,14 @@ result.addEventListener("click", function() {
     numbers.splice(add, 2, parseFloat(numbers[add]) + parseFloat(numbers[add + 1]));
     operators.splice(add, 1);
     add = operators.indexOf("+");
+  }
+  
+  //掛け算
+  let mul = operators.indexOf("×");
+  while (mul != -1) {
+    numbers.splice(mul, 2, numbers[mul] * numbers[mul + 1]);
+    operators.splice(mul, 1);
+    mul = operators.indexOf("×");
   }
 
 //結果の表示

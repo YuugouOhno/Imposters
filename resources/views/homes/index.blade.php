@@ -24,7 +24,7 @@
 <!--/slider--></ul>
  <a href="#" class="btn bgleft"><span>一日日記</span></a>
  <a href="/math" class="btn bgleft"><span>電卓</span></a>
- <a href="#" class="btn bgleft"><span>予備</span></a>
+ <a href="translator" class="btn bgleft"><span>予備</span></a>
  
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
