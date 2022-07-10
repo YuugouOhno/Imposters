@@ -41,7 +41,7 @@
 
 
          <div class="btn-container">
-           <a href="https://0a51725619d042bc9734257a1989006e.vfs.cloud9.us-east-1.amazonaws.com/diary/create" class="btn bgleft  box1"><span>一日日記</span></a>
+           <a href="/diary/create" class="btn bgleft  box1"><span>一日日記</span></a>
            <a href="/math" class="btn bgleft box2"><span>電卓</span></a>
            <a href="/translator" class="btn bgleft box3"><span>翻訳</span></a>
          </div>
