@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+svg {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .btn{
     /*アニメーションの起点とするためrelativeを指定*/
     position: relative;
@@ -6,7 +16,7 @@
   text-decoration: none;
   display: inline-block;
     border: 1px solid #555;/* ボーダーの色と太さ */
-    padding: 10px 30px;
+    padding: 30px 30px;
     text-align: center;
     outline: none;
     /*アニメーションの指定*/   
@@ -24,6 +34,12 @@
   color:#fff;
 }
 
+.btn-container {
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 /*== 背景が流れる（左から右） */
 .bgleft:before {
   content: '';
@@ -33,7 +49,7 @@
   left: 0;
   z-index: 2;
     /*色や形状*/
-  background:#333;/*背景色*/
+  background:#6EFFFF;/*背景色*/
   width: 100%;
   height: 100%;
     /*アニメーション*/
@@ -48,6 +64,29 @@
   transform:scale(1, 1);
 }
 
+.box1{
+  width:100px;
+  height:100px;
+  background:#FFCB72;
+  border-radius:100%;
+  text-ali
+}
+
+.box2{
+  width:100px;
+  height:100px;
+  background:#72A6FF;
+  border-radius:100%;
+  text-ali
+}
+
+.box3{
+  width:100px;
+  height:100px;
+  background:#BCFF66;
+  border-radius:100%;
+  text-ali
+}
 
 /*========= レイアウトのためのCSS ===============*/
 
@@ -55,8 +94,11 @@ body{
     vertical-align:middle; 
     padding: 100px 0;
     text-align: center;
+    background: #32C1FF;
  }
 
-p{
-    margin: 0 0 10px 0;
+ h2{
+  color: black;
+  font-weight: center;
+  font-size:50px;
 }
