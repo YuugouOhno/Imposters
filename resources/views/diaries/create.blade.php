@@ -25,5 +25,10 @@
             <input type="submit" value="保存"/>
         </form>
         <a href='{{ route("diaries") }}'>日記を表示する</a>
+        @foreach($diaries as $diary)
+            <div class='diary'>
+                <p>{{$diary->text}}</p>
+            </div>
+        @endforeach
     </body>
 </html>

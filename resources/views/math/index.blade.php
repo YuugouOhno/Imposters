@@ -77,8 +77,5 @@
     <br>
     <img src="{{ asset('/CSS/img/img_chodoyoku.png') }}"
   </div>
-  
-
-  
 </body>
 </html>

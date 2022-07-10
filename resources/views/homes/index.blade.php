@@ -13,6 +13,7 @@
 　　<body>
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg"><path id="wave" d=""/></svg>
 
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
@@ -37,6 +38,7 @@
       <li><img src="https://blog.studionoah.jp/wp-content/uploads/2018/07/bbq01.jpg" alt=""></li>
       <li><img src="https://thumb.photo-ac.com/9d/9ddc3200fba75a7e8ac1cd90cb4afe11_t.jpeg" alt=""></li>
       <!--/slider--></ul>
+
 
          <div class="btn-container">
            <a href="https://0a51725619d042bc9734257a1989006e.vfs.cloud9.us-east-1.amazonaws.com/diary/create" class="btn bgleft  box1"><span>一日日記</span></a>
