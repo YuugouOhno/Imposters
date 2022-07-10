@@ -20,9 +20,9 @@ class DiaryController extends Controller
         return view('diaries/index')->with(['diaries' => $diaries]);
     }
     
-    public function create()
+    public function create(Diary $diary)
     {
-        return view('diaries/create');
+        return view('diaries/create')->with(['diaries' => $diary]);
     }
     
     public function store(DiaryRequest $request, Diary $diary)
