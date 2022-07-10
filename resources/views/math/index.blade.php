@@ -50,9 +50,14 @@
       
       <div class="equal" id="result">=</div>
     </div>
-  </div>
-  <div class="coment">
-    <p>ちょうどよくまちがえようか？</p>
+  </div> //
+  <div class="coment"> //
+    <p>ちょうどよくまちがえようか？</p> //
+  </div> //
+  
+  <div>
+//<button id="button" value = 70>送信</button> 
+//<h2 id="p"></h2>
   </div>
   
 </body>

@@ -9,6 +9,7 @@ var resultDisplayed = false;
 
 // 数字ボタンをクリックした時の処理
 for (var i = 0; i < number.length; i++){
+
   number[i].addEventListener("click", function(e) {
 
     var currentString = input.innerHTML;
@@ -46,13 +47,34 @@ for (var i = 0; i < operator.length; i++) {
 }
 
 
+
+
+//let choose_function = Math.floor(Math.random() * 2);
+
+//この辺りで正答率を受け取る？
 result.addEventListener("click", function() {
 
   let inputString = input.innerHTML;
   let numbers = inputString.split(/\+|\-|\×|\÷/g);
   let operators = inputString.replace(/[0-9]|\./g, "").split("");
+  
+  
+  let random = Math.floor(Math.random() * 101);
+  // const probability = document.getElementById('button');
+  const probability = 0;
+  if(random<=probability){
+    math_correct(operators,numbers);
+  }else{
+    math_wrong(operators,numbers);
+  }
+  console.log(result);
+  
+});
 
+function math_correct(operators,numbers){ //関数1
 //割り算
+//console.log('correct');
+
   let div = operators.indexOf("÷");
   while (div != -1) {
     numbers.splice(div, 2, numbers[div] / numbers[div + 1]);
@@ -83,15 +105,58 @@ result.addEventListener("click", function() {
     operators.splice(add, 1);
     add = operators.indexOf("+");
   }
+  
+  input.innerHTML = numbers[0];
+  resultDisplayed = true; 
+} //関数1
+  
 
-//結果の表示
-  let random = Math.floor(Math.random() * 4); //0~5の中からランダム Math.floor()で小数点以下切り捨て
+
+
+function math_wrong(operators, numbers){ //関数2
+//console.log("wrong");
+//console.log(operators);
+  console.log('aaa')
+//引き算
+  let sub = operators.indexOf("-");
+  while (sub != -1) {
+    numbers.splice(sub, 2, numbers[sub] - numbers[sub + 1]);
+    operators.splice(sub, 1);
+    sub = operators.indexOf("-");
+  }
+
+//足し算
+  var add = operators.indexOf("+");
+  while (add != -1) {
+    numbers.splice(add, 2, parseFloat(numbers[add]) + parseFloat(numbers[add + 1]));
+    operators.splice(add, 1);
+    add = operators.indexOf("+");
+  }
+  
+//割り算
+  let div = operators.indexOf("÷");
+  while (div != -1) {
+    numbers.splice(div, 2, numbers[div] / numbers[div + 1]);
+    operators.splice(div, 1);
+    div = operators.indexOf("÷");
+  }
+
+//掛け算
+  let mul = operators.indexOf("×");
+  while (mul != -1) {
+    numbers.splice(mul, 2, numbers[mul] * numbers[mul + 1]);
+    operators.splice(mul, 1);
+    mul = operators.indexOf("×");
+  }
+  
+  var random = Math.floor(Math.random() * 3);
   input.innerHTML = numbers[0] + random;
   resultDisplayed = true; 
-});
-
+} //関数2
 
 // C(削除)機能
 clear.addEventListener("click", function() {
   input.innerHTML = "";
 })
+
+
