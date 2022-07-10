@@ -45,44 +45,58 @@ for (var i = 0; i < operator.length; i++) {
   });
 }
 
+
 result.addEventListener("click", function() {
 
-  var inputString = input.innerHTML;
-  var numbers = inputString.split(/\+|\-|\×|\÷/g);
-  var operators = inputString.replace(/[0-9]|\./g, "").split("");
+  let inputString = input.innerHTML;
+  let numbers = inputString.split(/\+|\-|\×|\÷/g);
+  let operators = inputString.replace(/[0-9]|\./g, "").split("");
 
-  var divide = operators.indexOf("÷");
-  while (divide != -1) {
-    numbers.splice(divide, 2, numbers[divide] / numbers[divide + 1]);
-    operators.splice(divide, 1);
-    divide = operators.indexOf("÷");
+//割り算
+  let div = operators.indexOf("÷");
+  while (div != -1) {
+    numbers.splice(div, 2, numbers[div] / numbers[div + 1]);
+    operators.splice(div, 1);
+    div = operators.indexOf("÷");
   }
 
-  var multiply = operators.indexOf("×");
-  while (multiply != -1) {
-    numbers.splice(multiply, 2, numbers[multiply] * numbers[multiply + 1]);
-    operators.splice(multiply, 1);
-    multiply = operators.indexOf("×");
+//掛け算
+  let mul = operators.indexOf("×");
+  while (mul != -1) {
+    numbers.splice(mul, 2, numbers[mul] * numbers[mul + 1]);
+    operators.splice(mul, 1);
+    mul = operators.indexOf("×");
   }
 
-  var subtract = operators.indexOf("-");
-  while (subtract != -1) {
-    numbers.splice(subtract, 2, numbers[subtract] - numbers[subtract + 1]);
-    operators.splice(subtract, 1);
-    subtract = operators.indexOf("-");
+//引き算
+  let sub = operators.indexOf("-");
+  while (sub != -1) {
+    numbers.splice(sub, 2, numbers[sub] - numbers[sub + 1]);
+    operators.splice(sub, 1);
+    sub = operators.indexOf("-");
   }
 
+//足し算
   var add = operators.indexOf("+");
   while (add != -1) {
     numbers.splice(add, 2, parseFloat(numbers[add]) + parseFloat(numbers[add + 1]));
     operators.splice(add, 1);
     add = operators.indexOf("+");
   }
+<<<<<<< HEAD
   console.log(numbers);
   input.innerHTML = numbers[0];
+=======
+
+//結果の表示
+  let random = Math.floor(Math.random() * 4); //0~5の中からランダム Math.floor()で小数点以下切り捨て
+  input.innerHTML = numbers[0] + random;
+>>>>>>> 09e673e6ac7d5af46868e61eb54b12252a4156e9
   resultDisplayed = true; 
 });
 
+
+// C(削除)機能
 clear.addEventListener("click", function() {
   input.innerHTML = "";
 })
