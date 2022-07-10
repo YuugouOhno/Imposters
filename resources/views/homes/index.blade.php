@@ -22,7 +22,7 @@
   <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-6/img/img_05.jpg" alt=""></li>
   <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-6/img/img_06.jpg" alt=""></li>
 <!--/slider--></ul>
- <a href="#" class="btn bgleft"><span>一日日記</span></a>
+ <a href="/diary/create" class="btn bgleft"><span>一日日記</span></a>
  <a href="/math" class="btn bgleft"><span>電卓</span></a>
  <a href="translator" class="btn bgleft"><span>予備</span></a>
  
