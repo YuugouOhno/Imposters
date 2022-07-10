@@ -82,13 +82,7 @@ function math_correct(operators,numbers){ //関数1
     div = operators.indexOf("÷");
   }
 
-//掛け算
-  let mul = operators.indexOf("×");
-  while (mul != -1) {
-    numbers.splice(mul, 2, numbers[mul] * numbers[mul + 1]);
-    operators.splice(mul, 1);
-    mul = operators.indexOf("×");
-  }
+
 
 //引き算
   let sub = operators.indexOf("-");
@@ -151,6 +145,7 @@ function math_wrong(operators, numbers){ //関数2
   
   var random = Math.floor(Math.random() * 3);
   input.innerHTML = numbers[0] + random;
+
   resultDisplayed = true; 
 } //関数2
 
