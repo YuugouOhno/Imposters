@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', 'DiaryController@aa');
 Route::get('/diaries', 'DiaryController@index')->name('diaries'); //日記の一覧
 Route::get('/diary/create', 'DiaryController@create')->name('diary.create'); //日記の作成
 Route::post('/diary/store', 'DiaryController@store')->name('diary.store'); //日記の投稿
@@ -21,3 +22,5 @@ Route::post('/diary/store', 'DiaryController@store')->name('diary.store'); //日
 Route::get('/math', function(){
     return view('math/index');
 }); 
+
+Route::get('/translator', 'TranslatorController@index')->name('translator');
