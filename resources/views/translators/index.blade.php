@@ -31,9 +31,9 @@
                 </form>
             </div>
             <div class='inputs'>
-                <div class='text_container'>
-                    <div class='text'>
-                        <input class='original_text' type="text" id="original_text" placeholder="翻訳したい文章を入力してください"/>
+            <div class='text_container'>
+                <div class='text'>
+                    <textarea class='original_text' type="text" id="original_text" placeholder="翻訳したい文章を入力してください" row="50" cols="60"></textarea>
                     </div>
                 </div>
                 <div classs='text_container'>

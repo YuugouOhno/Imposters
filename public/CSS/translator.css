@@ -1,5 +1,13 @@
 body {
-    background-color: #fcfefb;    
+    background-color: #fcfefb;
+}
+
+h1 {
+    font-size: 50px;    
+}
+
+p,select {
+    font-size: 30px;
 }
 
 .main{
@@ -16,6 +24,7 @@ body {
 .settings{
     display:flex;
     justify-content:space-around;
+    font-size: 30px;
 }
 
 .text_result{
@@ -26,7 +35,7 @@ body {
 
 .inputs{
     text-align:center;
-    
+    font-size: 30px;
 }
 
 .original_text{
@@ -51,4 +60,8 @@ img {
 .save_button{
     margin:0 auto;
     text-align: center;
+}
+
+.text.placeholder {
+    font-size: 30px
 }

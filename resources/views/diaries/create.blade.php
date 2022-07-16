@@ -21,7 +21,8 @@
             @csrf
             <div class="title">
                 <h2>日記</h2>
-                <input type="text" name="diary[text]" placeholder="内容"/>
+                <!--<input type="text" name="diary[text]" placeholder="内容"/>-->
+                <textarea  type="text" name="diary[text]" placeholder="内容"></textarea>
                 <p class="text__error" style="color:red">{{ $errors->first('diary.text') }}</p>
             </div>
             <input type="submit" value="保存"/>
