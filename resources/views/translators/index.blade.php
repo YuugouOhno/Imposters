@@ -11,8 +11,8 @@
     <body>
         <div class='main'>
             <div class='title'>
-                <h1>うっかり翻訳</h1>
-                <p>うっかり具合と翻訳したい言語を選んでね</p>
+                <h1>うっかりほんやく</h1>
+                <p>うっかり具合とほんやくしたい言語を選んでね</p>
             </div>
             <div class='settings'>
                 <form method="GET">
@@ -30,17 +30,14 @@
                 </form>
             </div>
             <div class='inputs'>
-            <div class='text_container'>
-                <div class='text'>
-                    <input class='original_text' type="text" id="original_text" placeholder="翻訳したい文章を入力してください"/>
-                </div>
-            </div>
-            <div classs='text_container'>
-                <button type='button' class='text' onclick="buttonClick()">保存</button>
-            </div>
-            <div class='text_container'>
-                <p id='result' class='text'>翻訳</p>
-            </div>
+                <input class='original_text' type="text" id="original_text" placeholder="翻訳したい文章を入力してください"/>
+                    <div align='right'>
+                      <button type='button' class='text' onclick="buttonClick()">保存</button>
+                    </div>
+                        <div class='text_03'>
+                            <p id='result' class='text'>翻訳</p>
+                            <p id='result02' class='text'>翻訳</p>
+                        </div>
             </div>
             <div class='img'>
                 <img src='https://pics.prcm.jp/satomi0317/38190093/jpeg/38190093_480x345.jpeg'

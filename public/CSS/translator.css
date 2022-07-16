@@ -1,21 +1,43 @@
 body {
-    background-color: #fcfefb;    
+
+}
+
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
 }
 
 .main{
     display:flex;
     flex-flow: column;
-    justify-content:space-between;
+    justify-content:space-betwwen;
 }
 
 .title{
     text-align:center;
+    font-size:45px;
     margin:auto;
 }
 
 .settings{
-    display:flex;
-    justify-content:space-around;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    
+}
+.setting{
+    font-size:30px;
+}
+
+.text_container{
+    display: inline-block;
+    
 }
 
 .text_result{
@@ -40,15 +62,32 @@ img {
     margin: 0 auto;
 }
   
-.text{
-    margin:0 auto;
-    text-align: center;
+input::placeholder {
+  color: red;
+  font-size: 40px;
+  font-style: italic;
+}
+
+.original_text{
+ display: inline-block;
+    width: 80%;
+    /*コレ*/padding: 1em 0.5em;
+    /*コレ*/line-height: 3;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    background: #f2f2f2;
+    margin: 0.5em 0;
+}
+
 }
 .btn{
     margin-lef:100px;
-    text-align: center;
+    text-align: right;
+    width: 40px;
+    height: 30px;
 }
-.save_button{
-    margin:0 auto;
-    text-align: center;
+
+.result{
+    margin: 0
+    display: inline-block;
 }
