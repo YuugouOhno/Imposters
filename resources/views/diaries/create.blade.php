@@ -1,3 +1,5 @@
+@extends('layouts.common')
+@section('content')
 <!DOCTYPE HTML>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -19,7 +21,8 @@
             @csrf
             <div class="title">
                 <h2>日記</h2>
-                <input type="text" name="diary[text]" placeholder="内容"/>
+                <!--<input type="text" name="diary[text]" placeholder="内容"/>-->
+                <textarea  type="text" name="diary[text]" placeholder="内容"></textarea>
                 <p class="text__error" style="color:red">{{ $errors->first('diary.text') }}</p>
             </div>
             <input type="submit" value="保存"/>
@@ -29,6 +32,14 @@
             <div class='diary'>
                 <p>{{$diary->text}}</p>
             </div>
+            @if ('1'==Auth::user()->id)
+            <form action="/diary/delete/{{ $diary->id }}" method="post" style="display:inline">
+              @csrf
+              @method('DELETE')
+              <button type="submit">削除</button> 
+            </form>
+            @endif
         @endforeach
     </body>
 </html>
+@endsection
