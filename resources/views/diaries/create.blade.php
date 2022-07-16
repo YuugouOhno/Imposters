@@ -29,6 +29,13 @@
             <div class='diary'>
                 <p>{{$diary->text}}</p>
             </div>
+            @if ('1'==Auth::user()->id)
+            <form action="/diary/delete/{{ $diary->id }}" method="post" style="display:inline">
+              @csrf
+              @method('DELETE')
+              <button type="submit">削除</button> 
+            </form>
+            @endif
         @endforeach
     </body>
 </html>
