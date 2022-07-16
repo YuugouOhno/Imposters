@@ -29,3 +29,6 @@ body {
   color: black;
   font-size:30px
 }
+textara::placeholder {
+ font-size: 30px;
+}
