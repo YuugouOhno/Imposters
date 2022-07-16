@@ -1,3 +1,5 @@
+@extends('layouts.common')
+@section('content')
 <!DOCTYPE html>
 <html lang="ja">
 　<head>
@@ -51,3 +53,4 @@
         <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-6/js/6-1-6.js"></script>
     </body>
 </html>
+@endsection
