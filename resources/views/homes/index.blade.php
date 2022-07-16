@@ -13,6 +13,7 @@
 　　<body>
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg"><path id="wave" d=""/></svg>
 
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
@@ -38,10 +39,13 @@
       <li><img src="https://thumb.photo-ac.com/9d/9ddc3200fba75a7e8ac1cd90cb4afe11_t.jpeg" alt=""></li>
       <!--/slider--></ul>
 
+
          <div class="btn-container">
+<<<<<<< HEAD
            <a href="https://0a51725619d042bc9734257a1989006e.vfs.cloud9.us-east-1.amazonaws.com/diary/create" class="btn bgleft  box1"><span>にっき</span></a>
            <a href="/math" class="btn bgleft box2"><span>けいさん</span></a>
            <a href="/translator" class="btn bgleft box3"><span>ほんやく</span></a>
+
          </div>
  
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
