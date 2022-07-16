@@ -19,13 +19,9 @@
   </div>
   
   <div class="click">
-    <form action="/math.js" method="POST">
       <br>
       正答率:
-      <input class="input_num" type="number" id="probability" placeholder="何点とりたい？" />
-      
-      <h2 id="p"></h2>
-    </form>
+      <input class="input_num" type="number" id="probability" name="probability" placeholder="何点とりたい？" value="old('probability')"/>
   </div>
   
   <div class="calculator">

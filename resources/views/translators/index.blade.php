@@ -20,7 +20,6 @@
                 <form method="GET">
                     @csrf
                     <select class='setting' id='error_level'>
-                        <option value=0>0うっかり</option>
                         <option value=1>1うっかり</option>
                         <option value=2>2うっかり</option>
                         <option value=3>3うっかり</option>
@@ -34,16 +33,18 @@
             <div class='inputs'>
             <div class='text_container'>
                 <div class='text'>
-                    <!--<input class='original_text' type="text" id="original_text" placeholder="翻訳したい文章を入力してください"/>-->
                     <textarea class='original_text' type="text" id="original_text" placeholder="翻訳したい文章を入力してください" row="50" cols="60"></textarea>
+                    </div>
                 </div>
-            </div>
-            <div classs='text_container'>
-                <button type='button' class='text' onclick="buttonClick()">保存</button>
-            </div>
-            <div class='text_container'>
-                <p id='result' class='text'>翻訳</p>
-            </div>
+                <div classs='text_container'>
+                    <button type='button' class='text' onclick="buttonClick()">保存</button>
+                </div>
+                <div class='text_container'>
+                    <p id='result' class='text'>正しい訳</p>
+                </div>
+                <div class='text_container'>
+                    <p id='result2' class='text'>間違った訳</p>
+                </div>
             </div>
             <div class='img'>
                 <img src='https://pics.prcm.jp/satomi0317/38190093/jpeg/38190093_480x345.jpeg'
