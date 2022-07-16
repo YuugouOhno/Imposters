@@ -18,7 +18,6 @@
                 <form method="GET">
                     @csrf
                     <select class='setting' id='error_level'>
-                        <option value=0>0うっかり</option>
                         <option value=1>1うっかり</option>
                         <option value=2>2うっかり</option>
                         <option value=3>3うっかり</option>
