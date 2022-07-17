@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="{{ asset('/CSS/translator.css') }}">
     </head>
     <body>
-            <div class="test">
+            <div class="mein">
                 <h1>うっかりほんやく</h1>
                 <p>うっかり具合とほんやくしたい言語を選んでね</p>
             </div>
@@ -48,6 +48,7 @@
                 <form method="GET">
                     @csrf
                     <select class='setting' id='error_level'>
+                        <option value=0>0うっかり</option>
                         <option value=1>1うっかり</option>
                         <option value=2>2うっかり</option>
                         <option value=3>3うっかり</option>
@@ -66,8 +67,8 @@
                             <button type='button' class='text' onclick="buttonClick()">保存</button>
                         </div>
                             <div class='style_03'>
-                                <p id='result' class='text'></p>
-                                <p id='result2' class='text'></p>
+                                <p id='result' class='result_01'>翻訳</p>
+                                <p id='result2' class='result_02'>翻訳</p>
                             </div>
                 </div>
             <div class='img'>
