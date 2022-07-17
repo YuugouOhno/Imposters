@@ -59,34 +59,36 @@
     <div class="footer05">
  <div class="wrap">
   <div class="box">
-    <h3>タイトル</h3>
+    <h3>会社概要</h3>
     <p>
-     こんにちは
+    株式会社imposters
     </p>
   </div>
   <div class="box">
-    <h3>タイトル</h3>
+    <h3>メンバー</h3>
     <ul>
-      <li><a href="#">A</a></li>
-      <li><a href="#">B</a></li>
+      <li><a href="#">Yuugou Ohno</a></li>
+      <li><a href="#">Hiroki Taba</a></li>
+      <li><a href="#">Katsuma Hoshi</a></li>
+      <li><a href="#">Takumi Yokochi</a></li>
     </ul>
   </div>
   <div class="box">
-    <h3>タイトル</h3>
+    <h3>サービス</h3>
     <ul>
-    <li><a href="#">F</a></li>
-    <li><a href="#">G</a></li>
+    <li><a href="#">サービス名</a></li>
+    <li><a href="#">サービス名</a></li>
     </ul>
   </div>
   <div class="box">
-    <h3>タイトル</h3>
+    <h3>お問い合せ</h3>
     <ul>
-    <li><a href="#">K</a></li>
-    <li><a href="#">L</a></li>
+    <li><a href="#">リンク</a></li>
+    <li><a href="#"></a></li>
     </ul>
   </div>
   <p class="copyright">
-    &copy; 会社名
+    &copy; imposters
   </p>
  </div>
 </div>
