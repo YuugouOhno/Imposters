@@ -70,7 +70,7 @@ svg {
 .box1{
   width:100px;
   height:100px;
-  background:#FFCB72;
+  background:white;
   border-radius:100%;
   text-align: center;
 }
@@ -78,7 +78,7 @@ svg {
 .box2{
   width:100px;
   height:100px;
-  background:#72A6FF;
+  background:white;
   border-radius:100%;
   text-align: center;
 }
@@ -86,7 +86,7 @@ svg {
 .box3{
   width:100px;
   height:100px;
-  background:#BCFF66;
+  background:white;
   border-radius:100%;
   text-align: center;
 }

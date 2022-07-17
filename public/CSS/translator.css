@@ -1,67 +1,117 @@
 body {
-    background-color: #fcfefb;
+  
 }
 
-h1 {
-    font-size: 50px;    
+@keyframes squiggly-anim{
+  0% {
+    filter:url('#squiggly-0');
+  }
+  25% {
+    filter:url('#squiggly-1');
+  }
+  50% {
+    filter:url('#squiggly-2');
+  }
+  75% {
+    filter:url('#squiggly-3');
+  }
+  100% {
+    filter:url('#squiggly-4');
+  }
 }
 
-p,select {
-    font-size: 30px;
+.svg{
+  animation:squiggly-anim .34s linear infinite;
+  color: black;
+  position: relative;
+  text-align: center;
+  font-size:110px;
 }
-
-.main{
-    display:flex;
-    flex-flow: column;
-    justify-content:space-between;
+.svg_02{
+  animation:squiggly-anim .34s linear infinite;
+  color: black;
+  position: relative;
+  text-align: center;
+  font-size:60px;
 }
 
 .title{
-    text-align:center;
-    margin:auto;
+  color: black;
+  position: relative;
+  text-align: center;
+  top:100px;
+  font-size:60px;
 }
 
 .settings{
-    display:flex;
-    justify-content:space-around;
-    font-size: 30px;
+    position: relative;
+    text-align: center;
+}
+.setting{
+    font-size:30px;
+    background-color: white;
+}
+.text{
+    font-size:30px;
+    position: relative;
+    width: 300px;
+    right: 80px;
+    padding: 10px;
+    background-color: white;
+}
+.style_01{
+    text-align: center;
+    font-size:30px;
+}
+.style_02{
+    text-align: right;
+    padding:10px;
 }
 
-.text_result{
-    margin-top: 10px;
-    width:200px;
-    border: solid 2px #000000;
+.style_03{
+  text-align: center;
 }
 
-.inputs{
-    text-align:center;
-    font-size: 30px;
+input::placeholder {
+  color: black;
+  font-size: 30px;
+  text-align: center;
 }
 
 .original_text{
-    margin:0 auto;
+    display: inline-block;
+    width: 90%;
+    height: 200px;
+    font-size:30px;
     text-align: center;
+    padding: 1em 0.5em;
+    line-height: 3;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    background: #f2f2f2;
+    margin: 0.5em 0;
 }
 
-img {
-    width:800px;
-    height:500px;
-    margin: 0 auto;
-}
-  
-.text{
-    margin:0 auto;
-    text-align: center;
-}
-.btn{
-    margin-lef:100px;
-    text-align: center;
-}
-.save_button{
-    margin:0 auto;
-    text-align: center;
+.result_01{
+  color:black;
+  display: inline-block;
+  width:40%; 
+  height:300px;
+  margin:60px;
+  word-wrap: break-word;
+  text-align:center;
+  font-weight: bold;
+  font-size:40px;
 }
 
-.text.placeholder {
-    font-size: 30px
+.result_02{
+  color:red;
+  display: inline-block;
+  width:40%; 
+  height:300px;
+  margin:60px;
+  text-align:center;
+  word-wrap: break-word;
+  font-weight: bold;
+  font-size:40px;
 }
