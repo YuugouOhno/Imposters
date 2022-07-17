@@ -30,7 +30,7 @@
            });
         </script>     
     
-        <h2>夏休みの宿題を計画的に終わらせよう</h2>
+        <h2>夏休みの宿題をおわらせよう！</h2>
 
       <ul class="slider">
       <li><img src="https://www.jalan.net/news/img/2018/06/20180531_natsuyasumi_17.jpg" alt=""></li>
@@ -43,9 +43,10 @@
 
 
          <div class="btn-container">
-           <a href="/diary/create" class="btn bgleft  box1"><span>一日日記</span></a>
-           <a href="/math" class="btn bgleft box2"><span>電卓</span></a>
-           <a href="/translator" class="btn bgleft box3"><span>翻訳</span></a>
+           <a href="https://0a51725619d042bc9734257a1989006e.vfs.cloud9.us-east-1.amazonaws.com/diary/create" class="btn bgleft  box1"><span>にっき</span></a>
+           <a href="/math" class="btn bgleft box2"><span>けいさん</span></a>
+           <a href="/translator" class="btn bgleft box3"><span>ほんやく</span></a>
+
          </div>
  
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
