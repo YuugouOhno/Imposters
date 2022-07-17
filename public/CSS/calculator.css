@@ -123,7 +123,7 @@ div.equal:active {
 .probability {
   font-size: 35px;
   font-family: "Hannotate SC";
-  color: #3f3f3f;
+  color: #404040;
 }
 
 input[type="number"].input_num {
@@ -151,5 +151,5 @@ input[type="button"].input_button{
 
 .comment {
   font-family: "Hannotate SC";
-  color: #3f3f3f;
+  color: #404040;
 }

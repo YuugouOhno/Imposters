@@ -21,7 +21,7 @@
   <div class="probability">
       <br>
       正答率:
-      <input class="input_num" type="number" id="probability" name="probability" placeholder="何点とりたい？" />
+      <input class="input_num" type="number" id="probability" name="probability" placeholder="何点とりたい？"/>
   </div>
   <br>
   
