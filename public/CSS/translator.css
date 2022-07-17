@@ -23,7 +23,7 @@ body {
 
 .test{
   animation:squiggly-anim .34s linear infinite;
-  color: #800d1e;
+  color: white;
   position: relative;
   text-align: center;
   top:100px;
@@ -58,7 +58,7 @@ body {
 }
   
 input::placeholder {
-  color: red;
+  color: black;
   font-size: 30px;
   text-align: center;
 }

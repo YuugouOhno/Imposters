@@ -58,7 +58,6 @@
                     </select>
                 </form>
             </div>
-<<<<<<< HEAD
                 <div class="input">
                     <div class='style_01'>
                         <input class='original_text' type="text" id="original_text" placeholder="翻訳したい文章を入力してください"/>
@@ -67,32 +66,14 @@
                             <button type='button' class='text' onclick="buttonClick()">保存</button>
                         </div>
                             <div class='style_03'>
-                                <p id='result' class='text'>翻訳</p>
-                                <p id='result2' class='text'>翻訳</p>
+                                <p id='result' class='text'></p>
+                                <p id='result2' class='text'></p>
                             </div>
                 </div>
-=======
-            <div class='inputs'>
-            <div class='text_container'>
-                <div class='text'>
-                    <textarea class='original_text' type="text" id="original_text" placeholder="翻訳したい文章を入力してください" row="50" cols="60"></textarea>
-                    </div>
-                </div>
-                <div classs='text_container'>
-                    <button type='button' class='text' onclick="buttonClick()">保存</button>
-                </div>
-                <div class='text_container'>
-                    <p id='result' class='text'>正しい訳</p>
-                </div>
-                <div class='text_container'>
-                    <p id='result2' class='text'>間違った訳</p>
-                </div>
-            </div>
             <div class='img'>
                 <img src='https://pics.prcm.jp/satomi0317/38190093/jpeg/38190093_480x345.jpeg'
             </div>
         </div>
->>>>>>> origin/master
     </body>
 </html>
 @endsection
