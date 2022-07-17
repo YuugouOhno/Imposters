@@ -16,7 +16,6 @@ Route::get('/diary/create', 'DiaryController@create')->name('diary.create'); //�
 Route::post('/diary/store', 'DiaryController@store')->name('diary.store'); //日記の投稿
 
 
-
 //Route::get('/math', 'PostController@math'); //一覧画面
 
 Route::get('/math', function(){
