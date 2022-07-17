@@ -18,13 +18,13 @@ body {
   padding: 20px;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
-  background-color: white;
+  background-color: #fdfdfd;
   margin: 0 auto;
 }
 
 .input {
   border: 1px solid #000;
-  border-radius: 1px;
+  border-radius: 10px;
   height: 60px;
   padding-right: 15px;
   padding-top: 10px;
@@ -55,7 +55,7 @@ body {
 }
 
 .operators div:hover {
-  background-color: #ddd;
+  background-color: #ffff28; /*カーソルをボタン上に置いた時にここで指定した色に変化する*/
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   border-color: #aaa;
@@ -79,12 +79,14 @@ body {
   margin: 10px 4px 10px 0;
   cursor: pointer;
   border-radius: 25px;
-  background-color: #0FF;
+  background-color: #84ffff; /*電卓の数字部分のカラー*/
   transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+  font-family: "Hannotate SC";
+  color: #404040;
 }
 
 .numbers div:hover {
-  background-color: #f1f1f1;
+  background-color: #ffff28; /*カーソルをボタン上に置いた時にここで指定した色に変化する*/
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   border-color: #bbb;
@@ -105,12 +107,12 @@ div.equal {
   vertical-align: top;
   cursor: pointer;
   color: #FFF;
-  background-color: #4d90fe;
+  background-color: #3399ff;
   transition: all .2s ease-in-out;
 }
 
 div.equal:hover {
-  background-color: #307CF9;
+  background-color: #007fff; /*カーソルをボタン上に置いた時にここで指定した色に変化する*/
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   border-color: #1857BB;
