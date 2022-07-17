@@ -11,9 +11,9 @@
         <link rel="stylesheet" href="{{ asset('/CSS/translator.css') }}">
     </head>
     <body>
-            <div class="mein">
-                <h1>うっかりほんやく</h1>
-                <p>うっかり具合とほんやくしたい言語を選んでね</p>
+            <div class="title">
+                <h1><span class="svg">うっかり</span>ほんやく</h1>
+                <p><span class="svg_02">うっかり</span>具合とほんやくしたい言語を選んでね</p>
             </div>
             
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -48,7 +48,6 @@
                 <form method="GET">
                     @csrf
                     <select class='setting' id='error_level'>
-                        <option value=0>0うっかり</option>
                         <option value=1>1うっかり</option>
                         <option value=2>2うっかり</option>
                         <option value=3>3うっかり</option>
@@ -64,16 +63,13 @@
                         <input class='original_text' type="text" id="original_text" placeholder="翻訳したい文章を入力してください"/>
                     </div>
                         <div class='style_02'>
-                            <button type='button' class='text' onclick="buttonClick()">保存</button>
+                            <button type='button' class='text' onclick="buttonClick()">ほんやく！！</button>
                         </div>
-                            <div class='style_03'>
-                                <p id='result' class='result_01'>翻訳</p>
-                                <p id='result2' class='result_02'>翻訳</p>
-                            </div>
+                                <div align= "center">
+                                    <p id='result' class='result_01'>正しいほんやく</p>
+                                    <p id='result2' class='result_02'>間違ったほんやく</p>
+                                </div>
                 </div>
-            <div class='img'>
-                <img src='https://pics.prcm.jp/satomi0317/38190093/jpeg/38190093_480x345.jpeg'
-            </div>
         </div>
     </body>
 </html>
