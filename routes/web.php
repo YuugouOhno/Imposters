@@ -24,6 +24,11 @@ Route::get('/math', function(){
     return view('math/index');
 }); 
 
+Route::get('/manegiment', function(){
+    return view('diaries/manegiment');
+}); 
+
+
 Route::get('/translator', 'TranslatorController@index')->name('translator');
 Auth::routes();
 
