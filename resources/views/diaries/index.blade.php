@@ -12,14 +12,13 @@
         <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-6/css/5-6.css">
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-6/js/5-6.js"></script>
-        <link rel="stylesheet" href="{{ asset('/CSS/diaris/index.css') }}">
+        <link rel="stylesheet" href="{{ asset('/CSS/diaries/index.css') }}">
         <script src="{{asset('JS/diaries.js')}}" defer></script>
     </head>
     <body>
       <div id="particles-js"></div>
-        <h1>投稿一覧ページ</h1>
-
-        <h1>夏休み分の一言日記を一日で終わらせよう</h1>
+      <h1>一言日記を1日で終わらせよう</h1>
+        <h2>投稿一覧ページ</h2>
 
         <form action='{{ route("diaries") }}' method="GET">
             @csrf
@@ -27,7 +26,7 @@
                 <input type="text" name="num_of_days" placeholder="日数"/>
                 <input type="submit" value="決定"/>
                 <p class="text__error" style="color:red">{{ $errors->first('diary.text') }}</p>
-                <p>日記を書かなければいけない日数を入力するとランダムにその日の日記が表示されます</p>
+                <p class="comment">日記を書かなければいけない日数を入力するとランダムにその日の日記が表示されます</p>
             </div>
         </form>
         <div class='diaries'>
