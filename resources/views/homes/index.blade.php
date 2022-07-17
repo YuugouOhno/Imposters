@@ -51,6 +51,45 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-6/js/6-1-6.js"></script>
+        
+        
+        
+            <footer>
+    <div class="footer05">
+ <div class="wrap">
+  <div class="box">
+    <h3>タイトル</h3>
+    <p>
+     こんにちは
+    </p>
+  </div>
+  <div class="box">
+    <h3>タイトル</h3>
+    <ul>
+      <li><a href="#">A</a></li>
+      <li><a href="#">B</a></li>
+    </ul>
+  </div>
+  <div class="box">
+    <h3>タイトル</h3>
+    <ul>
+    <li><a href="#">F</a></li>
+    <li><a href="#">G</a></li>
+    </ul>
+  </div>
+  <div class="box">
+    <h3>タイトル</h3>
+    <ul>
+    <li><a href="#">K</a></li>
+    <li><a href="#">L</a></li>
+    </ul>
+  </div>
+  <p class="copyright">
+    &copy; 会社名
+  </p>
+ </div>
+</div>
+</footer>
     </body>
 </html>
 @endsection

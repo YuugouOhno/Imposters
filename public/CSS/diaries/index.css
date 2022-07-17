@@ -15,20 +15,25 @@ body {
 }
 
  h1{
-  color:red;
-  font-size:50px;
+  color:#007bbb;
+  font-size:65px;
+  font-family: "TsukuARdGothic-Regular";
 }
 
  h2{
-  color: black;
-  font-size:30px;
+  color: #008b8b;
+  font-size:40px;
+  font-family: "TsukuARdGothic-Regular";
 }
 
 
- p{
+ a{
   color: black;
-  font-size:30px
+  font-size:15px;
+  font-family: "TsukuARdGothic-Regular";
 }
-textara::placeholder {
- font-size: 30px;
+
+.comment{
+ font-family: "HanziPen SC";
+ font-size: 20px;
 }

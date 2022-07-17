@@ -4,13 +4,13 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <title>Blog</title>
+        <title>一言日記</title>
         
              <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-6/css/reset.css">
             <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-6/css/5-6.css">
             <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
             <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-6/js/5-6.js"></script>
-            <link rel="stylesheet" href="{{ asset('/CSS/diaris/create.css') }}">
+            <link rel="stylesheet" href="{{ asset('/CSS/diaries/create.css') }}">
             <script src="{{asset('JS/diaries.js')}}" defer></script>
     </head>
     <body>
