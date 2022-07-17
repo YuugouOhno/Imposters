@@ -120,9 +120,10 @@ div.equal:active {
   font-weight: bold;
 }
 
-.click {
+.probability {
   font-size: 35px;
-  font-family: sans-serif;
+  font-family: "Hannotate SC";
+  color: #404040;
 }
 
 input[type="number"].input_num {
@@ -148,3 +149,7 @@ input[type="button"].input_button{
   height: 30px;
 }
 
+.comment {
+  font-family: "Hannotate SC";
+  color: #404040;
+}

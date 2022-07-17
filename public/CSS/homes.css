@@ -28,6 +28,9 @@ svg {
   position: relative;
   z-index: 3;/*z-indexの数値をあげて文字を背景よりも手前に表示*/
   color:#333;
+  font-family: "HanziPen SC";
+  font-weight: bolder;
+  font-size: 18px;
 }
 
 .btn:hover span{
@@ -69,7 +72,7 @@ svg {
   height:100px;
   background:white;
   border-radius:100%;
-  text-ali
+  text-align: center;
 }
 
 .box2{
@@ -77,7 +80,7 @@ svg {
   height:100px;
   background:white;
   border-radius:100%;
-  text-ali
+  text-align: center;
 }
 
 .box3{
@@ -85,7 +88,7 @@ svg {
   height:100px;
   background:white;
   border-radius:100%;
-  text-ali
+  text-align: center;
 }
 
 /*========= レイアウトのためのCSS ===============*/
@@ -99,5 +102,8 @@ body{
 
  h2{
   color: black;
+  font-weight: bold;
   font-size:50px;
+  font-family: "HanziPen SC";
+  text-align: center;
 }
