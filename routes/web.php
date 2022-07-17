@@ -18,7 +18,6 @@ Route::delete('/diary/delete/{diary}', 'DiaryController@delete')->name('diary.de
 
 
 
-
 //Route::get('/math', 'PostController@math'); //一覧画面
 
 Route::get('/math', function(){
