@@ -64,7 +64,7 @@
       <div class="equal" id="result">=</div>
     </div>
   </div>
-  <div class="coment">
+  <div class="comment">
     <p>答えを確認したらCボタンを押してね！</p>
   </div>
   
