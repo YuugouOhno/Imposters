@@ -120,9 +120,9 @@ div.equal:active {
   font-weight: bold;
 }
 
-.click {
+.probability {
   font-size: 35px;
-  font-family: sans-serif;
+  font-family: "Hannotate SC";
 }
 
 input[type="number"].input_num {
@@ -147,4 +147,3 @@ input[type="button"].input_button{
 .img2 {
   height: 30px;
 }
-

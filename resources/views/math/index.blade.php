@@ -8,8 +8,8 @@
     <title>算数・数学</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{asset('/CSS/style.css')}}">
-    <script src="{{asset('JS/math.js')}}" defer></script>
+    <link rel="stylesheet" href="{{asset('/CSS/calculator.css')}}">
+    <script src="{{asset('JS/calculator.js')}}" defer></script>
   </head>
   
 <body>
@@ -18,11 +18,12 @@
     <img src="{{ asset('/CSS/img/img_maniau.png') }}"
   </div>
   
-  <div class="click">
+  <div class="probability">
       <br>
       正答率:
-      <input class="input_num" type="number" id="probability" name="probability" placeholder="何点とりたい？" value="old('probability')"/>
+      <input class="input_num" type="number" id="probability" name="probability" placeholder="何点とりたい？" />
   </div>
+  <br>
   
   <div class="calculator">
     <div class="input" id="input"></div>
@@ -64,7 +65,6 @@
     </div>
   </div>
   <div class="coment">
-    <p>ちょうどよくまちがえようか？</p>
     <p>答えを確認したらCボタンを押してね！</p>
   </div>
   
