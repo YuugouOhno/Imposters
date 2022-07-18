@@ -107,7 +107,7 @@ function division(operators,numbers){ // 割り算
 function addision(operators,numbers){ // 足し算
   var add = operators.indexOf("+");
   while (add != -1) {
-    numbers.splice(add, 2, numbers[add] + numbers[add + 1]);
+    numbers.splice(add, 2, parseFloat(numbers[add]) + parseFloat(numbers[add + 1]));
     operators.splice(add, 1);
     add = operators.indexOf("+");
   }
