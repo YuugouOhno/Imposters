@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim');
+
 body {
     padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
 }
@@ -5,7 +7,7 @@ body {
 header {
     width: 100%; /* 幅いっぱいを指定 */
     height: 50px; /* 高さを50pxに指定 */
-    background: #CCC; /* 背景色にグレーを指定 */
+    background: white; /* 背景色に白を指定 */
     padding: 20px 50px; /* ヘッダーに上下左右それぞれ余白を指定 */
     box-sizing: border-box; /* padding分を含んで幅を100%にするため */
     position: fixed; /* ウィンドウを基準に画面に固定 */
@@ -17,6 +19,8 @@ header {
 
 header .gnav .menu {
     display: flex; /* 中の要素を横並びにする */
+    font-size: 20px;
+    font-family: 'Itim', cursive;
 }
 
 header .gnav .menu li {
