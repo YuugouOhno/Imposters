@@ -18,12 +18,16 @@ Route::delete('/diary/delete/{diary}', 'DiaryController@delete')->name('diary.de
 
 
 
-
 //Route::get('/math', 'PostController@math'); //一覧画面
 
 Route::get('/math', function(){
     return view('math/index');
 }); 
+
+Route::get('/manegiment', function(){
+    return view('diaries/manegiment');
+}); 
+
 
 Route::get('/translator', 'TranslatorController@index')->name('translator');
 Auth::routes();

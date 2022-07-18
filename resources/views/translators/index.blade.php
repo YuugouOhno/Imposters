@@ -11,11 +11,39 @@
         <link rel="stylesheet" href="{{ asset('/CSS/translator.css') }}">
     </head>
     <body>
-        <div class='main'>
-            <div class='title'>
-                <h1>うっかり翻訳</h1>
-                <p>うっかり具合と翻訳したい言語を選んでね</p>
+            <div class="title">
+                <h1><span class="svg">うっかり</span>ほんやく</h1>
+                <p><span class="svg_02">うっかり</span>具合とほんやくしたい言語を選んでね</p>
             </div>
+            
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="squiggly-0">
+        <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
+        <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+    </filter>
+    
+        <filter id="squiggly-1">
+            <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+        </filter>
+    
+            <filter id="squiggly-2">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+            </filter>
+    
+                <filter id="squiggly-3">
+                    <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+                </filter>
+    
+                    <filter id="squiggly-4">
+                        <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
+                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+                    </filter>
+  </defs> 
+</svg>
             <div class='settings'>
                 <form method="GET">
                     @csrf
@@ -30,25 +58,18 @@
                     </select>
                 </form>
             </div>
-            <div class='inputs'>
-            <div class='text_container'>
-                <div class='text'>
-                    <textarea class='original_text' type="text" id="original_text" placeholder="翻訳したい文章を入力してください" row="50" cols="60"></textarea>
+                <div class="input">
+                    <div class='style_01'>
+                        <input class='original_text' type="text" id="original_text" placeholder="翻訳したい文章を入力してください"/>
                     </div>
+                        <div class='style_02'>
+                            <button type='button' class='text' onclick="buttonClick()">ほんやく！！</button>
+                        </div>
+                                <div align= "center">
+                                    <p id='result' class='result_01'>正しいほんやく</p>
+                                    <p id='result2' class='result_02'>間違ったほんやく</p>
+                                </div>
                 </div>
-                <div classs='text_container'>
-                    <button type='button' class='text' onclick="buttonClick()">保存</button>
-                </div>
-                <div class='text_container'>
-                    <p id='result' class='text'>正しい訳</p>
-                </div>
-                <div class='text_container'>
-                    <p id='result2' class='text'>間違った訳</p>
-                </div>
-            </div>
-            <div class='img'>
-                <img src='https://pics.prcm.jp/satomi0317/38190093/jpeg/38190093_480x345.jpeg'
-            </div>
         </div>
     </body>
 </html>

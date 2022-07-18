@@ -26,6 +26,9 @@ svg {
   position: relative;
   z-index: 3;/*z-indexの数値をあげて文字を背景よりも手前に表示*/
   color:#333;
+  font-family: "HanziPen SC";
+  font-weight: bolder;
+  font-size: 18px;
 }
 
 .btn:hover span{
@@ -65,38 +68,120 @@ svg {
 .box1{
   width:100px;
   height:100px;
-  background:#FFCB72;
+  background:white;
   border-radius:100%;
-  text-ali
+  text-align: center;
 }
 
 .box2{
   width:100px;
   height:100px;
-  background:#72A6FF;
+  background:white;
   border-radius:100%;
-  text-ali
+  text-align: center;
 }
 
 .box3{
   width:100px;
   height:100px;
-  background:#BCFF66;
+  background:white;
   border-radius:100%;
-  text-ali
+  text-align: center;
 }
 
 /*========= レイアウトのためのCSS ===============*/
 
 body{
     vertical-align:middle; 
-    padding: 100px 0;
+    padding: 100px 0 0 0;
     text-align: center;
     background: #32C1FF;
  }
 
  h2{
   color: black;
-  font-weight: center;
+  font-weight: bold;
   font-size:50px;
+  font-family: "HanziPen SC";
+  text-align: center;
+}
+
+footer .footer05 {
+ color: #808080;
+ background: #e5e5e5;
+ padding: 30px;
+}
+
+footer .footer05 a {
+ color: #808080;
+ text-decoration: none;
+ font-family: "TsukuARdGothic-Regular";
+}
+
+footer .footer05 li a:hover {
+ text-decoration: underline;
+ font-family: "TsukuARdGothic-Regular";
+}
+
+footer .footer05 .wrap {
+ width: 900px;
+ margin: 0 auto;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ font-family: "TsukuARdGothic-Regular";
+}
+
+footer .footer05 .wrap h3 {
+ margin: 0 0 10px 0;
+ padding: 0;
+ border-bottom: 1px #c4c4c4 solid;
+ font-family: "TsukuARdGothic-Regular";
+}
+
+footer .footer05 .wrap p {
+ margin: 0;
+ padding: 0 0 20px 0;
+}
+
+footer .footer05 .wrap .box {
+ width: 22%;
+}
+
+footer .footer05 .wrap .box ul {
+ margin: 0;
+ padding: 0 0 20px 0;
+ list-style: none;
+}
+
+footer .footer05 .wrap .copyright {
+ width: 100%;
+ padding: 20px 0 0 0;
+ font-family: "TsukuARdGothic-Regular";
+}
+
+@media only screen and (max-width: 599px) {
+footer .footer05 .wrap {
+ width: 100%;
+ padding: 0 20px;
+ box-sizing: border-box;
+}
+
+footer .footer05 .wrap h3 {
+ border: none;
+}
+
+footer .footer05 .wrap .box {
+ width: 100%;
+}
+
+footer .footer05 .wrap .box ul {
+ border-top: 1px #c4c4c4 solid;
+}
+
+footer .footer05 .wrap .box ul li a {
+ display: block;
+ padding: 5px 15px;
+ border-bottom: 1px #c4c4c4 solid;
+}
 }

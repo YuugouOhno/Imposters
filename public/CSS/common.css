@@ -15,6 +15,8 @@ header {
     left: 0; /* 左右の固定位置を左から0pxにする */
     display: flex; /* 中の要素を横並びにする */
     align-items: center; /* 中の要素を上下中央に並べる */
+    font-family: "TsukuARdGothic-Regular";
+    font-size: 18px;
 }
 
 header .gnav .menu {
@@ -34,3 +36,6 @@ header .gnav .menu li + li {
 main {
     height: 100vw; /* スクロールの演出を見れるようにmainに高さを指定 */
 }
+
+
+

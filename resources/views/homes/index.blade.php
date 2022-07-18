@@ -30,7 +30,7 @@
            });
         </script>     
     
-        <h2>夏休みの宿題を計画的に終わらせよう</h2>
+        <h2>夏休みの宿題をおわらせよう！</h2>
 
       <ul class="slider">
       <li><img src="https://www.jalan.net/news/img/2018/06/20180531_natsuyasumi_17.jpg" alt=""></li>
@@ -43,14 +43,56 @@
 
 
          <div class="btn-container">
-           <a href="/diary/create" class="btn bgleft  box1"><span>一日日記</span></a>
-           <a href="/math" class="btn bgleft box2"><span>電卓</span></a>
-           <a href="/translator" class="btn bgleft box3"><span>翻訳</span></a>
+           <a href="/diary/create" class="btn bgleft  box1"><span>にっき</span></a>
+           <a href="/math" class="btn bgleft box2"><span>けいさん</span></a>
+           <a href="/translator" class="btn bgleft box3"><span>ほんやく</span></a>
+
          </div>
  
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-6/js/6-1-6.js"></script>
+        
+        
+        
+            <footer>
+    <div class="footer05">
+ <div class="wrap">
+  <div class="box">
+    <h3>会社概要</h3>
+    <p>
+    株式会社imposters
+    </p>
+  </div>
+  <div class="box">
+    <h3>メンバー</h3>
+    <ul>
+      <li><a href="#">Yuugou Ohno</a></li>
+      <li><a href="#">Hiroki Taba</a></li>
+      <li><a href="#">Katsuma Hoshi</a></li>
+      <li><a href="#">Takumi Yokochi</a></li>
+    </ul>
+  </div>
+  <div class="box">
+    <h3>サービス</h3>
+    <ul>
+    <li><a href="#">サービス名</a></li>
+    <li><a href="#">サービス名</a></li>
+    </ul>
+  </div>
+  <div class="box">
+    <h3>お問い合せ</h3>
+    <ul>
+    <li><a href="#">リンク</a></li>
+    <li><a href="#"></a></li>
+    </ul>
+  </div>
+  <p class="copyright">
+    &copy; imposters
+  </p>
+ </div>
+</div>
+</footer>
     </body>
 </html>
 @endsection
