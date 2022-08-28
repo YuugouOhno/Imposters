@@ -10,8 +10,8 @@
             <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-6/css/5-6.css">
             <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
             <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-6/js/5-6.js"></script>
-            <link rel="stylesheet" href="{{ asset('/CSS/diaries/create.css') }}">
-            <script src="{{asset('JS/diaries.js')}}" defer></script>
+            <link rel="stylesheet" href="{{ asset('/css/diaries/create.css') }}">
+            <script src="{{asset('js/diaries.js')}}" defer></script>
     </head>
     <body>
          <div id="particles-js"></div>

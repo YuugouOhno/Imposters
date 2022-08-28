@@ -1,7 +1,7 @@
 async function taranslator(original_text, original_language, result_language) { //翻訳用の関数の設定
     const result = await fetch(`https://script.google.com/macros/s/AKfycbw_nTaoeQWgAsiMXkAjciTpcaqWOzFnpAkQlrQ1NKo1UqE11u4raJtBIqiaRZlavTS0/exec?text=${original_text}&source=${original_language}&target=${result_language}`);
     const data = await result.json();
-    await console.log(data);
+    // await console.log(data);
     return data.text;
 }
 async function buttonClick(){　// 原文とうっかりレベルを取得
