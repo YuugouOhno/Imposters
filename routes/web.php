@@ -30,6 +30,8 @@ Route::get('/manegiment', function(){
 
 
 Route::get('/translator', 'TranslatorController@index')->name('translator');
+Route::get('/test', 'TranslatorController@test')->name('test');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

@@ -8,14 +8,14 @@
     <title>ちょうどいい電卓</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{asset('/CSS/calculator.css')}}">
-    <script src="{{asset('JS/calculator.js')}}" defer></script>
+    <link rel="stylesheet" href="{{asset('/css/calculator.css')}}">
+    <script src="{{asset('js/calculator.js')}}" defer></script>
   </head>
   
 <body>
   
   <div class="img">
-    <img src="{{ asset('/CSS/img/img_maniau.png') }}"
+    <img src="{{ asset('/css/img/img_maniau.png') }}"
   </div>
   
   <div class="probability">
@@ -73,7 +73,7 @@
   
   <div class="img2">
     <br>
-    <img src="{{ asset('/CSS/img/img_chodoyoku.png') }}"
+    <img src="{{ asset('/css/img/img_chodoyoku.png') }}"
   </div>
 </body>
 </html>
