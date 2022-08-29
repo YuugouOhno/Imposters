@@ -1920,24 +1920,28 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   props: ['place'],
   data: function data() {
     return {
-      text: '',
-      longitude: 0
+      longitude: 0,
+      error_level: 1,
+      original_language: 'ja',
+      result_language: 'en',
+      original_text: '',
+      error_result: '',
+      correct_result: ''
     };
   },
   mounted: function mounted() {
-    this.taranslator();
-    this.buttonClick();
+    this.translate();
   },
   methods: {
-    taranslator: function () {
-      var _taranslator = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(original_text, original_language, result_language) {
+    translator: function () {
+      var _translator = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(original_text, original_language, result_language) {
         var result, data;
         return _regeneratorRuntime().wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return fetch("https://script.google.com/macros/s/AKfycbw_nTaoeQWgAsiMXkAjciTpcaqWOzFnpAkQlrQ1NKo1UqE11u4raJtBIqiaRZlavTS0/exec?text=".concat(original_text, "&source=").concat(original_language, "&target=").concat(result_language));
+                return fetch('https://script.google.com/macros/s/AKfycbw_nTaoeQWgAsiMXkAjciTpcaqWOzFnpAkQlrQ1NKo1UqE11u4raJtBIqiaRZlavTS0/exec?text=' + original_text + '&source=' + original_language + '&target=' + result_language);
 
               case 2:
                 result = _context.sent;
@@ -1946,93 +1950,80 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
               case 5:
                 data = _context.sent;
-                this.text = data.text;
+                return _context.abrupt("return", data.text);
 
               case 7:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, this);
+        }, _callee);
       }));
 
-      function taranslator(_x, _x2, _x3) {
-        return _taranslator.apply(this, arguments);
+      function translator(_x, _x2, _x3) {
+        return _translator.apply(this, arguments);
       }
 
-      return taranslator;
+      return translator;
     }(),
-    buttonClick: function () {
-      var _buttonClick = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
-        var original_text, error_level, original_language, result_language, middle_language1, middle_language2, result, result_correct;
+    translate: function () {
+      var _translate = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+        var middle_language1, middle_language2, correct_result;
         return _regeneratorRuntime().wrap(function _callee2$(_context2) {
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
                 // 原文とうっかりレベルを取得
-                original_text = document.getElementById('original_text').value;
-                error_level = document.getElementById('error_level').value;
-
-                if (document.getElementById('translation').value == 'ja_to_en') {
-                  // 「日本語から英語」か「英語から日本語」の選択
-                  original_language = 'ja';
-                  result_language = 'en';
-                } else if (document.getElementById('translation').value == 'en_to_ja') {
-                  original_language = 'en';
-                  result_language = 'ja';
-                }
-
-                if (error_level == 1) {
-                  middle_language1 = result_language;
-                  middle_language2 = original_language;
-                } else if (error_level == 2) {
-                  middle_language1 = result_language;
+                if (this.error_level == 1) {
+                  middle_language1 = this.result_language;
+                  middle_language2 = this.original_language;
+                } else if (this.error_level == 2) {
+                  middle_language1 = this.result_language;
                   middle_language2 = 'ko';
-                } else if (error_level == 3) {
+                } else if (this.error_level == 3) {
                   middle_language1 = 'ko';
                   middle_language2 = 'tt';
                 }
 
-                _context2.next = 6;
-                return taranslator(original_text, original_language, middle_language1);
+                _context2.next = 3;
+                return this.translator(this.original_text, this.original_language, middle_language1);
 
-              case 6:
-                result = _context2.sent;
-                console.log(result);
-                _context2.next = 10;
-                return taranslator(result, middle_language1, middle_language2);
+              case 3:
+                this.error_result = _context2.sent;
+                console.log(this.error_result);
+                _context2.next = 7;
+                return this.translator(this.error_result, middle_language1, middle_language2);
 
-              case 10:
-                result = _context2.sent;
-                console.log(result);
-                _context2.next = 14;
-                return taranslator(result, middle_language2, result_language);
+              case 7:
+                this.error_result = _context2.sent;
+                console.log(this.error_result);
+                _context2.next = 11;
+                return this.translator(this.error_result, middle_language2, this.result_language);
 
-              case 14:
-                result = _context2.sent;
-                console.log(result);
-                _context2.next = 18;
-                return taranslator(original_text, original_language, result_language);
+              case 11:
+                this.error_result = _context2.sent;
+                console.log(this.error_result);
+                _context2.next = 15;
+                return this.translator(this.original_text, this.original_language, this.result_language);
+
+              case 15:
+                correct_result = _context2.sent;
+                this.correct_result = correct_result;
+                console.log(this.correct_result);
 
               case 18:
-                result_correct = _context2.sent;
-                console.log(result_correct);
-                document.getElementById('result').innerText = result_correct;
-                document.getElementById('result2').innerText = result;
-
-              case 22:
               case "end":
                 return _context2.stop();
             }
           }
-        }, _callee2);
+        }, _callee2, this);
       }));
 
-      function buttonClick() {
-        return _buttonClick.apply(this, arguments);
+      function translate() {
+        return _translate.apply(this, arguments);
       }
 
-      return buttonClick;
+      return translate;
     }()
   }
 });
@@ -2054,23 +2045,23 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _vm._m(0);
-};
-
-var staticRenderFns = [function () {
-  var _vm = this,
-      _c = _vm._self._c;
-
-  return _c("div", [_c("h1", [_vm._v("うっかり翻訳")]), _vm._v(" "), _c("div", {
-    staticClass: "settings"
-  }, [_c("form", {
-    attrs: {
-      method: "GET"
-    }
-  }, [_vm._v("\n            @csrf\n            "), _c("select", {
-    staticClass: "setting",
-    attrs: {
-      id: "error_level"
+  return _c("div", [_c("h1", [_vm._v("うっかり翻訳")]), _vm._v(" "), _c("div", [_c("select", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.error_level,
+      expression: "error_level"
+    }],
+    on: {
+      change: function change($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
+          return o.selected;
+        }).map(function (o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val;
+        });
+        _vm.error_level = $event.target.multiple ? $$selectedVal : $$selectedVal[0];
+      }
     }
   }, [_c("option", {
     attrs: {
@@ -2085,53 +2076,87 @@ var staticRenderFns = [function () {
       value: "3"
     }
   }, [_vm._v("3うっかり")])]), _vm._v(" "), _c("select", {
-    staticClass: "setting",
-    attrs: {
-      id: "translation"
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.original_language,
+      expression: "original_language"
+    }],
+    on: {
+      change: function change($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
+          return o.selected;
+        }).map(function (o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val;
+        });
+        _vm.original_language = $event.target.multiple ? $$selectedVal : $$selectedVal[0];
+      }
     }
   }, [_c("option", {
     attrs: {
-      value: "ja_to_en"
+      value: "ja"
     }
-  }, [_vm._v("日本語から英語")]), _vm._v(" "), _c("option", {
+  }, [_vm._v("日本語")]), _vm._v(" "), _c("option", {
     attrs: {
-      value: "en_to_ja"
+      value: "en"
     }
-  }, [_vm._v("英語から日本語")])])])]), _vm._v(" "), _c("div", {
-    staticClass: "input"
-  }, [_c("div", {
-    staticClass: "style_01"
-  }, [_c("input", {
-    staticClass: "original_text",
+  }, [_vm._v("英語")])]), _vm._v(" "), _c("select", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.result_language,
+      expression: "result_language"
+    }],
+    on: {
+      change: function change($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
+          return o.selected;
+        }).map(function (o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val;
+        });
+        _vm.result_language = $event.target.multiple ? $$selectedVal : $$selectedVal[0];
+      }
+    }
+  }, [_c("option", {
+    attrs: {
+      value: "ja"
+    }
+  }, [_vm._v("日本語")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "en"
+    }
+  }, [_vm._v("英語")])])]), _vm._v(" "), _c("div", [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.original_text,
+      expression: "original_text"
+    }],
     attrs: {
       type: "text",
-      id: "original_text",
       placeholder: "翻訳したい文章を入力してください"
+    },
+    domProps: {
+      value: _vm.original_text
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.original_text = $event.target.value;
+      }
     }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "style_02"
-  }, [_c("button", {
-    staticClass: "text",
-    attrs: {
-      type: "button",
-      onclick: "buttonClick()"
+  }), _vm._v(" "), _c("h2", [_vm._v("誤った訳")]), _vm._v(" "), _c("p", [_vm._v(_vm._s(_vm.error_result))]), _vm._v(" "), _c("h2", [_vm._v("正しい訳")]), _vm._v(" "), _c("p", [_vm._v(_vm._s(_vm.correct_result))])]), _vm._v(" "), _c("button", {
+    on: {
+      click: function click($event) {
+        return _vm.translate();
+      }
     }
-  }, [_vm._v("ほんやく！！")])]), _vm._v(" "), _c("div", {
-    attrs: {
-      align: "center"
-    }
-  }, [_c("p", {
-    staticClass: "result_01",
-    attrs: {
-      id: "result"
-    }
-  }, [_vm._v("正しいほんやく")]), _vm._v(" "), _c("p", {
-    staticClass: "result_02",
-    attrs: {
-      id: "result2"
-    }
-  }, [_vm._v("間違ったほんやく")])])])]);
-}];
+  }, [_vm._v("翻訳")])]);
+};
+
+var staticRenderFns = [];
 render._withStripped = true;
 
 
@@ -49674,15 +49699,14 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*!******************************************************!*\
   !*** ./resources/js/components/ExampleComponent.vue ***!
   \******************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ExampleComponent.vue?vue&type=template&id=299e239e& */ "./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e&");
 /* harmony import */ var _ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ExampleComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _ExampleComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -49712,7 +49736,7 @@ component.options.__file = "resources/js/components/ExampleComponent.vue"
 /*!*******************************************************************************!*\
   !*** ./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js& ***!
   \*******************************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
