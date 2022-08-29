@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Language;
 
 class TranslatorController extends Controller
 {
@@ -10,7 +11,8 @@ class TranslatorController extends Controller
         return view('translators/index');
     }
     
-    public function test(){
-        return view('translators/test');
+    public function test(Language $language){
+        
+        return view('translators/test')->with(['language' => $language->get()]);
     }
 }

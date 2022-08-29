@@ -1,4 +1,4 @@
 @extends('layouts.app')
 @section('content')
-        <example-component></example-component>
+        <translator-component :language='{{ json_encode($language)}}'></translator-component>
 @endsection
