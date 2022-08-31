@@ -8,13 +8,23 @@
                 <option value="en">英語</option>
             </select>
 	    </div>
+	    <div>
+            <select v-model="result_language">
+                <option value="en">英語</option>
+                <option value="ja">日本語</option>
+            </select>
+	    </div>
         <div>
-            <input @input="change" type='text' v-model="original_text" placeholder="翻訳したい文章を入力してください">
+            <!--<input @input="change" type='text' v-model="original_text">-->
+            <input type='text' v-model="original_text" placeholder="翻訳したい文章を入力してください">
+            <button v-on:click="translate()">翻訳</button>
         </div>
-        <!--<div v-for='text in results.previous_text'>-->
-        <!--   <p>{{text}}</p>-->
-        <!--</div>-->
-
+        <div v-for='name, index in results.language_name'>
+            <div>
+                <p>{{name}}語に訳すと</p>
+                <p>{{results.previous_text[index+1] }}</p>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -26,6 +36,7 @@
         data() {
             return {
                 original_language: 'ja',
+                result_language: 'en',
                 original_text: '',
                 translate_level: 5,
                 results: {

@@ -1923,6 +1923,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   data: function data() {
     return {
       original_language: 'ja',
+      result_language: 'en',
       original_text: '',
       translate_level: 5,
       results: {
@@ -2144,7 +2145,33 @@ var render = function render() {
     attrs: {
       value: "en"
     }
-  }, [_vm._v("英語")])])]), _vm._v(" "), _c("div", [_c("input", {
+  }, [_vm._v("英語")])])]), _vm._v(" "), _c("div", [_c("select", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.result_language,
+      expression: "result_language"
+    }],
+    on: {
+      change: function change($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
+          return o.selected;
+        }).map(function (o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val;
+        });
+        _vm.result_language = $event.target.multiple ? $$selectedVal : $$selectedVal[0];
+      }
+    }
+  }, [_c("option", {
+    attrs: {
+      value: "en"
+    }
+  }, [_vm._v("英語")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "ja"
+    }
+  }, [_vm._v("日本語")])])]), _vm._v(" "), _c("div", [_c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -2159,12 +2186,20 @@ var render = function render() {
       value: _vm.original_text
     },
     on: {
-      input: [function ($event) {
+      input: function input($event) {
         if ($event.target.composing) return;
         _vm.original_text = $event.target.value;
-      }, _vm.change]
+      }
     }
-  })])]);
+  }), _vm._v(" "), _c("button", {
+    on: {
+      click: function click($event) {
+        return _vm.translate();
+      }
+    }
+  }, [_vm._v("翻訳")])]), _vm._v(" "), _vm._l(_vm.results.language_name, function (name, index) {
+    return _c("div", [_c("div", [_c("p", [_vm._v(_vm._s(name) + "語に訳すと")]), _vm._v(" "), _c("p", [_vm._v(_vm._s(_vm.results.previous_text[index + 1]))])])]);
+  })], 2);
 };
 
 var staticRenderFns = [];
