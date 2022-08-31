@@ -1918,14 +1918,14 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
-    language: []
+    languages: []
   },
   data: function data() {
     return {
-      original_language: 'ja',
-      result_language: 'en',
+      original_language: 15,
+      last_language: 6,
       original_text: '',
-      translate_level: 5,
+      translate_level: 2,
       results: {
         previous_text: [],
         language_label: [],
@@ -1975,21 +1975,39 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       return translator;
     }(),
     next_translate: function () {
-      var _next_translate = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(translate_count) {
-        var rand, midway_result;
+      var _next_translate = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(translate_count, isLast) {
+        var i, rand, midway_result;
         return _regeneratorRuntime().wrap(function _callee2$(_context2) {
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
-                if (false) {}
+                i = 0;
 
-                rand = Math.floor(Math.random() * this.language.length);
-                console.log(this.language[rand].name, this.language[rand].label);
-                this.results.language_name.splice(translate_count, 1, this.language[rand].name);
-                this.results.language_label.splice(translate_count, 1, this.language[rand].label);
+              case 1:
+                if (!(i < 100)) {
+                  _context2.next = 19;
+                  break;
+                }
+
+                console.log(this.languages);
+
+                if (isLast) {
+                  rand = this.last_language - 1;
+                } else {
+                  rand = Math.floor(Math.random() * this.languages.length);
+                }
+
+                this.results.language_name.splice(translate_count, 1, this.languages[rand].name);
+                this.results.language_label.splice(translate_count, 1, this.languages[rand].label);
+                console.log(this.results.language_name[translate_count], this.results.language_label[translate_count]);
 
                 if (!(translate_count === 0)) {
-                  _context2.next = 11;
+                  _context2.next = 14;
+                  break;
+                }
+
+                if (!(this.results.language_label[translate_count] != this.languages[this.original_language].label)) {
+                  _context2.next = 12;
                   break;
                 }
 
@@ -1999,33 +2017,39 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 }
 
                 this.results.previous_text.splice(translate_count, 1, this.original_text);
-                return _context2.abrupt("break", 15);
+                return _context2.abrupt("break", 19);
 
-              case 11:
+              case 12:
+                _context2.next = 16;
+                break;
+
+              case 14:
                 if (!(this.results.language_label[translate_count] != this.results.language_label[translate_count - 1])) {
-                  _context2.next = 13;
+                  _context2.next = 16;
                   break;
                 }
 
-                return _context2.abrupt("break", 15);
+                return _context2.abrupt("break", 19);
 
-              case 13:
-                _context2.next = 0;
+              case 16:
+                i += 1;
+                _context2.next = 1;
                 break;
 
-              case 15:
-                _context2.next = 17;
-                return this.translator(this.results.previous_text[translate_count], translate_count === 0 ? this.original_language : this.results.language_label[translate_count - 1], this.results.language_label[translate_count]);
-
-              case 17:
-                midway_result = _context2.sent;
-                _context2.next = 20;
-                return this.results.previous_text.splice(translate_count + 1, 1, midway_result);
-
-              case 20:
-                console.log(midway_result);
+              case 19:
+                _context2.next = 21;
+                return this.translator(this.results.previous_text[translate_count], translate_count === 0 ? this.languages[this.original_language].label : this.results.language_label[translate_count - 1], this.results.language_label[translate_count]);
 
               case 21:
+                midway_result = _context2.sent;
+                console.log(midway_result);
+                _context2.next = 25;
+                return this.results.previous_text.splice(translate_count + 1, 1, midway_result);
+
+              case 25:
+                console.log(this.results.previous_text[translate_count]);
+
+              case 26:
               case "end":
                 return _context2.stop();
             }
@@ -2033,7 +2057,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         }, _callee2, this);
       }));
 
-      function next_translate(_x4) {
+      function next_translate(_x4, _x5) {
         return _next_translate.apply(this, arguments);
       }
 
@@ -2050,23 +2074,37 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
               case 1:
                 if (!(i < this.translate_level)) {
+                  _context3.next = 13;
+                  break;
+                }
+
+                if (!(i != this.translate_level - 1)) {
                   _context3.next = 7;
                   break;
                 }
 
-                _context3.next = 4;
-                return this.next_translate(i);
+                _context3.next = 5;
+                return this.next_translate(i, false);
 
-              case 4:
+              case 5:
+                _context3.next = 10;
+                break;
+
+              case 7:
+                console.log('最後のひと訳');
+                _context3.next = 10;
+                return this.next_translate(i, true);
+
+              case 10:
                 i += 1;
                 _context3.next = 1;
                 break;
 
-              case 7:
-                _context3.next = 9;
-                return console.log(this.results);
+              case 13:
+                // await this.next_translate(i, this.last_language);
+                console.log(this.results);
 
-              case 9:
+              case 14:
               case "end":
                 return _context3.stop();
             }
@@ -2126,6 +2164,9 @@ var render = function render() {
       value: _vm.original_language,
       expression: "original_language"
     }],
+    attrs: {
+      placeholder: "翻訳元の言語"
+    },
     on: {
       change: function change($event) {
         var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
@@ -2137,21 +2178,23 @@ var render = function render() {
         _vm.original_language = $event.target.multiple ? $$selectedVal : $$selectedVal[0];
       }
     }
-  }, [_c("option", {
-    attrs: {
-      value: "ja"
-    }
-  }, [_vm._v("日本語")]), _vm._v(" "), _c("option", {
-    attrs: {
-      value: "en"
-    }
-  }, [_vm._v("英語")])])]), _vm._v(" "), _c("div", [_c("select", {
+  }, _vm._l(_vm.languages, function (language) {
+    return _c("option", {
+      key: language.id,
+      domProps: {
+        value: language.id
+      }
+    }, [_vm._v("\n                    " + _vm._s(language.name) + "\n                ")]);
+  }), 0)]), _vm._v(" "), _c("h1", [_vm._v(_vm._s(_vm.original_language))]), _vm._v(" "), _c("div", [_c("select", {
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: _vm.result_language,
-      expression: "result_language"
+      value: _vm.last_language,
+      expression: "last_language"
     }],
+    attrs: {
+      placeholder: "翻訳先の言語"
+    },
     on: {
       change: function change($event) {
         var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
@@ -2160,18 +2203,17 @@ var render = function render() {
           var val = "_value" in o ? o._value : o.value;
           return val;
         });
-        _vm.result_language = $event.target.multiple ? $$selectedVal : $$selectedVal[0];
+        _vm.last_language = $event.target.multiple ? $$selectedVal : $$selectedVal[0];
       }
     }
-  }, [_c("option", {
-    attrs: {
-      value: "en"
-    }
-  }, [_vm._v("英語")]), _vm._v(" "), _c("option", {
-    attrs: {
-      value: "ja"
-    }
-  }, [_vm._v("日本語")])])]), _vm._v(" "), _c("div", [_c("input", {
+  }, _vm._l(_vm.languages, function (language) {
+    return _c("option", {
+      key: language.id,
+      domProps: {
+        value: language.id
+      }
+    }, [_vm._v("\n                    " + _vm._s(language.name) + "\n                ")]);
+  }), 0)]), _vm._v(" "), _c("div", [_c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
