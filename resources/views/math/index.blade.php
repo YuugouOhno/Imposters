@@ -14,14 +14,14 @@
   
 <body>
   
-  <div class="img">
-    <img src="{{ asset('/css/img/img_maniau.png') }}"
-  </div>
+  <!--<div class="img">-->
+  <!--  <img src="{{ asset('/css/img/img_maniau.png') }}"-->
+  <!--</div>-->
   
   <div class="probability">
       <br>
       正答率:
-      <input class="input_num" type="number" id="probability" name="probability" placeholder="何点とりたい？"/>
+      <input class="input_num" type="number" id="probability" name="probability" placeholder="何点とりたい？" style="text-align:center;"/>
   </div>
   <br>
   
@@ -65,7 +65,8 @@
     </div>
   </div>
   <div class="comment">
-    <p></p> <!--電卓下にコメントを入れる場合はここに書く-->
+   
+    <p id="neko"></p>
   </div>
   
   
@@ -73,7 +74,7 @@
   
   <div class="img2">
     <br>
-    <img src="{{ asset('/css/img/img_chodoyoku.png') }}"
+    <!--<img src="{{ asset('/css/img/img_chodoyoku.png') }}"-->
   </div>
 </body>
 </html>
