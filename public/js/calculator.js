@@ -2,6 +2,9 @@ var input = document.getElementById('input'); // inputを取得
 var number = document.querySelectorAll('.numbers div'); // 数字(0-9と小数点)を配列として取得
 var operator = document.querySelectorAll('.operators div'); // 演算子を配列として取得
 var result = document.getElementById('result'); // =を取得
+var neko = document.getElementById('neko'); //最初に入力された式を履歴として表示
+var nekoArray = []; //履歴確認用
+
 var clear = document.getElementById('clear'); // clearを取得
 var resultDisplayed = false;
 
@@ -39,18 +42,25 @@ for (var i = 0; i < operator.length; i++) { // 演算子の配列をそれぞれ
   });
 }
 
+
 // Cボタンで削除
 clear.addEventListener("click", function() {
   input.innerHTML = "";
+  // neko.innerHTML = "中止されました";
 })
+
 
 result.addEventListener("click", function() { // 最終結果の出力
   let inputString = input.innerHTML; // inputを取得
+  console.log("inputStringだよ",inputString);
+  nekoArray.push(inputString); //入力された計算式をneko配列に格納
+  console.log("nekoArrrayだよ",nekoArray);
+  
+  
   let numbers = inputString.split(/\+|\-|\×|\÷/g); // 演算子で区切られている数字を配列として取得
   let operators = inputString.replace(/[0-9]|\./g, "").split(""); // 数字で区切られている演算子を配列として取得
   let random = Math.floor(Math.random() * 101); // 0から100までランダムに取得
   const probability = document.getElementById('probability').value;//正答率を受け取る
-  console.log('probability');
   if(random<probability){ // ランダムで取得した値が正答率を超えているとき
     math_correct(operators,numbers); // 正しい計算
   }else{
@@ -65,6 +75,9 @@ function math_correct(operators,numbers){ //正しい計算の関数
   addision(operators,numbers); //足し算
   subtraction(operators,numbers); //引き算
   input.innerHTML = numbers[0];
+  nekoArray.push(operators);
+  nekoArray.push('=');
+  nekoArray.push(numbers[0]);
   resultDisplayed = true; 
 }
 
@@ -76,14 +89,22 @@ function math_wrong(operators, numbers){ //間違える計算の関数
   division(operators,numbers); //割り算　演算の順番を間違える
   var addOrSub = Math.random(); // 
   var random = Math.floor(Math.random() * 2); // 誤差の値を決定
+  
   if(addOrSub < 0.5){
     input.innerHTML = numbers[0] + 1 + random; // addOrSubに応じて５０％で最終結果に1から3を足す
+     
   }else if(addOrSub > 0.5){
     input.innerHTML = numbers[0] - 1 - random; // addOrSubに応じて５０％で最終結果に1から3を引く
-  }else{
+    
+  } else {
     input.innerHTML = numbers[0] + 10000; // たまに最終結果に10000を足す
+    
   }
+  nekoArray.push('=');
+  nekoArray.push(numbers[0]);
   resultDisplayed = true; 
+  //for(i = 0; i < nekoArray.length/3; i++) neko.innerHTML = nekoArray[i*3+1]+ nekoArray[i*3+2]+ nekoArray[i*3+3]+"\n"; //履歴を表示
+   for(i = 0; i < nekoArray.length/3; i++) neko.innerHTML = nekoArray[i*3]+ nekoArray[i*3+1]+ nekoArray[i*3+2]+"\n"; //履歴を表示
 } //間違える計算の関数
 
 function multiplication(operators,numbers){ // 掛け算
