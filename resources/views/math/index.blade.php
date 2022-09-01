@@ -17,7 +17,7 @@
   <!--<div class="img">-->
   <!--  <img src="{{ asset('/css/img/img_maniau.png') }}"-->
   <!--</div>-->
-  <h1>ねこ</h1>
+  <h1 className="text-align: center;">電卓一覧</h1>
 </body>
 </html>
 @endsection
