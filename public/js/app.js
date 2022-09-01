@@ -1899,6 +1899,17 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Calc2Component.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Calc2Component.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /home/ec2-user/environment/Imposters/resources/js/components/Calc2Component.vue: Unexpected keyword 'var'. (20:0)\n\n\u001b[0m \u001b[90m 18 |\u001b[39m         }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m         methods\u001b[33m:\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m \u001b[36mvar\u001b[39m input \u001b[33m=\u001b[39m document\u001b[33m.\u001b[39mgetElementById(\u001b[32m'input'\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// inputを取得\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m \u001b[36mvar\u001b[39m number \u001b[33m=\u001b[39m document\u001b[33m.\u001b[39mquerySelectorAll(\u001b[32m'.numbers div'\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// 数字(0-9と小数点)を配列として取得\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 |\u001b[39m \u001b[36mvar\u001b[39m operator \u001b[33m=\u001b[39m document\u001b[33m.\u001b[39mquerySelectorAll(\u001b[32m'.operators div'\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// 演算子を配列として取得\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 23 |\u001b[39m \u001b[36mvar\u001b[39m result \u001b[33m=\u001b[39m document\u001b[33m.\u001b[39mgetElementById(\u001b[32m'result'\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// =を取得\u001b[39m\u001b[0m\n    at instantiate (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:72:32)\n    at constructor (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:359:12)\n    at Parser.raise (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:3339:19)\n    at Parser.checkReservedWord (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:14146:12)\n    at Parser.parseObjectProperty (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:13773:12)\n    at Parser.parseObjPropValue (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:13801:100)\n    at Parser.parsePropertyDefinition (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:13718:10)\n    at Parser.parseObjectLike (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:13608:21)\n    at Parser.parseExprAtom (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:12998:23)\n    at Parser.parseExprSubscripts (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:12648:23)\n    at Parser.parseUpdate (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:12627:21)\n    at Parser.parseMaybeUnary (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:12598:23)\n    at Parser.parseMaybeUnaryOrPrivate (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:12392:61)\n    at Parser.parseExprOps (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:12399:23)\n    at Parser.parseMaybeConditional (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:12369:23)\n    at Parser.parseMaybeAssign (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:12321:21)\n    at /home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:12279:39\n    at Parser.allowInAnd (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:14352:12)\n    at Parser.parseMaybeAssignAllowIn (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:12279:17)\n    at Parser.parseObjectProperty (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:13768:101)\n    at Parser.parseObjPropValue (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:13801:100)\n    at Parser.parsePropertyDefinition (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:13718:10)\n    at Parser.parseObjectLike (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:13608:21)\n    at Parser.parseExprAtom (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:12998:23)\n    at Parser.parseExprSubscripts (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:12648:23)\n    at Parser.parseUpdate (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:12627:21)\n    at Parser.parseMaybeUnary (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:12598:23)\n    at Parser.parseMaybeUnaryOrPrivate (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:12392:61)\n    at Parser.parseExprOps (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:12399:23)\n    at Parser.parseMaybeConditional (/home/ec2-user/environment/Imposters/node_modules/@babel/parser/lib/index.js:12369:23)");
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/TranslatorComponent.vue?vue&type=script&lang=js&":
 /*!******************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/TranslatorComponent.vue?vue&type=script&lang=js& ***!
@@ -2120,6 +2131,84 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     }()
   }
 });
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Calc2Component.vue?vue&type=template&id=5772942b&":
+/*!***********************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Calc2Component.vue?vue&type=template&id=5772942b& ***!
+  \***********************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function render() {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _vm._m(0);
+};
+
+var staticRenderFns = [function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", [_c("div", {
+    staticClass: "probability"
+  }, [_c("br"), _vm._v("\n            正答率:\n            "), _c("input", {
+    staticClass: "input_num",
+    staticStyle: {
+      "text-align": "center"
+    },
+    attrs: {
+      type: "number",
+      id: "probability",
+      name: "probability",
+      placeholder: "何点とりたい？"
+    }
+  })]), _vm._v(" "), _c("br"), _vm._v(" "), _c("div", {
+    staticClass: "calculator"
+  }, [_c("div", {
+    staticClass: "input",
+    attrs: {
+      id: "input"
+    }
+  }), _vm._v(" "), _c("div", {
+    staticClass: "buttons"
+  }, [_c("div", {
+    staticClass: "operators"
+  }, [_c("div", [_vm._v("+")]), _vm._v(" "), _c("div", [_vm._v("-")]), _vm._v(" "), _c("div", [_vm._v("×")]), _vm._v(" "), _c("div", [_vm._v("÷")])]), _vm._v(" "), _c("div", {
+    staticClass: "leftPanel"
+  }, [_c("div", {
+    staticClass: "numbers"
+  }, [_c("div", [_vm._v("7")]), _vm._v(" "), _c("div", [_vm._v("8")]), _vm._v(" "), _c("div", [_vm._v("9")])]), _vm._v(" "), _c("div", {
+    staticClass: "numbers"
+  }, [_c("div", [_vm._v("4")]), _vm._v(" "), _c("div", [_vm._v("5")]), _vm._v(" "), _c("div", [_vm._v("6")])]), _vm._v(" "), _c("div", {
+    staticClass: "numbers"
+  }, [_c("div", [_vm._v("1")]), _vm._v(" "), _c("div", [_vm._v("2")]), _vm._v(" "), _c("div", [_vm._v("3")])]), _vm._v(" "), _c("div", {
+    staticClass: "numbers"
+  }, [_c("div", [_vm._v("0")]), _vm._v(" "), _c("div", [_vm._v(".")]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "clear"
+    }
+  }, [_vm._v("C")])])]), _vm._v(" "), _c("div", {
+    staticClass: "equal",
+    attrs: {
+      id: "result"
+    }
+  }, [_vm._v("=")])])]), _vm._v(" "), _c("div", {
+    staticClass: "comment"
+  }, [_c("p", {
+    attrs: {
+      id: "neko"
+    }
+  })])]);
+}];
+render._withStripped = true;
+
 
 /***/ }),
 
@@ -49726,6 +49815,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('translator-component', __webpack_require__(/*! ./components/TranslatorComponent.vue */ "./resources/js/components/TranslatorComponent.vue")["default"]);
+Vue.component('calc2-component', __webpack_require__(/*! ./components/Calc2Component.vue */ "./resources/js/components/Calc2Component.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -49780,6 +49870,78 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/Calc2Component.vue":
+/*!****************************************************!*\
+  !*** ./resources/js/components/Calc2Component.vue ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Calc2Component_vue_vue_type_template_id_5772942b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Calc2Component.vue?vue&type=template&id=5772942b& */ "./resources/js/components/Calc2Component.vue?vue&type=template&id=5772942b&");
+/* harmony import */ var _Calc2Component_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Calc2Component.vue?vue&type=script&lang=js& */ "./resources/js/components/Calc2Component.vue?vue&type=script&lang=js&");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Calc2Component_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Calc2Component_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Calc2Component_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Calc2Component_vue_vue_type_template_id_5772942b___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Calc2Component_vue_vue_type_template_id_5772942b___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Calc2Component.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Calc2Component.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/components/Calc2Component.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Calc2Component_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Calc2Component.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Calc2Component.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Calc2Component_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Calc2Component_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Calc2Component_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Calc2Component_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Calc2Component_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Calc2Component.vue?vue&type=template&id=5772942b&":
+/*!***********************************************************************************!*\
+  !*** ./resources/js/components/Calc2Component.vue?vue&type=template&id=5772942b& ***!
+  \***********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_Calc2Component_vue_vue_type_template_id_5772942b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!../../../node_modules/vue-loader/lib??vue-loader-options!./Calc2Component.vue?vue&type=template&id=5772942b& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Calc2Component.vue?vue&type=template&id=5772942b&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_Calc2Component_vue_vue_type_template_id_5772942b___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_Calc2Component_vue_vue_type_template_id_5772942b___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 

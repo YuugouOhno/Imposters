@@ -20,18 +20,18 @@ Route::delete('/diary/delete/{diary}', 'DiaryController@delete')->name('diary.de
 
 //Route::get('/math', 'PostController@math'); //一覧画面
 
-Route::get('/math', function(){
-    return view('math/index');
-}); 
+// Route::get('/math', function(){
+//     return view('math/index');
+// }); 
 
 
-Route::get('/calculator','calculatorController@index');
-Route::get('/calculator/1', 'calculatorController@calc1');
-Route::get('/calculator/2', 'calculatorController@calc2');
-Route::get('/calculator/3', 'calculatorController@calc3');
-Route::get('/calculator/4', 'calculatorController@calc4');
-Route::get('/calculator/5', 'calculatorController@calc5');
-Route::get('/calculator/6', 'calculatorController@calc6');
+Route::get('/calculator','CalculatorController@index');
+Route::get('/calculator/1', 'CalculatorController@calc1');
+Route::get('/calculator/2', 'CalculatorController@calc2');
+Route::get('/calculator/3', 'CalculatorController@calc3');
+Route::get('/calculator/4', 'CalculatorController@calc4');
+Route::get('/calculator/5', 'CalculatorController@calc5');
+Route::get('/calculator/6', 'CalculatorController@calc6');
 
 
 Route::get('/manegiment', function(){
