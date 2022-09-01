@@ -21,6 +21,7 @@ window.Vue = require('vue');
 
 Vue.component('translator-component', require('./components/TranslatorComponent.vue').default);
 Vue.component('calc2-component', require('./components/Calc2Component.vue').default);
+Vue.component('calc4-component', require('./components/Calc4Component.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
