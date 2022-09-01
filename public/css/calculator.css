@@ -1,4 +1,4 @@
-body {
+body, .body_container {
   margin: 4% auto;
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 5px;
@@ -6,6 +6,7 @@ body {
   -webkit-user-select: none;
   /*background-image: url('https://www.pakutaso.com/shared/img/thumb/PP_keshigomutopen_TP_V.jpg');*/
 }
+
 
 .img {
   margin-left: auto;
