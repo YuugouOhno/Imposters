@@ -24,6 +24,18 @@ Route::get('/math', function(){
     return view('math/index');
 }); 
 
+
+Route::controller(CalculatorController::class)->group(function () {
+Route::get('/calculator', 'index');
+Route::get('/calculator/1', 'calcu1');
+Route::get('/calculator/2', 'calcu2');
+Route::get('/calculator/3', 'calcu3');
+Route::get('/calculator/4', 'calcu4');
+Route::get('/calculator/5', 'calcu5');
+Route::get('/calculator/6', 'calcu6');
+
+});
+
 Route::get('/manegiment', function(){
     return view('diaries/manegiment');
 }); 

@@ -4,6 +4,7 @@ var operator = document.querySelectorAll('.operators div'); // 演算子を配�
 var result = document.getElementById('result'); // =を取得
 var neko = document.getElementById('neko'); //最初に入力された式を履歴として表示
 var nekoArray = []; //履歴確認用
+var nekoArray2 = [];
 
 var clear = document.getElementById('clear'); // clearを取得
 var resultDisplayed = false;
@@ -54,7 +55,7 @@ result.addEventListener("click", function() { // 最終結果の出力
   let inputString = input.innerHTML; // inputを取得
   console.log("inputStringだよ",inputString);
   nekoArray.push(inputString); //入力された計算式をneko配列に格納
-  console.log("nekoArrrayだよ",nekoArray);
+  console.log("nekoArrayだよ",nekoArray);
   
   
   let numbers = inputString.split(/\+|\-|\×|\÷/g); // 演算子で区切られている数字を配列として取得
@@ -102,9 +103,11 @@ function math_wrong(operators, numbers){ //間違える計算の関数
   }
   nekoArray.push('=');
   nekoArray.push(numbers[0]);
+  console.log("nekoArrayの長さだよ",nekoArray.length/3);
   resultDisplayed = true; 
-  //for(i = 0; i < nekoArray.length/3; i++) neko.innerHTML = nekoArray[i*3+1]+ nekoArray[i*3+2]+ nekoArray[i*3+3]+"\n"; //履歴を表示
-   for(i = 0; i < nekoArray.length/3; i++) neko.innerHTML = nekoArray[i*3]+ nekoArray[i*3+1]+ nekoArray[i*3+2]+"\n"; //履歴を表示
+   for(i = 0; i < nekoArray.length/3; i++) nekoArray2 = [nekoArray[i*3]+ nekoArray[i*3+1]+ nekoArray[i*3+2]+"\n"]; //履歴を表示
+   console.log("nekoArray2だよ",nekoArray2)
+    neko.innerHTML = nekoArray2;
 } //間違える計算の関数
 
 function multiplication(operators,numbers){ // 掛け算
