@@ -1943,20 +1943,17 @@ __webpack_require__.r(__webpack_exports__);
     return {
       result: "0",
       is_calc: false,
-      dataArrays: [["7", "8", "9", "÷"], ["4", "5", "6", "×"], ["1", "2", "3", "-"], ["0", ".", "=", "+"]],
+      operators: [["+", "-", "×", "÷"]],
+      numbers: [["7", "8", "9"], ["4", "5", "6"], ["1", "2", "3"], ["0", ".", "C"]],
       operators_list: ["÷", "×", "-", "+"]
     };
   },
   methods: {
-    c_click: function c_click() {
-      this.result = "0";
-      this.is_calc = false;
-    },
     btn_Click: function btn_Click(val) {
       if (this.operators_list.includes(val)) {
         this.ope_click(val);
-      } else if (val === "=") {
-        this.equal_click();
+      } else if (val === "C") {
+        this.c_click();
       } else {
         this.num_click(val);
       }
@@ -1974,6 +1971,10 @@ __webpack_require__.r(__webpack_exports__);
       } else {
         this.result += val;
       }
+    },
+    c_click: function c_click() {
+      this.result = "0";
+      this.is_calc = false;
     },
     ope_click: function ope_click(val) {
       if (this.is_calc) this.is_calc = false;
@@ -2312,33 +2313,19 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("div", [_c("h1", [_vm._v("電卓")]), _vm._v(" "), _c("div", [_c("div", [_c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.result,
-      expression: "result"
-    }],
-    attrs: {
-      readonly: "",
-      type: "text"
-    },
-    domProps: {
-      value: _vm.result
-    },
-    on: {
-      input: function input($event) {
-        if ($event.target.composing) return;
-        _vm.result = $event.target.value;
-      }
-    }
-  }), _c("button", {
-    on: {
-      click: _vm.c_click
-    }
-  }, [_vm._v("C")])]), _vm._v(" "), _vm._l(_vm.dataArrays, function (row) {
-    return _c("div", _vm._l(row, function (column) {
-      return _c("button", {
+  return _c("div", {
+    staticClass: "body_container"
+  }, [_c("h1", [_vm._v("電卓")]), _vm._v(" "), _c("div", {
+    staticClass: "calculator"
+  }, [_c("div", {
+    staticClass: "input"
+  }, [_vm._v(_vm._s(_vm.result))]), _vm._v(" "), _c("div", {
+    staticClass: "buttons"
+  }, [_vm._l(_vm.operators, function (row) {
+    return _c("div", {
+      staticClass: "operators"
+    }, _vm._l(row, function (column) {
+      return _c("div", {
         on: {
           click: function click($event) {
             return _vm.btn_Click(column);
@@ -2346,7 +2333,26 @@ var render = function render() {
         }
       }, [_vm._v(_vm._s(column))]);
     }), 0);
-  })], 2)]);
+  }), _vm._v(" "), _c("div", {
+    staticClass: "leftPanel"
+  }, _vm._l(_vm.numbers, function (row) {
+    return _c("div", {
+      staticClass: "numbers"
+    }, _vm._l(row, function (column) {
+      return _c("div", {
+        on: {
+          click: function click($event) {
+            return _vm.btn_Click(column);
+          }
+        }
+      }, [_vm._v(_vm._s(column))]);
+    }), 0);
+  }), 0), _vm._v(" "), _c("div", {
+    staticClass: "equal",
+    on: {
+      click: _vm.equal_click
+    }
+  }, [_vm._v("=")])], 2)])]);
 };
 
 var staticRenderFns = [];
@@ -50666,15 +50672,14 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*!****************************************************!*\
   !*** ./resources/js/components/Calc2Component.vue ***!
   \****************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Calc2Component_vue_vue_type_template_id_5772942b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Calc2Component.vue?vue&type=template&id=5772942b& */ "./resources/js/components/Calc2Component.vue?vue&type=template&id=5772942b&");
 /* harmony import */ var _Calc2Component_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Calc2Component.vue?vue&type=script&lang=js& */ "./resources/js/components/Calc2Component.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Calc2Component_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Calc2Component_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _Calc2Component_vue_vue_type_style_index_0_id_5772942b_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Calc2Component.vue?vue&type=style&index=0&id=5772942b&lang=css& */ "./resources/js/components/Calc2Component.vue?vue&type=style&index=0&id=5772942b&lang=css&");
+/* empty/unused harmony star reexport *//* harmony import */ var _Calc2Component_vue_vue_type_style_index_0_id_5772942b_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Calc2Component.vue?vue&type=style&index=0&id=5772942b&lang=css& */ "./resources/js/components/Calc2Component.vue?vue&type=style&index=0&id=5772942b&lang=css&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -50706,7 +50711,7 @@ component.options.__file = "resources/js/components/Calc2Component.vue"
 /*!*****************************************************************************!*\
   !*** ./resources/js/components/Calc2Component.vue?vue&type=script&lang=js& ***!
   \*****************************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
