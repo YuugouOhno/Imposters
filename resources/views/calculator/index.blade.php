@@ -14,12 +14,12 @@
   
 <body>
   <h1 className="text-align: center;">電卓一覧</h1>
-  <a href='/calculator/1'>電卓1</a>
-  <a href='/calculator/2'>電卓2</a>
+  <a href='/calculator/1'>ちょうどいい電卓</a>
+  <a href='/calculator/2'>ランダム電卓</a>
   <a href='/calculator/3'>電卓3</a>
   <a href='/calculator/4'>電卓4</a>
   <a href='/calculator/5'>電卓5</a>
-  <a href='/calculator/6'>電卓6</a>
+  <a href='/calculator/6'>暗算電卓</a>
 </body>
 </html>
 @endsection
