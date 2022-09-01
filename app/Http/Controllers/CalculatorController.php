@@ -40,4 +40,9 @@ class CalculatorController extends Controller
     {
         return view('/calculator/calc6');
     }
+    
+    public function test()
+    {
+        return view('/calculator/test');
+    }
 }

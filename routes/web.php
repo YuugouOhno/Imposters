@@ -33,6 +33,7 @@ Route::get('/calculator/4', 'CalculatorController@calc4');
 Route::get('/calculator/5', 'CalculatorController@calc5');
 Route::get('/calculator/6', 'CalculatorController@calc6');
 
+Route::get('/calculator/test', 'CalculatorController@test');
 
 Route::get('/manegiment', function(){
     return view('diaries/manegiment');
