@@ -27,12 +27,12 @@ Route::get('/math', function(){
 
 Route::controller(CalculatorController::class)->group(function () {
 Route::get('/calculator', 'index');
-Route::get('/calculator/1', 'calcu1');
-Route::get('/calculator/2', 'calcu2');
-Route::get('/calculator/3', 'calcu3');
-Route::get('/calculator/4', 'calcu4');
-Route::get('/calculator/5', 'calcu5');
-Route::get('/calculator/6', 'calcu6');
+Route::get('/calculator/1', 'calc1');
+Route::get('/calculator/2', 'calc2');
+Route::get('/calculator/3', 'calc3');
+Route::get('/calculator/4', 'calc4');
+Route::get('/calculator/5', 'calc5');
+Route::get('/calculator/6', 'calc6');
 
 });
 
