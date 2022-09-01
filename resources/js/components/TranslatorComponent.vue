@@ -24,6 +24,7 @@
         </div>
         <div v-for='name, index in results.language_name'>
             <div>
+                
                 <p>{{name}}語に訳すと</p>
                 <p>{{results.previous_text[index+1] }}</p>
             </div>
