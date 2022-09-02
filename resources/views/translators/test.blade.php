@@ -4,31 +4,41 @@
 @endsection
 
 @section('content')
-        <h1>てきとう翻訳</h1>
-        <div>
-            <select class='original_language'>
-                <option>何語から</option>
-            </select>
+        <h2>てきとう翻訳</h2>
+        <div class= transition_form>
+            <div class="box01">
+                <select class='original_language'>
+                    <option>何語から</option>
+                </select>
+            </div>
+                <div class="box03">
+                        <select class='last_language'>
+                            <option>何語まで</option>
+                        </select>
+                </div>
+                    <div class="box02">
+                        <div align="center">
+                            <div class='arrow'>
+                                <input type='number' class="number">
+                            </div>
+                                <button>翻訳</button>
+                        </div>
+                    </div>
         </div>
-        <div>
-            <input type='number'>
-        </div>
-        <div>
-            <button>翻訳</button>
-        </div>
-        <div>
-            <select class='last_language'>
-                <option>何語まで</option>
-            </select>
-        </div>
-        <div>
-            <textaria></textaria>
+        
+        <div class="textaria">
+            <div align="center">
+                <textaria><input type="text" class="original_text"/></textaria>
+            </div>
         </div>
         
         <div class='test_container'>
-            <div class=""><p>xxxx語に訳すと</p></div>
-            <div class=""><p>「私は天才だ」</p></div>
+            <div align="center">
+                <div class="search_arrow"><p>xxxx語に訳すと</p></div>
+                <div class="result_text"><p>「私は天才だ」</p></div>
+            </div>
         </div>
+        
         <div>
             <p>--------------------------------------この上を頼む----------------------------------------</p>
         </div>

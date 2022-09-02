@@ -1,0 +1,96 @@
+body{
+  background-color: #f0f8ff;
+}
+
+
+h2{
+  color: black;
+  font-weight: bold;
+  font-size:50px;
+  font-family: "HanziPen SC";
+  text-align: center;
+}
+
+
+
+button{
+  width: 50%;
+  aspect-ratio: 3/1 ;
+  clip-path: polygon(3% 0, 89% 0, 60% 60%, 37% 30%, 3% 30%);
+  text-align: right;
+  padding-right: 19%;
+  padding-bottom: 7%;
+  position: relative;
+}
+
+.arrow{
+  width: 50%;
+  aspect-ratio: 3/1 ;
+  clip-path: polygon(3% 70%, 37% 70%, 60% 40%, 89% 100%, 3% 100%);
+  text-align: right;
+  padding-right: 14%;
+  padding-top: 12%;
+  background-color: red;
+  position: relative;
+}
+
+input.original_text{
+  width: 80%;
+  aspect-ratio: 6/1;
+  clip-path: polygon(0 49%, 43% 49%, 56% 60%, 65% 48%, 100% 49%, 100% 85%, 65% 85%, 56% 100%, 42% 85%, 0% 85%);
+  border-color: white;
+  position: relative;
+  background-color: green;
+  
+}
+
+.result_text{
+  width: 80%;
+  aspect-ratio: 6/1;
+  clip-path: polygon(0 49%, 43% 49%, 56% 60%, 65% 48%, 100% 49%, 100% 85%, 65% 85%, 56% 100%, 42% 85%, 0% 85%);
+  border-color: white;
+  position: relative;
+  background-color: green;
+}
+
+.search_arrow{
+  width: 20%;
+  aspect-ratio: 2/2;
+  clip-path: polygon(65% 47%, 100% 30%, 100% 70%, 65% 90%, 0% 70%, 0% 30%);
+  background-color: white;
+  position: relative;
+  background-color: green;
+}
+
+/*.box01{
+  background: black;
+  width: 25%;
+  height: 400px;
+  display: flex;
+  
+}
+
+.box02{
+  background: black;
+  width: 40%;
+  height: 400px;
+  display: flex;
+  
+}
+
+.box03{
+  background: black;
+  width: 25%;
+  height: 400px;
+  display: flex;
+  
+}
+
+.transition_form{
+  display: flex;
+  
+}*/
+
+
+
+
