@@ -12,14 +12,8 @@
     <script src="{{asset('js/calculator.js')}}" defer></script>
   </head>
   <body>
+      <a onclick="speech()">音声テスト</a>
     <h1>電卓3</h1>
-    <div class="probability">
-        <br>
-        正答率:
-        <input class="input_num" type="number" id="probability" name="probability" placeholder="何点とりたい？" style="text-align:center;"/>
-    </div>
-    <br>
-    
     <div class="calculator">
       <div class="input" id="input"></div>
       <div class="buttons">
@@ -62,6 +56,36 @@
     <div class="comment">
       <p id="neko"></p>
     </div>
+    
+     <script>
+  function speech(){
+    if ('speechSynthesis' in window) {
+      console.log("オンクリック");
+
+    // 発言を設定 (必須)
+    const uttr = new SpeechSynthesisUtterance()
+
+    // テキストを設定 (必須)
+    uttr.text = 'いち、に、さん、よん、ご'
+
+    // 言語を設定
+    uttr.lang = "ja-JP"
+
+    // 速度を設定
+    uttr.rate = 1
+
+    // 高さを設定
+    uttr.pitch = 2
+
+    // 音量を設定
+    uttr.volume = 1
+
+    // 発言を再生 (必須)
+    window.speechSynthesis.speak(uttr)
+
+ }
+ }
+  </script>
   </body>
 </html>
 @endsection

@@ -18,8 +18,40 @@
   <a href='/calculator/2'>ランダム電卓</a>
   <a href='/calculator/3'>喋る電卓</a>
   <a href='/calculator/4'>消えゆく電卓</a>
-  <a href='/calculator/5'>暗算電卓</a>
-  <a href='/calculator/6'>comming soon</a>
+  <a href='/calculator/5'>電卓5</a>
+   <a href='/calculator/6'>暗算電卓</a>
+   
+  <a onclick="speech()">音声テスト</a>
+  
+  <script>
+  function speech(){
+    if ('speechSynthesis' in window) {
+      console.log("オンクリック");
+
+    // 発言を設定 (必須)
+    const uttr = new SpeechSynthesisUtterance()
+
+    // テキストを設定 (必須)
+    uttr.text = 'いち、に、さん、よん、ご'
+
+    // 言語を設定
+    uttr.lang = "ja-JP"
+
+    // 速度を設定
+    uttr.rate = 1
+
+    // 高さを設定
+    uttr.pitch = 2
+
+    // 音量を設定
+    uttr.volume = 1
+
+    // 発言を再生 (必須)
+    window.speechSynthesis.speak(uttr)
+
+ }
+ }
+  </script>
 </body>
 </html>
 @endsection
