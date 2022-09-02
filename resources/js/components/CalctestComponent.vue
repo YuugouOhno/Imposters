@@ -8,12 +8,14 @@
                 <div class="operators" v-for="row in operators">
                     <div v-for="column in row" v-on:click="btn_Click(column)">{{column}}</div>
                 </div>
-                <div class="leftPanel">
-                    <div class="numbers" v-for="row in numbers">
-                        <div v-for="column in row" v-on:click="btn_Click(column)">{{column}}</div>
+                <div class="bottomPanel">
+                    <div class="leftPanel">
+                        <div class="numbers" v-for="row in numbers">
+                            <div v-for="column in row" v-on:click="btn_Click(column)">{{column}}</div>
+                        </div>
                     </div>
+                    <div class="equal" v-on:click="equal_click">=</div>
                 </div>
-                <div class="equal" v-on:click="equal_click">=</div>
             </div>
         </div>
     </div>
