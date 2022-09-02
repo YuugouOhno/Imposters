@@ -13,13 +13,45 @@
   </head>
   
 <body>
-  <h1 className="text-align: center;">電卓一覧</h1>
-  <a href='/calculator/1'>ちょうどいい電卓</a>
-  <a href='/calculator/2'>ランダム電卓</a>
-  <a href='/calculator/3'>喋る電卓</a>
-  <a href='/calculator/4'>消えゆく電卓</a>
-  <a href='/calculator/5'>暗算電卓</a>
-   <a href='/calculator/6'>comming soon</a>
+  <h1 style="text-align:center;">電卓一覧</h1>
+   <div class="calculator" style="display: grid; width:80%; margin: 0 auto; grid-template-columns: 1fr 1fr 1fr;">
+      <div style="margin: 15px 15px 30px 15px;  text-align:center;">
+      <img src="https://2.bp.blogspot.com/--BYLyPduBgM/WaPvldUDt9I/AAAAAAABGNw/XTkwA_fBEC86bpvy2z7-1jZ9-dEc_6_jQCLcBGAs/s400/dentaku_syoumen_small.png" />
+      <br />
+       <a style="text-decoration: none;" href='/calculator/1'>ちょうどいい電卓</a>
+      </div>
+      
+      <div style="margin: 15px 15px 30px 15px;  text-align:center;">
+      <img src="https://2.bp.blogspot.com/--BYLyPduBgM/WaPvldUDt9I/AAAAAAABGNw/XTkwA_fBEC86bpvy2z7-1jZ9-dEc_6_jQCLcBGAs/s400/dentaku_syoumen_small.png" />
+       <br />
+       <a style="text-decoration: none;" href='/calculator/2'>ランダム電卓</a>
+      </div>
+      
+      <div style="margin: 15px 15px 30px 15px; text-align:center;">
+           <img src="https://2.bp.blogspot.com/--BYLyPduBgM/WaPvldUDt9I/AAAAAAABGNw/XTkwA_fBEC86bpvy2z7-1jZ9-dEc_6_jQCLcBGAs/s400/dentaku_syoumen_small.png" />
+            <br />
+            <a style="text-decoration: none;" href='/calculator/3'>電卓3</a>
+      </div>
+       
+      <div style="margin: 15px;  text-align:center;">
+            <img src="https://2.bp.blogspot.com/--BYLyPduBgM/WaPvldUDt9I/AAAAAAABGNw/XTkwA_fBEC86bpvy2z7-1jZ9-dEc_6_jQCLcBGAs/s400/dentaku_syoumen_small.png" />
+            <br />
+            <a style="text-decoration: none;" href='/calculator/4'>電卓4</a>
+      </div>
+      
+      <div style="margin: 15px;  text-align:center;">
+             <img src="https://2.bp.blogspot.com/--BYLyPduBgM/WaPvldUDt9I/AAAAAAABGNw/XTkwA_fBEC86bpvy2z7-1jZ9-dEc_6_jQCLcBGAs/s400/dentaku_syoumen_small.png" />
+             <br />
+             <a style="text-decoration: none;" href='/calculator/5'>電卓5</a>
+      </div>
+     
+      <div style="margin: 15px;  text-align:center;">
+             <img src="https://2.bp.blogspot.com/--BYLyPduBgM/WaPvldUDt9I/AAAAAAABGNw/XTkwA_fBEC86bpvy2z7-1jZ9-dEc_6_jQCLcBGAs/s400/dentaku_syoumen_small.png" />
+             <br />
+             <a style="text-decoration: none;" href='/calculator/6'>暗算電卓</a>
+       </div>
+   </div
+
    
   <a onclick="speech()">音声テスト</a>
   
