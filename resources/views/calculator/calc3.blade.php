@@ -60,13 +60,16 @@
      <script>
   function speech(){
     if ('speechSynthesis' in window) {
-      console.log("オンクリック");
+      console.log("クリックされました");
 
     // 発言を設定 (必須)
     const uttr = new SpeechSynthesisUtterance()
+    
+    const number = new Array("いち","に","さん","よん","ご","ろく","なな","はち","きゅう","こんにちは");
 
     // テキストを設定 (必須)
-    uttr.text = 'いち、に、さん、よん、ご'
+    uttr.text =  number[ Math.floor( Math.random()*11)-1 ];
+    console.log(uttr.text);
 
     // 言語を設定
     uttr.lang = "ja-JP"
@@ -75,7 +78,7 @@
     uttr.rate = 1
 
     // 高さを設定
-    uttr.pitch = 2
+    uttr.pitch = 1
 
     // 音量を設定
     uttr.volume = 1
