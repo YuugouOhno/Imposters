@@ -9,12 +9,11 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{asset('/css/calculator.css')}}">
-    <script src="{{asset('js/calculator6.js')}}" defer></script>
   </head>
   <body>
-    <h1>暗算電卓</h1>
+    
     <div class="calculator">
-      <div class="input" id="input"></div>
+      <div class="input" id="input">Comming soon</div>
       <div class="buttons">
         <div class="operators">
           <div>+</div>
