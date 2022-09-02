@@ -17,7 +17,7 @@
   <a href='/calculator/1'>ちょうどいい電卓</a>
   <a href='/calculator/2'>ランダム電卓</a>
   <a href='/calculator/3'>電卓3</a>
-  <a href='/calculator/4'>電卓4</a>
+  <a href='/calculator/4'>消えゆく電卓</a>
   <a href='/calculator/5'>電卓5</a>
   <a href='/calculator/6'>暗算電卓</a>
 </body>
