@@ -11,8 +11,8 @@
                 </div>
                 <div class="bottomPanel">
                     <div class="leftPanel">
-                        <div class="numbers" v-for="row in numbers">
-                            <div :class="{ 'inline': numbers_isInline[index], 'none': numbers_isNone[index]}" :ref="'val' + column" v-for="column, index in row" v-on:click="btn_Click(column)">{{column}}</div>
+                        <div class="numbers" v-for="row, index1 in numbers">
+                            <div :class="{ 'inline': numbers_isInline[index1][index2], 'none': numbers_isNone[index1][index2]}" :ref="'val' + column" v-for="column, index2 in row" v-on:click="btn_Click(column)">{{column}}</div>
                         </div>
                     </div>
                     <div class="equal" v-on:click="equal_click">=</div>
@@ -39,17 +39,41 @@ export default {
             operators_list: ["÷", "×", "-", "+"],
             operators_isInline: [true, true, true, true],
             operators_isNone: [false, false, false, false],
-            numbers_isInline: [true, true, true, true, true, true, true, true, true, true, true, true],
-            numbers_isNone: [false, false, false, false, false, false, false, false, false, false, false, false]
+            numbers_isInline: [
+                [true, true, true],
+                [true, true, true],
+                [true, true, true],
+                [true, true, true]
+            ],
+            numbers_isNone: [
+                [false, false, false],
+                [false, false, false],
+                [false, false, false],
+                [false, false, false]
+            ]
         }
     },
     methods: {
         lostButton: function (val) {
-            const numbers_list = ["7", "8", "9", "4", "5", "6", "1", "2", "3", "0", ".", "C"]
-            const operators_list = ["+", "-", "×", "÷", ]
             // const label = "val" + val
             // console.log('中身', this.$refs[label])
-            console.log('何番目', numbers_list.indexOf(val))
+            for (var i=0; i<4; i++) {
+                var index = this.numbers[i].indexOf(val)
+                if (index >= 0) {
+                    console.log("見つけた")
+                    this.numbers_isInline[i].splice(index, 1, false)
+                    this.numbers_isNone[i].splice(index, 1, true)
+                    i = 100;
+                }
+            }
+            if (index === -1) {
+                const operators_list = ["+", "-", "×", "÷"]
+                index = operators_list.indexOf(val)
+                console.log("記号を消したい",index)
+                this.operators_isInline.splice(index, 1, false)
+                this.operators_isNone.splice(index, 1, true)
+            }
+            console.log('何番目', index)
         },
         resetButton: function () {
             const shuffled_list = ["+", "-", "×", "÷", "7", "8", "9", "4", "5", "6", "1", "2", "3", "0", ".", "C"]

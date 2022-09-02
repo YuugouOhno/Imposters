@@ -2050,17 +2050,34 @@ __webpack_require__.r(__webpack_exports__);
       operators_list: ["÷", "×", "-", "+"],
       operators_isInline: [true, true, true, true],
       operators_isNone: [false, false, false, false],
-      numbers_isInline: [true, true, true, true, true, true, true, true, true, true, true, true],
-      numbers_isNone: [false, false, false, false, false, false, false, false, false, false, false, false]
+      numbers_isInline: [[true, true, true], [true, true, true], [true, true, true], [true, true, true]],
+      numbers_isNone: [[false, false, false], [false, false, false], [false, false, false], [false, false, false]]
     };
   },
   methods: {
     lostButton: function lostButton(val) {
-      var numbers_list = ["7", "8", "9", "4", "5", "6", "1", "2", "3", "0", ".", "C"];
-      var operators_list = ["+", "-", "×", "÷"]; // const label = "val" + val
+      // const label = "val" + val
       // console.log('中身', this.$refs[label])
+      for (var i = 0; i < 4; i++) {
+        var index = this.numbers[i].indexOf(val);
 
-      console.log('何番目', numbers_list.indexOf(val));
+        if (index >= 0) {
+          console.log("見つけた");
+          this.numbers_isInline[i].splice(index, 1, false);
+          this.numbers_isNone[i].splice(index, 1, true);
+          i = 100;
+        }
+      }
+
+      if (index === -1) {
+        var operators_list = ["+", "-", "×", "÷"];
+        index = operators_list.indexOf(val);
+        console.log("記号を消したい", index);
+        this.operators_isInline.splice(index, 1, false);
+        this.operators_isNone.splice(index, 1, true);
+      }
+
+      console.log('何番目', index);
     },
     resetButton: function resetButton() {
       var shuffled_list = ["+", "-", "×", "÷", "7", "8", "9", "4", "5", "6", "1", "2", "3", "0", ".", "C"];
@@ -2474,16 +2491,16 @@ var render = function render() {
     staticClass: "bottomPanel"
   }, [_c("div", {
     staticClass: "leftPanel"
-  }, _vm._l(_vm.numbers, function (row) {
+  }, _vm._l(_vm.numbers, function (row, index1) {
     return _c("div", {
       staticClass: "numbers"
-    }, _vm._l(row, function (column, index) {
+    }, _vm._l(row, function (column, index2) {
       return _c("div", {
         ref: "val" + column,
         refInFor: true,
         "class": {
-          inline: _vm.numbers_isInline[index],
-          none: _vm.numbers_isNone[index]
+          inline: _vm.numbers_isInline[index1][index2],
+          none: _vm.numbers_isNone[index1][index2]
         },
         on: {
           click: function click($event) {
