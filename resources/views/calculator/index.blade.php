@@ -18,8 +18,8 @@
   <a href='/calculator/2'>ランダム電卓</a>
   <a href='/calculator/3'>喋る電卓</a>
   <a href='/calculator/4'>消えゆく電卓</a>
-  <a href='/calculator/5'>電卓5</a>
-   <a href='/calculator/6'>暗算電卓</a>
+  <a href='/calculator/5'>暗算電卓</a>
+   <a href='/calculator/6'>comming soon</a>
    
   <a onclick="speech()">音声テスト</a>
   
