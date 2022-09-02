@@ -51,6 +51,7 @@
              <a style="text-decoration: none;" href='/calculator/6'>暗算電卓</a>
        </div>
    </div
+
    
   <a onclick="speech()">音声テスト</a>
   
@@ -83,7 +84,6 @@
  }
  }
   </script>
-
 </body>
 </html>
 @endsection
