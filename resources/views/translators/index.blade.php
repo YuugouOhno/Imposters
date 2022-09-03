@@ -85,9 +85,15 @@
                     </div>
                 </div>
             </div>
-        
-        <div>
-            <a href='/test'>いい感じの翻訳</a>
+            
+        <div align="center">
+            <h1>「いい感じの翻訳」への隠ボタンがあるよ探してみてね</h1>
+            <div class="random_hover">
+                <span class="dli-arrow-down"></span>
+                <div class="random">
+                    <a href='/randomtranslator'>いい感じの翻訳</a>
+                </div>
+            </div>
         </div>
     </body>
 </html>
