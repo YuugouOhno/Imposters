@@ -41,7 +41,7 @@ Route::get('/manegiment', function(){
 
 
 Route::get('/translator', 'TranslatorController@index')->name('translator');
-Route::get('/test', 'TranslatorController@test')->name('test');
+Route::get('/randomtranslator', 'TranslatorController@random')->name('random');
 
 Auth::routes();
 

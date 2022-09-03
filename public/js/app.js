@@ -2538,26 +2538,11 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("div", [_c("h1", [_vm._v("てきとう翻訳")]), _vm._v(" "), _c("input", {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.translate_level,
-      expression: "translate_level"
-    }],
-    attrs: {
-      type: "number"
-    },
-    domProps: {
-      value: _vm.translate_level
-    },
-    on: {
-      input: function input($event) {
-        if ($event.target.composing) return;
-        _vm.translate_level = $event.target.value;
-      }
-    }
-  }), _vm._v(" "), _c("div", [_c("select", {
+  return _c("div", [_c("h1", [_vm._v("てきとう翻訳")]), _vm._v(" "), _c("div", {
+    staticClass: "translate_menue"
+  }, [_c("div", {
+    staticClass: "original_language fluid_03"
+  }, [_c("p", [_vm._v("何語から翻訳する？")]), _vm._v(" "), _c("select", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -2584,8 +2569,42 @@ var render = function render() {
       domProps: {
         value: language.id
       }
-    }, [_vm._v("\n                    " + _vm._s(language.name) + "\n                ")]);
-  }), 0)]), _vm._v(" "), _c("h1", [_vm._v(_vm._s(_vm.original_language))]), _vm._v(" "), _c("div", [_c("select", {
+    }, [_vm._v("\n                        " + _vm._s(language.name) + "\n                    ")]);
+  }), 0)]), _vm._v(" "), _c("div", {
+    attrs: {
+      align: "center"
+    }
+  }, [_c("div", {
+    staticClass: "arrow"
+  }, [_c("p", [_vm._v("何重に翻訳する？")]), _vm._v(" "), _c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.translate_level,
+      expression: "translate_level"
+    }],
+    staticClass: "number",
+    attrs: {
+      type: "number"
+    },
+    domProps: {
+      value: _vm.translate_level
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.translate_level = $event.target.value;
+      }
+    }
+  })]), _vm._v(" "), _c("button", {
+    on: {
+      click: function click($event) {
+        return _vm.translate();
+      }
+    }
+  }, [_c("h6", [_vm._v("翻訳スタート")])])]), _vm._v(" "), _c("div", {
+    staticClass: "last_language fluid_03"
+  }, [_c("p", [_vm._v("何語に翻訳する？")]), _vm._v(" "), _c("select", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -2612,14 +2631,17 @@ var render = function render() {
       domProps: {
         value: language.id
       }
-    }, [_vm._v("\n                    " + _vm._s(language.name) + "\n                ")]);
-  }), 0)]), _vm._v(" "), _c("div", [_c("input", {
+    }, [_vm._v("\n                        " + _vm._s(language.name) + "\n                    ")]);
+  }), 0)])]), _vm._v(" "), _c("div", {
+    staticClass: "input_container"
+  }, [_c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
       value: _vm.original_text,
       expression: "original_text"
     }],
+    staticClass: "input_original_language",
     attrs: {
       type: "text",
       placeholder: "翻訳したい文章を入力してください"
@@ -2633,14 +2655,18 @@ var render = function render() {
         _vm.original_text = $event.target.value;
       }
     }
-  }), _vm._v(" "), _c("button", {
-    on: {
-      click: function click($event) {
-        return _vm.translate();
+  })]), _vm._v(" "), _vm._l(_vm.results.language_name, function (name, index) {
+    return _c("div", [_c("div", {
+      attrs: {
+        align: "center"
       }
-    }
-  }, [_vm._v("翻訳")])]), _vm._v(" "), _vm._l(_vm.results.language_name, function (name, index) {
-    return _c("div", [_c("div", [_c("p", [_vm._v(_vm._s(name) + "語に訳すと")]), _vm._v(" "), _c("p", [_vm._v(_vm._s(_vm.results.previous_text[index + 1]))])])]);
+    }, [_c("div", {
+      staticClass: "bubble2"
+    }), _vm._v(" "), _c("p", [_vm._v(_vm._s(name) + "語に訳すと")]), _vm._v(" "), _c("div", {
+      staticClass: "bubble2"
+    }), _vm._v(" "), _c("div", {
+      staticClass: "result"
+    }, [_c("p", [_vm._v(_vm._s(_vm.results.previous_text[index + 1]))])])])]);
   })], 2);
 };
 
