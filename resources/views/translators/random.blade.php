@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('head')
-<link rel="stylesheet" href="{{asset('/css/rendom.css')}}">
+<link rel="stylesheet" href="{{asset('/css/random.css')}}">
 @endsection
 
 @section('content')
