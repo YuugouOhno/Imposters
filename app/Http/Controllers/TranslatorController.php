@@ -11,8 +11,8 @@ class TranslatorController extends Controller
         return view('translators/index');
     }
     
-    public function test(Language $language){
+    public function random(Language $language){
         
-        return view('translators/test')->with(['language' => $language->get()]);
+        return view('translators/random')->with(['language' => $language->get()]);
     }
 }
