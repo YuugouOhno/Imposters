@@ -1,32 +1,45 @@
 <template>
     <div>
         <h1>てきとう翻訳</h1>
-        <input type='number' v-model='translate_level'>
-        <div>
-            <select v-model="original_language" placeholder="翻訳元の言語">
-                <option v-for="language in languages" :key="language.id" :value="language.id">
-                    {{ language.name }}
-                </option>
-            </select>
+	    <div class="translate_menue">
+	         <div class="original_language fluid_03">
+	            <p>何語から翻訳する？</p>
+                <select v-model="original_language" placeholder="翻訳元の言語">
+                    <option v-for="language in languages" :key="language.id" :value="language.id">
+                        {{ language.name }}
+                    </option>
+                </select>
+    	    </div>
+	        <div align="center">
+                <!--<input @input="change" type='text' v-model="original_text">-->
+                <div class='arrow'>
+                    <p>何重に翻訳する？</p>
+                    <input class="number" type='number' v-model='translate_level'>
+                </div>
+                <button v-on:click="translate()"><h6>翻訳スタート</h6></button>
+            </div>
+            <div class="last_language fluid_03">
+                <p>何語に翻訳する？</p>
+                <select v-model="last_language" placeholder="翻訳先の言語">
+                    <option v-for="language in languages" :key="language.id" :value="language.id">
+                        {{ language.name }}
+                    </option>
+                </select>
+    	    </div>
 	    </div>
-	    <h1>{{original_language}}</h1>
-	    <div>
-            <select v-model="last_language" placeholder="翻訳先の言語">
-                <option v-for="language in languages" :key="language.id" :value="language.id">
-                    {{ language.name }}
-                </option>
-            </select>
-	    </div>
-        <div>
-            <!--<input @input="change" type='text' v-model="original_text">-->
-            <input type='text' v-model="original_text" placeholder="翻訳したい文章を入力してください">
-            <button v-on:click="translate()">翻訳</button>
+        
+        <div class="input_container">
+        <input class="input_original_language" type='text' v-model="original_text" placeholder="翻訳したい文章を入力してください">
         </div>
+        
         <div v-for='name, index in results.language_name'>
-            <div>
-                
+            <div align="center">
+                <div class="bubble2"></div>
                 <p>{{name}}語に訳すと</p>
+                <div class="bubble2"></div>
+                <div class='result'>
                 <p>{{results.previous_text[index+1] }}</p>
+                </div>
             </div>
         </div>
     </div>
