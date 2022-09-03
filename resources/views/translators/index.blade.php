@@ -11,10 +11,18 @@
         <link rel="stylesheet" href="{{ asset('/css/translator.css') }}">
     </head>
     <body>
-            <div class="title">
-                <h1><span class="svg">うっかり</span>ほんやく</h1>
-                <p><span class="svg_02">うっかり</span>具合とほんやくしたい言語を選んでね</p>
-            </div>
+        <div class='fluids'>
+            <div class="fluid_01"></div>
+            <div class='title_fluid'>
+                <div class="fluid_02"></div>
+                    <div class="title">
+                        <h1><span class="svg">うっかり</span>ほんやく</h1>
+                        <p><span class="svg_02">うっかり</span>具合とほんやくしたい言語を選んでね</p>
+                    </div>
+                </div>
+            <div class="fluid_03"></div>
+        </div>
+        
             
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
   <defs>
@@ -63,11 +71,17 @@
                         <input class='original_text' type="text" id="original_text" placeholder="翻訳したい文章を入力してください"/>
                     </div>
                     <div class='style_02'>
-                        <button type='button' class='text' onclick="buttonClick()">ほんやく！！</button>
+                        <button type='button' class='text' onclick="buttonClick()">　ほんやく！！</button>
                     </div>
-                    <div align= "center">
-                        <p id='result' class='result_01'>正しいほんやく</p>
-                        <p id='result2' class='result_02'>間違ったほんやく</p>
+                    <div class='style_03'>
+                        <div class='true_answer'>
+                            <h4>正しいほんやく</h4>
+                            <p id='result' class='result_01'></p>
+                        </div>
+                        <div class='falut_answer'>
+                            <h4>うっかりほんやく</h4>
+                            <p id='result2' class='result_02'></p>
+                        </div>
                     </div>
                 </div>
             </div>
