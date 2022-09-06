@@ -61,7 +61,7 @@
       </div>
     </div>
     <div class="comment">
-      <p id="neko"></p>
+      <p style="text-align:center; font-size:xxx-large;" id="neko"></p>
     </div>
   </body>
 </html>
