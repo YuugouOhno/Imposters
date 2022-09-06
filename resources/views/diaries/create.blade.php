@@ -23,7 +23,7 @@
             <div class="title">
                 <h2 style="color:#a99e93;">日記</h2>
                 <!--<input type="text" name="diary[text]" placeholder="内容"/>-->
-                <textarea  style=" border-radius: 12px; width:30%;" type="text" name="diary[text]" placeholder="内容"></textarea>
+                <textarea  style="border-radius: 12px; width:30%;" type="text" name="diary[text]" placeholder="内容"></textarea>
                 <p class="text__error" style="color:red">{{ $errors->first('diary.text') }}</p>
             </div>
             <input style="border-radius: 8px; padding:7px 12px; font-size:medium;" type="submit" value="保存"/>

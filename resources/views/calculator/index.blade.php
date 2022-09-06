@@ -46,7 +46,7 @@
       <div style="margin: 15px 15px 30px 15px; text-align:center;">
            <img src="https://2.bp.blogspot.com/--BYLyPduBgM/WaPvldUDt9I/AAAAAAABGNw/XTkwA_fBEC86bpvy2z7-1jZ9-dEc_6_jQCLcBGAs/s400/dentaku_syoumen_small.png" />
             <br />
-            <a style="text-decoration: none;" href='/calculator/3'>電卓3</a>
+            <a style="text-decoration: none;" href='/calculator/3'>しゃべる電卓</a>
       </div>
        
       <div style="margin: 15px;  text-align:center;">

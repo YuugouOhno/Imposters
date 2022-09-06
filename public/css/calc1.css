@@ -7,6 +7,10 @@ body {
   /*background-image: url('https://www.pakutaso.com/shared/img/thumb/PP_keshigomutopen_TP_V.jpg');*/
 }
 
+h1{
+  text-align:center;
+}
+
 
 .img {
   margin-left: auto;
@@ -40,6 +44,10 @@ body {
   border: 1px solid #bbb;
   -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.input_num{
+  text-align: center;
 }
 
 .operators div {

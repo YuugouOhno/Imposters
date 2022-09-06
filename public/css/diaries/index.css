@@ -15,15 +15,15 @@ body {
 }
 
  h1{
-  color:#007bbb;
+  color: #12aa61;
   font-size:65px;
   font-family: "TsukuARdGothic-Regular";
 }
 
  h2{
-  color: #008b8b;
-  font-size:40px;
-  font-family: "TsukuARdGothic-Regular";
+  color: #d14040;
+  font-size:30px;
+  font-family: "Hannotate SC";
 }
 
  a{
@@ -35,4 +35,12 @@ body {
 .comment{
  font-family: "HanziPen SC";
  font-size: 20px;
+ color: #d14040;;
+}
+
+.diaries{
+  color: #c1e4e9;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "TsukuARdGothic-Regular";
 }
