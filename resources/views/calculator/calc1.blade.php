@@ -12,11 +12,11 @@
     <script src="{{asset('js/calculator.js')}}" defer></script>
   </head>
   <body>
-    <h1>電卓1</h1>
+    <h1>ちょうどよく間違える電卓</h1>
     <div class="probability">
         <br>
         正答率:
-        <input class="input_num" type="number" id="probability" name="probability" placeholder="何点とりたい？" style="text-align:center;"/>
+        <input style="align-items: center;" class="input_num" type="number" id="probability" name="probability" placeholder="何点とりたい？" style="text-align:center;"/>
     </div>
     <br>
     
