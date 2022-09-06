@@ -14,30 +14,30 @@ body {
   text-align:center;
 }
 
+.ZenKurenaido{
+font-family: 'Zen Kurenaido', sans-serif;
+}
+
+.YujiBoku{
+font-family: 'Yuji Boku', serif;
+}
+
  h1{
   color: #12aa61;
   font-size:65px;
-  font-family: "TsukuARdGothic-Regular";
 }
 
  p{
   color: #c1e4e9;
   font-size: 30px;
   font-weight: bold;
-  font-family: "TsukuARdGothic-Regular";
 }
 
 h2{
   color: #d14040;
   font-size:30px;
-  font-family: "Hannotate SC";
 }
 
 textara::placeholder {
  font-size: 30px;
- font-family: "HanziPen SC";
-}
-
-a{
- font-family: "TsukuARdGothic-Regular";
 }

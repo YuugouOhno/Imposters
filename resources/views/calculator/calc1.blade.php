@@ -8,13 +8,16 @@
     <title>ちょうどいい電卓</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('/css/calc1.css')}}">
     <script src="{{asset('js/calculator.js')}}" defer></script>
   </head>
   <body>
 
-    <h1>ちょうどいい電卓</h1>
-    <div class="probability">
+    <h1 style="text-align:center; font-size: xxx-large; color:#44617b;" class="DotGothic16">ちょうどいい電卓</h1>
+    <div style="text-align:center; font-size: xx-large; color:#4a4a4a;" class="DotGothic16" class="probability">
         <br>
         正答率:
         <input style="align-items: center;" class="input_num" type="number" id="probability" name="probability" placeholder="何点とりたい？" style="text-align:center;"/>
