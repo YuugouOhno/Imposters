@@ -9,6 +9,10 @@
     z-index: 1000;
 }
 
+.DotGothic16 {
+    font-family: 'DotGothic16', sans-serif;
+}
+
 @keyframes kirakira {
     0% {
         transform:translateY(0) rotateY(0);
