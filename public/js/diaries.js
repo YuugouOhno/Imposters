@@ -7,37 +7,40 @@
         "value_area":1121.6780303333778
       }
     },
+    
     "color":{
       "value":"#fff"
     },
+    
     "shape":{
       "type":"image",//形状は画像を指定
       "stroke":{
         "width":0,
       },
+      
       "image":{
-        "src":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSralpDF_bLF33nAzc23jmSvfBopZ0bHYbsfUtn9W_aaSv5lTQXlrl2D4crzbIpmjdrVkg&usqp=CAU",//画像を指定
-        "width":120,
-        "height":120
+        "src":"https://illustmint.com/wp-content/uploads/2019/11/snowflake_565.png",//画像を指定
+        "width":80000,
+        "height":80000
       }
     },
     "opacity":{
-      "value":0.06409588744762158,
+      "value":0.5,
       "random":true,
       "anim":{
         "enable":false,
         "speed":1,
-        "opacity_min":0.1,
+        "opacity_min":0.3,
         "sync":false
       }
     },
     "size":{
-      "value":8.011985930952697,
+      "value":12,
       "random":true,//サイズをランダムに
       "anim":{
         "enable":false,
-        "speed":4,
-        "size_min":0.1,
+        "speed":3,
+        "size_min":5,
         "sync":false
       }
     },
@@ -46,7 +49,7 @@
     },
     "move":{
       "enable":true,
-      "speed":7,//この数値を小さくするとゆっくりな動きになる
+      "speed":5,//この数値を小さくするとゆっくりな動きになる
       "direction":"bottom-right",//右下に向かって落ちる
       "random":false,//動きはランダムにしない
       "straight":false,//動きをとどめない
@@ -65,9 +68,11 @@
       "onhover":{
         "enable":false,
       },
+      
       "onclick":{
         "enable":false,
       },
+      
       "resize":true
     }
   },
