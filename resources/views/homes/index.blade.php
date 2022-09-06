@@ -72,16 +72,16 @@
   <div class="box">
     <h3>メンバー</h3>
     <ul>
-      <li><a href="#">Yuugou Ohno</a></li>
-      <li><a href="#">Hiroki Taba</a></li>
-      <li><a href="#">Katsuma Hoshi</a></li>
-      <li><a href="#">Takumi Yokochi</a></li>
+      <li><a href="https://github.com/YuugouOhno">Yuugou Ohno</a></li>
+      <li><a href="https://github.com/Hiroki1238">Hiroki Taba</a></li>
+      <li><a href="https://github.com/kaho2580">Katsuma Hoshi</a></li>
+      <li><a href="https://github.com/yoktak">Takumi Yokochi</a></li>
     </ul>
   </div>
   <div class="box">
     <h3>サービス</h3>
     <ul>
-    <li><a href="#">サービス名</a></li>
+    <li><a href="https://github.com/YuugouOhno/Imposters.git">リポジトリ</a></li>
     <li><a href="#">サービス名</a></li>
     </ul>
   </div>

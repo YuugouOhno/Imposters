@@ -13,7 +13,7 @@
   </head>
   <body>
       <a>音声テスト</a>
-    <h1>電卓3</h1>
+    <h1>しゃべる電卓</h1>
     <div class="calculator">
       <div class="input" id="input"></div>
       <div class="buttons">

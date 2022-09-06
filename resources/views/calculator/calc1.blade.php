@@ -12,7 +12,8 @@
     <script src="{{asset('js/calculator.js')}}" defer></script>
   </head>
   <body>
-    <h1>ちょうどよく間違える電卓</h1>
+
+    <h1>ちょうどいい電卓</h1>
     <div class="probability">
         <br>
         正答率:

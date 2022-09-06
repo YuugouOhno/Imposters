@@ -7,6 +7,10 @@
   /*background-image: url('https://www.pakutaso.com/shared/img/thumb/PP_keshigomutopen_TP_V.jpg');*/
 }
 
+h1{
+  text-align:center;
+}
+
 .calculator {
   width: 500px;
   padding: 20px;
