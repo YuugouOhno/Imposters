@@ -49,7 +49,7 @@
 
          <div class="btn-container">
            <a href="/diary/create" class="btn bgleft  box1"><span>にっき</span></a>
-           <a href="/math" class="btn bgleft box2"><span>けいさん</span></a>
+           <a href="/calculator" class="btn bgleft box2"><span>けいさん</span></a>
            <a href="/translator" class="btn bgleft box3"><span>ほんやく</span></a>
 
          </div>

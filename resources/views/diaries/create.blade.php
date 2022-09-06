@@ -16,18 +16,18 @@
     <body>
          <div id="particles-js"></div>
         <h1>一言日記を1日で終わらせよう</h1>
-        <p>1日分の日記を埋めると夏休み中の一言日記が完成するよ</p>
+        <h2>1日分の日記を埋めると夏休み中の一言日記が完成するよ</h2>
         <form action='{{ route("diary.store") }}' method="POST">
             @csrf
             <div class="title">
-                <h2>日記</h2>
+                <h2 style="color:#a99e93;">日記</h2>
                 <!--<input type="text" name="diary[text]" placeholder="内容"/>-->
-                <textarea  type="text" name="diary[text]" placeholder="内容"></textarea>
+                <textarea  style=" border-radius: 12px; width:30%;" type="text" name="diary[text]" placeholder="内容"></textarea>
                 <p class="text__error" style="color:red">{{ $errors->first('diary.text') }}</p>
             </div>
-            <input type="submit" value="保存"/>
+            <input style="border-radius: 8px; padding:7px 12px; font-size:medium;" type="submit" value="保存"/>
         </form>
-        <a href='{{ route("diaries") }}'>日記を表示する</a>
+        <a style="color:#dccb18; font-size:x-large; text-decoration:none;" href='{{ route("diaries") }}'>日記を表示する</a>
         @foreach($diaries as $diary)
             <div class='diary'>
                 <p>{{$diary->text}}</p>
