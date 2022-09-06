@@ -15,6 +15,10 @@
 　　　<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 　　　<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-6/css/6-1-6.css">
 　　　<link rel="stylesheet" href="{{ asset('/css/homes.css') }}">
+　　　
+　　　 <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
 　</head>
 
 　　<body>
@@ -35,7 +39,7 @@
            });
         </script>     
     
-        <h2 className="font-family: 'Potta One', cursive;">夏休みの宿題をおわらせよう！</h2>
+        <h2 class="ZenKurenaido">夏休みの宿題をおわらせよう！</h2>
 
       <ul class="slider">
       <li><img src="https://www.jalan.net/news/img/2018/06/20180531_natsuyasumi_17.jpg" alt=""></li>

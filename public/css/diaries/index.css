@@ -14,26 +14,26 @@ body {
   text-align:center;
 }
 
+.ZenKurenaido{
+font-family: 'Zen Kurenaido', sans-serif;
+}
+
  h1{
   color: #12aa61;
   font-size:65px;
-  font-family: "TsukuARdGothic-Regular";
 }
 
  h2{
   color: #d14040;
   font-size:30px;
-  font-family: "Hannotate SC";
 }
 
  a{
   color: black;
   font-size:15px;
-  font-family: "TsukuARdGothic-Regular";
 }
 
 .comment{
- font-family: "HanziPen SC";
  font-size: 20px;
  color: #d14040;;
 }
@@ -42,5 +42,4 @@ body {
   color: #c1e4e9;
   font-size: 30px;
   font-weight: bold;
-  font-family: "TsukuARdGothic-Regular";
 }
