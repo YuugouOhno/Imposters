@@ -14,6 +14,15 @@ body {
   text-align: center;
 }
 
+h1{
+  text-align:center;
+  color:#ff6600;
+}
+
+.DotGothic16 {
+    font-family: 'DotGothic16', sans-serif;
+}
+
 .calculator {
   width: 500px;
   padding: 20px;

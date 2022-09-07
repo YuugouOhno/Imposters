@@ -1,0 +1,37 @@
+.star {
+    animation: kirakira 8s linear;
+    color: #ffd700;
+    display: inline-block;
+    height: 1em;
+    line-height: 1em;
+    position: fixed;
+    top: -1em;
+    z-index: 1000;
+}
+
+.Button-style {
+  font-size: 16px;
+  display: inline-block;
+  background: #ffffff;
+  color: #44617b;
+  width: 80px;
+  height: 80px;
+  border: double 4px #44617b;;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.DotGothic16 {
+    font-family: 'DotGothic16', sans-serif;
+}
+
+@keyframes kirakira {
+    0% {
+        transform:translateY(0) rotateY(0);
+    }
+    100% {
+        transform:translateY(calc(100vh + 1em)) rotateY(3600deg);
+    }
+}

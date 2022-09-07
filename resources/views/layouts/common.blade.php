@@ -12,10 +12,10 @@
     <header>
             <nav class="gnav">
                 <ul class="menu">
-                    <li><a href="/">トップページ</a></li>
-                    <li><a href="/diary/create">一言日記</a></li>
-                    <li><a href="/calculator">電卓</a></li>
-                    <li><a href="/translator">翻訳</a></li>
+                    <li><a style="text-decoration: none; color:red;" href="/">トップページ</a></li>
+                    <li><a style="text-decoration: none; color:orange;" href="/diary/create">一言日記</a></li>
+                    <li><a style="text-decoration: none; color:#65ab31" href="/calculator">電卓</a></li>
+                    <li><a style="text-decoration: none; color:#00bfff;" href="/translator">翻訳</a></li>
                 </ul>
             </nav>
     </header>

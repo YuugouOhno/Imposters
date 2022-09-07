@@ -8,84 +8,116 @@
     <title>ちょうどいい電卓</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-9/css/reset.css">
+　　<link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-9/css/5-9.css">
+　　
     <link rel="stylesheet" href="{{asset('/css/calc3.css')}}">
-    <script src="{{asset('js/calculator.js')}}" defer></script>
+    <script src="{{asset('js/calculator3.js')}}" defer></script>
   </head>
   <body>
-      <a onclick="speech()">音声テスト</a>
-    <h1>電卓3</h1>
+    
+  <div id="particles-js"></div>
+  <div id="wrapper">
+    <h1 class="DotGothic16" class="DotGothic16">しゃべる電卓</h1>
     <div class="calculator">
       <div class="input" id="input"></div>
       <div class="buttons">
         <div class="operators">
-          <div>+</div>
-          <div>-</div>
-          <div>×</div>
-          <div>÷</div>
+          <div onclick="speech_operator()">+</div>
+          <div onclick="speech_operator()">-</div>
+          <div onclick="speech_operator()">×</div>
+          <div onclick="speech_operator()">÷</div>
         </div>
         
         <div class="leftPanel">
           <div class="numbers">
-            <div>7</div>
-            <div>8</div>
-            <div>9</div>
+            <div onclick="speech_num()">7</div>
+            <div onclick="speech_num()">8</div>
+            <div onclick="speech_num()">9</div>
           </div>
           
           <div class="numbers">
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
+            <div onclick="speech_num()">4</div>
+            <div onclick="speech_num()">5</div>
+            <div onclick="speech_num()">6</div>
           </div>
           
           <div class="numbers">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+            <div onclick="speech_num()">1</div>
+            <div onclick="speech_num()">2</div>
+            <div onclick="speech_num()">3</div>
           </div>
           
           <div class="numbers">
-            <div>0</div>
+            <div onclick="speech_num()">0</div>
             <div>.</div>
-            <div id="clear">C</div>
+            <div onclick="speech_operator()" id="clear">C</div>
           </div>
         </div>
         
-        <div class="equal" id="result">=</div>
+        <div onclick="speech_operator()" class="equal" id="result">=</div>
       </div>
     </div>
     <div class="comment">
       <p id="neko"></p>
     </div>
     
+    <button id="goBack" class="Button-style" type="button">戻る</button>
+    
+        <!--/wrapper--></div>
+    
      <script>
-  function speech(){
+    document.getElementById("goBack").addEventListener("click", function () {
+    location.replace("/calculator");
+    }, false);
+    </script>
+    
+     <script>
+  function speech_num(){
     if ('speechSynthesis' in window) {
-      console.log("オンクリック");
 
-    // 発言を設定 (必須)
-    const uttr = new SpeechSynthesisUtterance()
+    const uttr = new SpeechSynthesisUtterance() // 発言を設定
+    
+    const number = new Array("いち","に","さん","よん","ご","ろく","なな","はち","きゅう","え？");
+    uttr.text = number[Math.floor( Math.random()*10)]; // 読み上げる内容を設定
 
-    // テキストを設定 (必須)
-    uttr.text = 'いち、に、さん、よん、ご'
+    uttr.lang = "ja-JP" // 言語
+    uttr.rate = 1.5  // 速度
+    uttr.pitch = 1.2 // 高さ
+    uttr.volume = 1 // 音量
 
-    // 言語を設定
-    uttr.lang = "ja-JP"
+    window.speechSynthesis.speak(uttr)  // 発言を再生 (必須)
 
-    // 速度を設定
-    uttr.rate = 1
-
-    // 高さを設定
-    uttr.pitch = 2
-
-    // 音量を設定
-    uttr.volume = 1
-
-    // 発言を再生 (必須)
-    window.speechSynthesis.speak(uttr)
-
+    }
  }
+ 
+ function speech_operator(){
+    if ('speechSynthesis' in window) {
+
+    const uttr = new SpeechSynthesisUtterance() // 発言を設定
+    
+    const number = new Array("たす","ひく","かける","わる","てん","いこーる","くりあ");
+    uttr.text = number[Math.floor( Math.random()*6)]; // 読み上げる内容を設定
+
+    uttr.lang = "ja-JP" // 言語
+    uttr.rate = 1.5  // 速度
+    uttr.pitch = 0.3 // 高さ
+    uttr.volume = 1 // 音量
+
+    window.speechSynthesis.speak(uttr)  // 発言を再生 (必須)
+
+    }
  }
   </script>
+  
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-9/js/5-9.js"></script>
+
   </body>
 </html>
 @endsection

@@ -7,6 +7,14 @@ body {
   /*background-image: url('https://www.pakutaso.com/shared/img/thumb/PP_keshigomutopen_TP_V.jpg');*/
 }
 
+h1{
+  text-align:center;
+  color:#fcc800;
+}
+
+.DotGothic16 {
+    font-family: 'DotGothic16', sans-serif;
+}
 
 .img {
   margin-left: auto;
@@ -56,7 +64,7 @@ body {
 }
 
 .operators div:hover {
-  background-color: #ffff28; /*カーソルをボタン上に置いた時にここで指定した色に変化する*/
+  background-color: #fccf2a; /*カーソルをボタン上に置いた時にここで指定した色に変化する*/
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   border-color: #aaa;
@@ -80,14 +88,14 @@ body {
   margin: 10px 4px 10px 0;
   cursor: pointer;
   border-radius: 25px;
-  background-color: #84ffff; /*電卓の数字部分のカラー*/
+  background-color: #fff8ce; /*電卓の数字部分のカラー*/
   transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
   font-family: "Hannotate SC";
   color: #404040;
 }
 
 .numbers div:hover {
-  background-color: #ffff28; /*カーソルをボタン上に置いた時にここで指定した色に変化する*/
+  background-color: #fccf2a; /*カーソルをボタン上に置いた時にここで指定した色に変化する*/
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   border-color: #bbb;
@@ -99,7 +107,7 @@ body {
 
 div.equal {
   display: inline-block;
-  border: 1px solid #3079ED;
+  border: 1px solid #b59b1c;
   border-radius: 25px;
   width: 16%;
   text-align: center;
@@ -108,12 +116,12 @@ div.equal {
   vertical-align: top;
   cursor: pointer;
   color: #FFF;
-  background-color: #3399ff;
+  background-color: #ffe568;
   transition: all .2s ease-in-out;
 }
 
 div.equal:hover {
-  background-color: #007fff; /*カーソルをボタン上に置いた時にここで指定した色に変化する*/
+  background-color: #ffa719; /*カーソルをボタン上に置いた時にここで指定した色に変化する*/
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   border-color: #1857BB;
@@ -156,3 +164,46 @@ input[type="button"].input_button{
   font-family: "Hannotate SC";
   color: #404040;
 }
+
+.Button-style {
+  font-size: 20px;
+  display: inline-block;
+  background: #fffbed;
+  color: #fc6d00;
+  width: 80px;
+  height: 80px;
+  border: double 4px #fc6d00;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+#wrapper{
+  text-align:center;
+}
+
+/*========= particle js を描画するエリア設定 ===============*/
+
+html,body{
+  height: 100%;/*高さを100%にして描画エリアをとる*/
+}
+
+#particles-js{ 
+  position:fixed;/*描画固定*/
+  z-index:-1;/*描画を一番下に*/
+  width: 100%;
+  height: 100%;
+  background-color:#fffbed;/*背景色*/
+}
+
+#wrapper{
+  position: relative;/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+  z-index: 1;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+  width:100%;
+  height: 100%;
+}
+

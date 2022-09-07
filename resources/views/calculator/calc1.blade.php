@@ -8,15 +8,25 @@
     <title>ちょうどいい電卓</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('/css/calc1.css')}}">
+    
+    <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-4/css/reset.css">
+　　<link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-4/css/5-4.css">
+    
     <script src="{{asset('js/calculator.js')}}" defer></script>
   </head>
   <body>
-    <h1>電卓1</h1>
-    <div class="probability">
+  <div id="particles-js"></div>
+<div id="wrapper">
+  
+    <h1 style="text-align:center; font-size: xxx-large; color:#3399ff;" class="DotGothic16">ちょうどいい電卓</h1>
+    <div style="text-align:center; font-size: xx-large; color:orange;" class="DotGothic16" class="probability">
         <br>
         正答率:
-        <input class="input_num" type="number" id="probability" name="probability" placeholder="何点とりたい？" style="text-align:center;"/>
+        <input class="DotGothic16" style="align-items: center; text-align:center;" class="input_num" type="number" id="probability" name="probability" placeholder="何点とりたい？"/>
     </div>
     <br>
     
@@ -60,8 +70,21 @@
       </div>
     </div>
     <div class="comment">
-      <p id="neko"></p>
+      <p style="text-align:center; font-size:xxx-large;" id="neko"></p>
     </div>
+    
+    <button id="goBack" class="Button-style" type="button">戻る</button>
+    
+        <!--/wrapper--></div>
+    
+     <script>
+    document.getElementById("goBack").addEventListener("click", function () {
+    location.replace("/calculator");
+    }, false);
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-4/js/5-4.js"></script>
   </body>
 </html>
 @endsection

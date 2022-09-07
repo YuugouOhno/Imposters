@@ -50,6 +50,10 @@ body {
 .setting{
     font-size:30px;
     background-color: white;
+    padding:10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
 }
 .text{
     font-size:30px;
@@ -59,21 +63,50 @@ body {
     padding: 10px;
     background-color: white;
 }
+
 .style_01{
     text-align: center;
     font-size:30px;
+    position: relative;
 }
+
 .style_02{
-    text-align: right;
+    text-align: center;
     padding:10px;
+    padding-left: 120px;
+}
+.style_02 button {
+  border-radius: 25px;
+  position: relative;
 }
 
 .style_03{
   text-align: center;
+  display: flex;
+  margin:30px;
+  border:solid #EEEEEE;
+}
+.style_03 h4 {
+  margin-bottom: 0px;
 }
 
-input::placeholder {
+.true_answer {
+  flex-grow:1;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #BBFFFF;
+}
+
+.falut_answer {
+  flex-grow:1;
+  font-size: 40px;
+  font-weight: bold;
   color: black;
+  background-color: #FFBEDA;
+}
+
+placeholder {
+  color: gray;
   font-size: 30px;
   text-align: center;
 }
@@ -87,6 +120,7 @@ input::placeholder {
     padding: 1em 0.5em;
     line-height: 3;
     border: 1px solid #999;
+    border-radius: 25px;
     box-sizing: border-box;
     background: #f2f2f2;
     margin: 0.5em 0;
@@ -95,23 +129,127 @@ input::placeholder {
 .result_01{
   color:black;
   display: inline-block;
-  width:40%; 
+  width:80%; 
   height:300px;
-  margin:60px;
+  margin:30px;
+  padding: 30px;
   word-wrap: break-word;
   text-align:center;
   font-weight: bold;
   font-size:40px;
+  border: 1px solid #999;
+  border-radius: 10px;
+  background-color: #F2F2F2;
 }
 
 .result_02{
-  color:red;
+  color:black;
   display: inline-block;
-  width:40%; 
+  width:80%; 
   height:300px;
-  margin:60px;
+  margin:30px;
+  padding: 30px;
   text-align:center;
   word-wrap: break-word;
   font-weight: bold;
   font-size:40px;
+  border: 1px solid #999;
+  border-radius: 10px;
+  background-color: #F2F2F2;
+}
+
+
+.fluid_01{
+  width:15vh;/*横幅*/
+  height: 15vh;/*縦幅*/
+  background:#fff100;/*背景色*/
+  animation: fluidrotate 30s ease 0s infinite;/*アニメーションの設定*/
+  position: absolute;
+  left: 21%;
+}
+
+.title_fluid {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.fluid_02{
+  width:80vh;/*横幅*/
+  height: 80vh;/*縦幅*/
+  background:#fff100;/*背景色*/
+  animation: fluidrotate 30s ease 0s infinite;/*アニメーションの設定*/
+  position: absolute;
+}
+
+.fluid_03{
+  width:20vh;/*横幅*/
+  height: 20vh;/*縦幅*/
+  background:#fff100;/*背景色*/
+  animation: fluidrotate 30s ease 0s infinite;/*アニメーションの設定*/
+  position: absolute;
+  right: 12%;
+}
+
+@keyframes fluidrotate {  
+	  
+0%, 100% {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+}
+14% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+}
+28% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+}
+42% {
+    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+}
+56% {
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+}
+70% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+}
+84% {
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+}
+	  
+}
+
+.dli-arrow-down {
+  display: inline-block;
+  vertical-align: middle;
+  color: #333;
+  line-height: 1;
+  position: relative;
+  width: 50px;
+  height: 500px;
+  background: currentColor;
+}
+
+.dli-arrow-down::before {
+  content: '';
+  width: 325px;
+  height: 325px;
+  border: 50px solid currentColor;
+  border-top: 0;
+  border-right: 0;
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+  position: absolute;
+  left: 50%;
+  bottom: -50px;
+  box-sizing: border-box;
+}
+
+.random{
+  padding-top:50px;
+}
+
+.random a {
+  color:white;
+}
+
+.random_hover:hover{
+  background-color:#C7243A;
 }
