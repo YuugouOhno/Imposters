@@ -16,7 +16,7 @@
   </head>
   <body>
 
-    <h1 style="text-align:center; font-size: xxx-large; color:#44617b;" class="DotGothic16">ちょうどいい電卓</h1>
+    <h1 style="text-align:center; font-size: xxx-large; color:#3399ff;" class="DotGothic16">ちょうどいい電卓</h1>
     <div style="text-align:center; font-size: xx-large; color:#4a4a4a;" class="DotGothic16" class="probability">
         <br>
         正答率:

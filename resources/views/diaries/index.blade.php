@@ -27,7 +27,7 @@
         <form action='{{ route("diaries") }}' method="GET">
             @csrf
             <div class="days">
-                <input style="border-radius: 5px; width:5%;" type="text" name="num_of_days" placeholder="日数"/>
+                <input style="border-radius: 5px; width:45px; height:22px;" type="text" name="num_of_days" placeholder="日数"/>
                 <input class="ZenKurenaido" type="submit" value="決定"/>
                 <p class="text__error" style="color:red">{{ $errors->first('diary.text') }}</p>
                 <p class="ZenKurenaido" style="font-size:x-large; color:#d14040;">日記を書かなければいけない日数を入力するとランダムにその日の日記が表示されます</p>
