@@ -12,10 +12,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('/css/calc1.css')}}">
+    
+    <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-4/css/reset.css">
+　　<link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-4/css/5-4.css">
+    
     <script src="{{asset('js/calculator.js')}}" defer></script>
   </head>
   <body>
-
+  <div id="particles-js"></div>
+<div id="wrapper">
+  
     <h1 style="text-align:center; font-size: xxx-large; color:#3399ff;" class="DotGothic16">ちょうどいい電卓</h1>
     <div style="text-align:center; font-size: xx-large; color:#4a4a4a;" class="DotGothic16" class="probability">
         <br>
@@ -66,6 +72,11 @@
     <div class="comment">
       <p style="text-align:center; font-size:xxx-large;" id="neko"></p>
     </div>
+    
+    <!--/wrapper--></div>
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-4/js/5-4.js"></script>
   </body>
 </html>
 @endsection
