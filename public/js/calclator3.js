@@ -157,7 +157,7 @@ particlesJS("particles-js", {
       }
     },
     "color":{
-      "value":"#ffaf11"
+      "value":"#ffb12b"
     },
     "shape":{
       "type":"star",//形状はcircleを指定
