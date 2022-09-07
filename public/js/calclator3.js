@@ -147,72 +147,59 @@ function subtraction(operators,numbers){ //引き算
 }
 
 
-
-
-particlesJS("particles-js",{
+particlesJS("particles-js", {
   "particles":{
     "number":{
-      "value":90,//この数値を変更すると幾何学模様の数が増減できる
+      "value":70,//この数値を変更すると星の数が増減できる
       "density":{
         "enable":true,
         "value_area":800
       }
     },
     "color":{
-      "value":"#0095d9"//色
+      "value":"#ffaf11"
     },
     "shape":{
-      "type":"polygon",//形状はpolygonを指定
+      "type":"star",//形状はcircleを指定
       "stroke":{
-        "width":0,
+        "width":0
       },
-  "polygon":{
-    "nb_sides":10//多角形の角の数
-  },
-  "image":{
-    "width":380,
-    "height":290
-  }
-  },
+      },
     "opacity":{
-    "value":1,
-    "random":false,
-    "anim":{
-      "enable":true,
-      "speed":1.6,
-      "opacity_min":0.08115236356258881,
-      "sync":false
-    }
+      "value":1,//シェイプの透明度
+      "random":true,//シェイプの透明度をランダムにする
+      "anim":{
+        "enable":true,//シェイプの透明度をアニメーションさせる
+        "speed":1,//シェイプの透明度をアニメーションさせる
+        "opacity_min":0,//透明度の最小値０
+        "sync":false//全てを同時にアニメーションさせない
+      }
     },
     "size":{
-      "value":5,
+      "value":20,
       "random":true,
       "anim":{
         "enable":false,
-        "speed":40,
-        "size_min":2,
+        "speed":4,
+        "size_min":0.3,
         "sync":false
       }
     },
     "line_linked":{
-      "enable":true,
-      "distance":180,
-      "color":"#0066cc",
-      "opacity":0.6,
-      "width":1
+      "enable":false,
     },
     "move":{
       "enable":true,
-      "speed":3,//この数値を小さくするとゆっくりな動きになる
-      "direction":"none",//方向指定なし
-      "random":false,//動きはランダムにしない
-      "straight":false,//動きをとどめない
-      "out_mode":"out",//画面の外に出るように描写
-      "bounce":false,//跳ね返りなし
+      "speed":60,//この数値を小さくするとゆっくりな動きになる
+    "direction":"none",//方向指定なし
+    "random":true,//動きはランダムに
+    "straight":true,//動きをとどめる
+      "out_mode":"out",
+      "bounce":false,
       "attract":{
         "enable":false,
         "rotateX":600,
-        "rotateY":961.4383117143238
+        "rotateY":600
       }
     }
   },
@@ -221,12 +208,11 @@ particlesJS("particles-js",{
     "events":{
       "onhover":{
         "enable":false,
-        "mode":"repulse"
       },
-  "onclick":{
-    "enable":false
-  },
-  "resize":true
+      "onclick":{
+        "enable":false,
+      },
+      "resize":true
     }
   },
   "retina_detect":true

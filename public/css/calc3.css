@@ -88,7 +88,7 @@ h1{
   margin: 10px 4px 10px 0;
   cursor: pointer;
   border-radius: 25px;
-  background-color: #84ffff; /*電卓の数字部分のカラー*/
+  background-color: #fff8ce; /*電卓の数字部分のカラー*/
   transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
   font-family: "Hannotate SC";
   color: #404040;
@@ -107,7 +107,7 @@ h1{
 
 div.equal {
   display: inline-block;
-  border: 1px solid #3079ED;
+  border: 1px solid #b59b1c;
   border-radius: 25px;
   width: 16%;
   text-align: center;
@@ -116,7 +116,7 @@ div.equal {
   vertical-align: top;
   cursor: pointer;
   color: #FFF;
-  background-color: #3399ff;
+  background-color: #ffe568;
   transition: all .2s ease-in-out;
 }
 
@@ -163,4 +163,32 @@ input[type="button"].input_button{
 .comment {
   font-family: "Hannotate SC";
   color: #404040;
+}
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+#wrapper{
+  text-align:center;
+}
+
+/*========= particle js を描画するエリア設定 ===============*/
+
+html,body{
+  height: 100%;/*高さを100%にして描画エリアをとる*/
+}
+
+#particles-js{ 
+  position:fixed;/*描画固定*/
+  z-index:-1;/*描画を一番下に*/
+  width: 100%;
+  height: 100%;
+  background-color:#ffefd3;/*背景色*/
+}
+
+#wrapper{
+  position: relative;/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+  z-index: 1;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+  width:100%;
+  height: 100%;
 }
