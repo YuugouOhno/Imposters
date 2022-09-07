@@ -8,12 +8,18 @@
     <title>ちょうどいい電卓</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('/css/calc6.css')}}">
   </head>
   <body>
-    
+     <h1 class="DotGothic16">Coming Soon...</h1>
     <div class="calculator">
-      <div class="input" id="input">Comming soon</div>
+      <div class="input" id="input">
+        <h1 class="DotGothic16">Comming soon</h1>
+        </div>
       <div class="buttons">
         <div class="operators">
           <div>+</div>
