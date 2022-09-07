@@ -23,10 +23,10 @@
 <div id="wrapper">
   
     <h1 style="text-align:center; font-size: xxx-large; color:#3399ff;" class="DotGothic16">ちょうどいい電卓</h1>
-    <div style="text-align:center; font-size: xx-large; color:#4a4a4a;" class="DotGothic16" class="probability">
+    <div style="text-align:center; font-size: xx-large; color:orange;" class="DotGothic16" class="probability">
         <br>
         正答率:
-        <input class="DotGothic16" style="align-items: center; text-align:center;" class="input_num" type="number" id="probability" name="probability" placeholder="何点とりたい？" style="text-align:center;"/>
+        <input class="DotGothic16" style="align-items: center; text-align:center;" class="input_num" type="number" id="probability" name="probability" placeholder="何点とりたい？"/>
     </div>
     <br>
     

@@ -64,7 +64,7 @@ h1{
 }
 
 .operators div:hover {
-  background-color: #ffff28; /*カーソルをボタン上に置いた時にここで指定した色に変化する*/
+  background-color: #fccf2a; /*カーソルをボタン上に置いた時にここで指定した色に変化する*/
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   border-color: #aaa;
@@ -95,7 +95,7 @@ h1{
 }
 
 .numbers div:hover {
-  background-color: #ffff28; /*カーソルをボタン上に置いた時にここで指定した色に変化する*/
+  background-color: #fccf2a; /*カーソルをボタン上に置いた時にここで指定した色に変化する*/
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   border-color: #bbb;
@@ -121,7 +121,7 @@ div.equal {
 }
 
 div.equal:hover {
-  background-color: #007fff; /*カーソルをボタン上に置いた時にここで指定した色に変化する*/
+  background-color: #ffa719; /*カーソルをボタン上に置いた時にここで指定した色に変化する*/
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   border-color: #1857BB;
@@ -183,7 +183,7 @@ html,body{
   z-index:-1;/*描画を一番下に*/
   width: 100%;
   height: 100%;
-  background-color:#ffefd3;/*背景色*/
+  background-color:#fff3e0;/*背景色*/
 }
 
 #wrapper{
