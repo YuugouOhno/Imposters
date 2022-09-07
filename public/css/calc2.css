@@ -12,6 +12,10 @@ h1{
   color:#cc0000;
 }
 
+.DotGothic16 {
+    font-family: 'DotGothic16', sans-serif;
+}
+
 .calculator {
   width: 500px;
   padding: 20px;

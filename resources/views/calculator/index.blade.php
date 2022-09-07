@@ -8,6 +8,7 @@
     <title>ちょうどいい電卓</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
@@ -52,7 +53,7 @@
       <div style="margin: 15px;  text-align:center;">
              <img src="https://2.bp.blogspot.com/--BYLyPduBgM/WaPvldUDt9I/AAAAAAABGNw/XTkwA_fBEC86bpvy2z7-1jZ9-dEc_6_jQCLcBGAs/s400/dentaku_syoumen_small.png" />
              <br />
-             <a style="text-decoration: none; font-size: xx-large; color:#ff6600;" class="DotGothic16" href='/calculator/6'>Comming Soon...</a>
+             <a style="text-decoration: none; font-size: xx-large; color:#ff6600;" class="DotGothic16" href='/calculator/6'>Coming Soon...</a>
        </div>
    </div>
    

@@ -16,6 +16,15 @@
   margin: 0 auto;
 }
 
+.DotGothic16 {
+    font-family: 'DotGothic16', sans-serif;
+}
+
+h1{
+  text-align:center;
+  color:#9900cc;
+}
+
 .input {
   border: 1px solid #000;
   border-radius: 10px;

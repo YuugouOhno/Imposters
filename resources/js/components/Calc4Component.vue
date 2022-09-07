@@ -1,7 +1,7 @@
 <template>
     <div class='body_container'>
         
-        <h1>消えゆく電卓</h1>
+        <h1 class="DotGothic16">消えゆく電卓</h1>
         
         <div class="calculator">
             <div class="input">{{result}}</div>

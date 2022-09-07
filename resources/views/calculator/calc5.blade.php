@@ -8,11 +8,15 @@
     <title>ちょうどいい電卓</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('/css/calc5.css')}}">
     <script src="{{asset('js/calculator5.js')}}" defer></script>
   </head>
   <body>
-    <h1>暗算電卓</h1>
+    <h1 class="DotGothic16">暗算電卓</h1>
     <div class="calculator">
       <div class="input" id="input"></div>
       <div class="buttons">
