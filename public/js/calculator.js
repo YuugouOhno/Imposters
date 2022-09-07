@@ -170,8 +170,8 @@ particlesJS("particles-js",{
     "nb_sides":10//多角形の角の数
   },
   "image":{
-    "width":380,
-    "height":290
+    "width":400,
+    "height":310
   }
   },
     "opacity":{
@@ -180,7 +180,7 @@ particlesJS("particles-js",{
     "anim":{
       "enable":true,
       "speed":1.6,
-      "opacity_min":0.08115236356258881,
+      "opacity_min":0.08,
       "sync":false
     }
     },

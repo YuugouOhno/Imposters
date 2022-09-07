@@ -55,11 +55,17 @@
              <br />
              <a style="text-decoration: none; font-size: xx-large; color:#ff6600;" class="DotGothic16" href='/calculator/6'>Coming Soon...</a>
        </div>
-   </div>
-   
-  <a onclick="speech()">音声テスト</a>
+  </div>
+  <div style="text-align:center; margin:30px;">
+  <button id="goBack" class="Button-style" type="button"><span class="DotGothic16">ホームに戻る</span></button>
+  </div>
+  <a style="font-size:30px; padding:3px; color:#e0ffff" onclick="speech()">？</a>
   
-   <a href="/">ホームに戻る</a>
+  <script>
+    document.getElementById("goBack").addEventListener("click", function () {
+    location.replace("/");
+    }, false);
+    </script>
   
   <script>
   function speech(){
@@ -70,7 +76,7 @@
     const uttr = new SpeechSynthesisUtterance()
 
     // テキストを設定 (必須)
-    uttr.text = 'いち、に、さん、よん、ご'
+    uttr.text = 'こんにちは！'
 
     // 言語を設定
     uttr.lang = "ja-JP"
