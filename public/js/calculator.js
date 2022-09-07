@@ -145,3 +145,89 @@ function subtraction(operators,numbers){ //引き算
     sub = operators.indexOf("-");
   }
 }
+
+
+
+
+particlesJS("particles-js",{
+  "particles":{
+    "number":{
+      "value":70,//この数値を変更すると幾何学模様の数が増減できる
+      "density":{
+        "enable":true,
+        "value_area":800
+      }
+    },
+    "color":{
+      "value":"#0095d9"//色
+    },
+    "shape":{
+      "type":"polygon",//形状はpolygonを指定
+      "stroke":{
+        "width":0,
+      },
+  "polygon":{
+    "nb_sides":10//多角形の角の数
+  },
+  "image":{
+    "width":380,
+    "height":290
+  }
+  },
+    "opacity":{
+    "value":1,
+    "random":false,
+    "anim":{
+      "enable":true,
+      "speed":1.6,
+      "opacity_min":0.08115236356258881,
+      "sync":false
+    }
+    },
+    "size":{
+      "value":5,
+      "random":true,
+      "anim":{
+        "enable":false,
+        "speed":40,
+        "size_min":2,
+        "sync":false
+      }
+    },
+    "line_linked":{
+      "enable":true,
+      "distance":180,
+      "color":"#0066cc",
+      "opacity":0.6,
+      "width":1
+    },
+    "move":{
+      "enable":true,
+      "speed":3,//この数値を小さくするとゆっくりな動きになる
+      "direction":"none",//方向指定なし
+      "random":false,//動きはランダムにしない
+      "straight":false,//動きをとどめない
+      "out_mode":"out",//画面の外に出るように描写
+      "bounce":false,//跳ね返りなし
+      "attract":{
+        "enable":false,
+        "rotateX":600,
+        "rotateY":961.4383117143238
+      }
+    }
+  },
+  "interactivity":{
+    "detect_on":"canvas",
+    "events":{
+      "onhover":{
+        "enable":false,
+        "mode":"repulse"
+      },
+  "onclick":{
+    "enable":false
+  },
+  "resize":true
+    }
+  },
+  "retina_detect":true
+});
