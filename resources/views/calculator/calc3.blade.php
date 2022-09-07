@@ -12,11 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-9/css/reset.css">
+　　<link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-9/css/5-9.css">
+　　
     <link rel="stylesheet" href="{{asset('/css/calc3.css')}}">
-    <script src="{{asset('js/calculator.js')}}" defer></script>
+    <script src="{{asset('js/calclator3.js')}}" defer></script>
   </head>
   <body>
-      <a>音声テスト</a>
+  <div id="particles-js"></div>
+  <div id="wrapper">
     <h1 class="DotGothic16" class="DotGothic16">しゃべる電卓</h1>
     <div class="calculator">
       <div class="input" id="input"></div>
@@ -60,6 +65,7 @@
     <div class="comment">
       <p id="neko"></p>
     </div>
+    <!--/wrapper--></div>
     
      <script>
   function speech_num(){
@@ -98,6 +104,12 @@
     }
  }
   </script>
+  
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-9/js/5-9.js"></script>
+</body>
+</html>
+
   </body>
 </html>
 @endsection

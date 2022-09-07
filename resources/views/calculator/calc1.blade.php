@@ -26,7 +26,7 @@
     <div style="text-align:center; font-size: xx-large; color:#4a4a4a;" class="DotGothic16" class="probability">
         <br>
         正答率:
-        <input style="align-items: center;" class="input_num" type="number" id="probability" name="probability" placeholder="何点とりたい？" style="text-align:center;"/>
+        <input class="DotGothic16" style="align-items: center; text-align:center;" class="input_num" type="number" id="probability" name="probability" placeholder="何点とりたい？" style="text-align:center;"/>
     </div>
     <br>
     
