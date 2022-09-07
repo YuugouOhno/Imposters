@@ -17,9 +17,10 @@
 　　<link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-9/css/5-9.css">
 　　
     <link rel="stylesheet" href="{{asset('/css/calc3.css')}}">
-    <script src="{{asset('js/calclator3.js')}}" defer></script>
+    <script src="{{asset('js/calculator3.js')}}" defer></script>
   </head>
   <body>
+    
   <div id="particles-js"></div>
   <div id="wrapper">
     <h1 class="DotGothic16" class="DotGothic16">しゃべる電卓</h1>
@@ -65,7 +66,16 @@
     <div class="comment">
       <p id="neko"></p>
     </div>
-    <!--/wrapper--></div>
+    
+    <button id="goBack" class="Button-style" type="button">戻る</button>
+    
+        <!--/wrapper--></div>
+    
+     <script>
+    document.getElementById("goBack").addEventListener("click", function () {
+    location.replace("/calculator");
+    }, false);
+    </script>
     
      <script>
   function speech_num(){
@@ -107,8 +117,6 @@
   
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-9/js/5-9.js"></script>
-</body>
-</html>
 
   </body>
 </html>

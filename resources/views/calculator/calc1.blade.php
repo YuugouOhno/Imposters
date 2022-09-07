@@ -73,7 +73,15 @@
       <p style="text-align:center; font-size:xxx-large;" id="neko"></p>
     </div>
     
-    <!--/wrapper--></div>
+    <button id="goBack" class="Button-style" type="button">戻る</button>
+    
+        <!--/wrapper--></div>
+    
+     <script>
+    document.getElementById("goBack").addEventListener("click", function () {
+    location.replace("/calculator");
+    }, false);
+    </script>
     
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-4/js/5-4.js"></script>

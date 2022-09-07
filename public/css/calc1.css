@@ -163,13 +163,22 @@ input[type="button"].input_button{
 }
 
 .comment {
-  font-family: "Hannotate SC";
   color: #404040;
 }
 
-
-
-
+.Button-style {
+  font-size: 20px;
+  display: inline-block;
+  background: #ffffff;
+  color: orange;
+  width: 80px;
+  height: 80px;
+  border: double 4px orange;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+}
 
 
 

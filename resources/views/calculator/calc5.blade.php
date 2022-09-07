@@ -59,6 +59,15 @@
     <div class="comment">
       <p id="neko"></p>
     </div>
+    
+    <button id="goBack" type="button">戻る</button>
+    
+     <script>
+    document.getElementById("goBack").addEventListener("click", function () {
+    location.replace("/calculator");
+    }, false);
+    </script>
+    
   </body>
 </html>
 @endsection
