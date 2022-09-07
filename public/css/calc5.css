@@ -5,6 +5,19 @@ body {
   font-size: 1.8rem;
   -webkit-user-select: none;
   /*background-image: url('https://www.pakutaso.com/shared/img/thumb/PP_keshigomutopen_TP_V.jpg');*/
+  
+  background-image: url(https://thumb.ac-illust.com/a2/a24064a04ddc2db22203bd2a2d12c463_t.jpeg); /* image url*/
+  background-size: 360px 360px; /* image size */
+  -webkit-animation: bg 5s linear infinite;
+  animation: bg 10s infinite linear;
+}
+@keyframes bg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 360px -360px;
+  }
 }
 
 
