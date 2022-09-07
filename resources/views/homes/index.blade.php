@@ -4,6 +4,11 @@
 <html lang="ja">
 　<head>
 　　　<meta charset="utf-8">
+　　　
+　　　<link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+
 　　　<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
 　　　<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
@@ -30,7 +35,7 @@
            });
         </script>     
     
-        <h2>夏休みの宿題をおわらせよう！</h2>
+        <h2 className="font-family: 'Potta One', cursive;">夏休みの宿題をおわらせよう！</h2>
 
       <ul class="slider">
       <li><img src="https://www.jalan.net/news/img/2018/06/20180531_natsuyasumi_17.jpg" alt=""></li>

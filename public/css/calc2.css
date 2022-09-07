@@ -1,0 +1,128 @@
+.body_container {
+  margin: 4% auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 5px;
+  font-size: 1.8rem;
+  -webkit-user-select: none;
+  /*background-image: url('https://www.pakutaso.com/shared/img/thumb/PP_keshigomutopen_TP_V.jpg');*/
+}
+
+.calculator {
+  width: 500px;
+  padding: 20px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  background-color: #fcfcfc;
+  margin: 0 auto;
+}
+
+.input {
+  border: 1px solid #000;
+  border-radius: 10px;
+  height: 60px;
+  padding-right: 15px;
+  padding-top: 10px;
+  text-align: right;
+  margin-right: 6px;
+  font-size: 2.5rem;
+  overflow-x: auto;
+  transition: all .2s ease-in-out;
+}
+
+.input:hover {
+  border: 1px solid #bbb;
+  -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.operators, .bottomPanel{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.operators div {
+  display: inline-block;
+  border: 1px solid #bbb;
+  border-radius: 25px;
+  width: 102px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px 4px 10px 0;
+  cursor: pointer;
+  background-color: #ddd;
+  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.operators div:hover {
+  background-color: #ffff28; /*カーソルをボタン上に置いた時にここで指定した色に変化する*/
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #aaa;
+}
+
+.operators div:active {
+  font-weight: bold;
+}
+
+.leftPanel {
+  display: inline-block;
+}
+
+.numbers div {
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  width: 102px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 4px 10px 0;
+  cursor: pointer;
+  border-radius: 25px;
+  background-color: #84ffff; /*電卓の数字部分のカラー*/
+  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+  font-family: "Hannotate SC";
+  color: #404040;
+}
+
+.numbers div:hover {
+  background-color: #ffff28; /*カーソルをボタン上に置いた時にここで指定した色に変化する*/
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #bbb;
+}
+
+.numbers div:active {
+  font-weight: bold;
+}
+
+div.equal {
+  display: inline-block;
+  border: 1px solid #3079ED;
+  border-radius: 25px;
+  width: 102px;
+  text-align: center;
+  padding: 127px 10px;
+  margin: 10px 6px 10px 0;
+  vertical-align: top;
+  cursor: pointer;
+  color: #FFF;
+  background-color: #3399ff;
+  transition: all .2s ease-in-out;
+}
+
+div.equal:hover {
+  background-color: #007fff; /*カーソルをボタン上に置いた時にここで指定した色に変化する*/
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #1857BB;
+}
+
+div.equal:active {
+  font-weight: bold;
+}
+
+.probability {
+  font-size: 35px;
+  font-family: "Hannotate SC";
+  color: #404040;
+}
