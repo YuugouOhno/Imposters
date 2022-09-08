@@ -150,38 +150,38 @@ function subtraction(operators,numbers){ //引き算
 particlesJS("particles-js", {
   "particles":{
     "number":{
-      "value":74,//この数値を変更すると星の数が増減できる
+      "value":55,//この数値を変更すると星の数が増減できる
       "density":{
         "enable":true,
         "value_area":800
       }
     },
     "color":{
-      "value":"#ffc775"
+      "value":"#ffd8a5"
     },
     "shape":{
-      "type":"star",//形状を指定
+      "type":"polygon",//形状を指定
       "stroke":{
         "width":0
       },
       },
     "opacity":{
-      "value":0.6,//シェイプの透明度
+      "value":0.2,//シェイプの透明度
       "random":true,//シェイプの透明度をランダムにする
       "anim":{
         "enable":true,//シェイプの透明度をアニメーションさせる
-        "speed":0.5,//シェイプの透明度をアニメーションさせる
+        "speed":0.2,//シェイプの透明度をアニメーションさせる
         "opacity_min":0,//透明度の最小値０
         "sync":false//全てを同時にアニメーションさせない
       }
     },
     "size":{
-      "value":23,
+      "value":80,
       "random":true,
       "anim":{
         "enable":false,
-        "speed":6,
-        "size_min":0.3,
+        "speed":30,
+        "size_min":20,
         "sync":false
       }
     },
@@ -190,7 +190,7 @@ particlesJS("particles-js", {
     },
     "move":{
       "enable":true,
-      "speed":50,//この数値を小さくするとゆっくりな動きになる
+      "speed":180,//この数値を小さくするとゆっくりな動きになる
     "direction":"none",//方向指定なし
     "random":true,//動きはランダムに
     "straight":true,//動きをとどめる
