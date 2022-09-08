@@ -90,7 +90,6 @@ h1{
   border-radius: 25px;
   background-color: #fff8ce; /*電卓の数字部分のカラー*/
   transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
-  font-family: "Hannotate SC";
   color: #404040;
 }
 
@@ -133,7 +132,6 @@ div.equal:active {
 
 .probability {
   font-size: 35px;
-  font-family: "Hannotate SC";
   color: #404040;
 }
 
