@@ -46,6 +46,7 @@
 </div>
 
  <div class="bound-container">
+  <p class="DotGothic16" style="font-size:11px; font-weight: bold; color:#b74600;">たまごをクリックすると...</p>
   <img onclick="speech_img()" class="ball" src="https://miso33.com/wp-content/uploads/2021/10/medamayaki_kaonasi.png" />
   <span class="shadow"></span>
 </div>
@@ -97,7 +98,7 @@
     
   <div style="display:flex;">
     <div class="bound-container">
-  <img onclick="speech_img()" class="ball" src="https://miso33.com/wp-content/uploads/2021/10/medamayaki_kaonasi.png" />
+  <img onclick="speech_img()" class="ball" src="https://miso33.com/wp-content/uploads/2021/10/medamayaki.png" />
   <span class="shadow"></span>
 </div>
 
@@ -107,7 +108,7 @@
 </div>
 
 <div class="bound-container">
-  <img onclick="speech_img()" class="ball" src="https://miso33.com/wp-content/uploads/2021/10/medamayaki.png" />
+  <img onclick="speech_img()" class="ball" src="https://miso33.com/wp-content/uploads/2021/10/medamayaki_kaonasi.png" />
   <span class="shadow"></span>
 </div>
 
