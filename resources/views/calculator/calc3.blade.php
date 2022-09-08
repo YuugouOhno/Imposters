@@ -143,7 +143,7 @@
     uttr.text = number[Math.floor( Math.random()*10)]; // 読み上げる内容を設定
 
     uttr.lang = "ja-JP" // 言語
-    uttr.rate = 1.5  // 速度
+    uttr.rate = 1.8  // 速度
     uttr.pitch = 1.3 // 高さ
     uttr.volume = 1 // 音量
 
@@ -161,7 +161,7 @@
     uttr.text = number[Math.floor( Math.random()*6)]; // 読み上げる内容を設定
 
     uttr.lang = "ja-JP" // 言語
-    uttr.rate = 1.5  // 速度
+    uttr.rate = 1.8  // 速度
     uttr.pitch = 0.9 // 高さ
     uttr.volume = 1 // 音量
 
@@ -176,13 +176,13 @@
 
     const uttr = new SpeechSynthesisUtterance() // 発言を設定
     
-    const number = new Array("おい！","やぁ！","なんだよ！","ねむい！","おすな！","へい！","ん？","え？");
-    uttr.text = number[Math.floor( Math.random()*8)]; // 読み上げる内容を設定
+    const number = new Array("おい！","いてっ！","なんだよ！","ねむい！","触るな！","ん？","え？");
+    uttr.text = number[Math.floor( Math.random()*7)]; // 読み上げる内容を設定
 
     uttr.lang = "ja-JP" // 言語
     uttr.rate = 1.8  // 速度
     uttr.pitch = 0 // 高さ
-    uttr.volume = 1 // 音量
+    uttr.volume = 1.2 // 音量
 
     window.speechSynthesis.speak(uttr)  // 発言を再生 (必須)
 
