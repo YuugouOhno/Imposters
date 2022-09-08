@@ -2398,7 +2398,9 @@ var render = function render() {
 
   return _c("div", {
     staticClass: "body_container"
-  }, [_c("h1", [_vm._v("ランダム電卓")]), _vm._v(" "), _c("div", {
+  }, [_c("h1", {
+    staticClass: "DotGothic16"
+  }, [_vm._v("ランダム電卓")]), _vm._v(" "), _c("div", {
     staticClass: "calculator"
   }, [_c("div", {
     staticClass: "input"
@@ -2463,7 +2465,9 @@ var render = function render() {
 
   return _c("div", {
     staticClass: "body_container"
-  }, [_c("h1", [_vm._v("消えゆく電卓")]), _vm._v(" "), _c("div", {
+  }, [_c("h1", {
+    staticClass: "DotGothic16"
+  }, [_vm._v("消えゆく電卓")]), _vm._v(" "), _c("div", {
     staticClass: "calculator"
   }, [_c("div", {
     staticClass: "input"
