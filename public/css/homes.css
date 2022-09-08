@@ -71,7 +71,7 @@ font-family: 'Zen Kurenaido', sans-serif;
 .box1{
   width:100px;
   height:100px;
-  background:white;
+  background:#e9f9de;
   border-radius:100%;
   text-align: center;
 }
@@ -79,7 +79,7 @@ font-family: 'Zen Kurenaido', sans-serif;
 .box2{
   width:100px;
   height:100px;
-  background:white;
+  background:#c1f1ff;
   border-radius:100%;
   text-align: center;
 }
@@ -87,7 +87,7 @@ font-family: 'Zen Kurenaido', sans-serif;
 .box3{
   width:100px;
   height:100px;
-  background:white;
+  background:#ffeffd;
   border-radius:100%;
   text-align: center;
 }
@@ -102,9 +102,9 @@ body{
  }
 
  h2{
-  color: black;
+  color: #472c1c;
   font-weight: bold;
-  font-size:50px;
+  font-size:55px;
   text-align: center;
 }
 

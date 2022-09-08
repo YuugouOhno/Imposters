@@ -52,9 +52,9 @@
 
 
          <div class="btn-container">
-           <a href="/diary/create" class="btn bgleft  box1"><span>にっき</span></a>
-           <a href="/calculator" class="btn bgleft box2"><span>けいさん</span></a>
-           <a href="/translator" class="btn bgleft box3"><span>ほんやく</span></a>
+           <a href="/diary/create" class="btn bgleft  box1"><span class="ZenKurenaido">にっき</span></a>
+           <a href="/calculator" class="btn bgleft box2"><span class="ZenKurenaido">けいさん</span></a>
+           <a href="/translator" class="btn bgleft box3"><span class="ZenKurenaido">ほんやく</span></a>
 
          </div>
  
