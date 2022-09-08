@@ -1,3 +1,7 @@
+body {
+  background-color:black;
+}
+
 .body_container {
   margin: 4% auto;
   font-family: 'Source Sans Pro', sans-serif;
@@ -7,28 +11,42 @@
   /*background-image: url('https://www.pakutaso.com/shared/img/thumb/PP_keshigomutopen_TP_V.jpg');*/
 }
 
-.calculator {
-  width: 500px;
-  padding: 20px;
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 25px;
-  background-color: #fcfcfc;
-  margin: 0 auto;
+h1{
+  text-align:center;
+  color:#9900cc;
+  font-family: 'DotGothic16', sans-serif;
+  font-size: xxx-large;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 .DotGothic16 {
     font-family: 'DotGothic16', sans-serif;
 }
 
-h1{
-  text-align:center;
-  color:#9900cc;
+.calculator {
+  width: 800px;
+  height:800px;
+  padding: 170px;
+  padding-top:130px;
+  padding-bottom:130px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 400px;
+  background-color: #fcfcfc;
+  margin: 0 auto;
+  background-image: url("https://i.gzn.jp/img/2022/02/20/black-hole-in-the-universe/01_m.jpg");  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 20px 20px #4B0082;
 }
+
 
 .input {
   border: 1px solid #000;
   border-radius: 10px;
-  height: 60px;
+  width: 450px;
+  height: 70px;
   padding-right: 15px;
   padding-top: 10px;
   text-align: right;
@@ -36,6 +54,7 @@ h1{
   font-size: 2.5rem;
   overflow-x: auto;
   transition: all .2s ease-in-out;
+  background-color: white;
 }
 
 .input:hover {
