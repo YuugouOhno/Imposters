@@ -152,7 +152,7 @@ function subtraction(operators,numbers){ //引き算
 particlesJS("particles-js",{
   "particles":{
     "number":{
-      "value":90,//この数値を変更すると幾何学模様の数が増減できる
+      "value":100,//この数値を変更すると幾何学模様の数が増減できる
       "density":{
         "enable":true,
         "value_area":800
@@ -170,8 +170,8 @@ particlesJS("particles-js",{
     "nb_sides":10//多角形の角の数
   },
   "image":{
-    "width":400,
-    "height":310
+    "width":460,
+    "height":370
   }
   },
     "opacity":{
@@ -180,7 +180,7 @@ particlesJS("particles-js",{
     "anim":{
       "enable":true,
       "speed":1.6,
-      "opacity_min":0.08,
+      "opacity_min":0.3,
       "sync":false
     }
     },
