@@ -161,7 +161,6 @@ input[type="button"].input_button{
 }
 
 .comment {
-  font-family: "Hannotate SC";
   color: #404040;
 }
 
@@ -207,3 +206,58 @@ html,body{
   height: 100%;
 }
 
+
+
+
+
+.bound-container{
+  position:relative;
+  width:100%;
+  height:200px;
+}
+
+
+/*ボール*/
+.ball{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  margin: auto;
+  width:150px;
+  height:150px;
+  border-radius: 50%;
+  background:transparent;
+  opacity:0.6;
+  animation: bound-anim 1s infinite;
+}
+
+@keyframes bound-anim {
+  0%,100% {top: 0;transform: scale(1);}
+  30% {top: -60%; transform: scale(0.96,1.04);}
+  60% {transform: scale(1);}
+  90% {top: 0;transform: scale(1.15,0.9);}
+}
+
+/*影*/
+.shadow{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: -145px;/*対象のheightと微調節*/
+  margin: auto;
+  width: 90px;
+  height: 10px;
+  border-radius: 50%;
+  background: #000;
+  filter: blur(6px);
+  opacity:0.9;
+  animation: shadow-anim 1s infinite;
+}
+
+@keyframes shadow-anim {
+  0%,100%  {transform: scale(1);filter: blur(4px);}
+  30% {transform: scale(1.6,1);filter: blur(8px);}
+}

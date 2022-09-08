@@ -23,6 +23,34 @@
     
   <div id="particles-js"></div>
   <div id="wrapper">
+    
+    <div style="display:flex;">
+    <div class="bound-container">
+  <img onclick="speech_img()" class="ball" src="https://miso33.com/wp-content/uploads/2021/10/medamayaki_kaonasi.png" />
+  <span class="shadow"></span>
+</div>
+
+ <div class="bound-container">
+  <img onclick="speech_img()" class="ball" src="https://miso33.com/wp-content/uploads/2021/10/medamayaki_kaonasi.png" />
+  <span class="shadow"></span>
+</div>
+
+<div class="bound-container">
+  <img onclick="speech_img()" class="ball" src="https://miso33.com/wp-content/uploads/2021/10/medamayaki.png" />
+  <span class="shadow"></span>
+</div>
+
+<div class="bound-container">
+  <img onclick="speech_img()" class="ball" src="https://miso33.com/wp-content/uploads/2021/10/medamayaki_kaonasi.png" />
+  <span class="shadow"></span>
+</div>
+
+ <div class="bound-container">
+  <img onclick="speech_img()" class="ball" src="https://miso33.com/wp-content/uploads/2021/10/medamayaki_kaonasi.png" />
+  <span class="shadow"></span>
+</div>
+</div>
+
     <h1 class="DotGothic16" class="DotGothic16">しゃべる電卓</h1>
     <div class="calculator">
       <div class="input" id="input"></div>
@@ -67,6 +95,33 @@
       <p id="neko"></p>
     </div>
     
+  <div style="display:flex;">
+    <div class="bound-container">
+  <img onclick="speech_img()" class="ball" src="https://miso33.com/wp-content/uploads/2021/10/medamayaki_kaonasi.png" />
+  <span class="shadow"></span>
+</div>
+
+ <div class="bound-container">
+  <img onclick="speech_img()" class="ball" src="https://miso33.com/wp-content/uploads/2021/10/medamayaki_kaonasi.png" />
+  <span class="shadow"></span>
+</div>
+
+<div class="bound-container">
+  <img onclick="speech_img()" class="ball" src="https://miso33.com/wp-content/uploads/2021/10/medamayaki.png" />
+  <span class="shadow"></span>
+</div>
+
+<div class="bound-container">
+  <img onclick="speech_img()" class="ball" src="https://miso33.com/wp-content/uploads/2021/10/medamayaki_kaonasi.png" />
+  <span class="shadow"></span>
+</div>
+
+ <div class="bound-container">
+  <img onclick="speech_img()" class="ball" src="https://miso33.com/wp-content/uploads/2021/10/medamayaki_kaonasi.png" />
+  <span class="shadow"></span>
+</div>
+</div>
+    
     <button id="goBack" class="Button-style" type="button">戻る</button>
     
         <!--/wrapper--></div>
@@ -88,7 +143,7 @@
 
     uttr.lang = "ja-JP" // 言語
     uttr.rate = 1.5  // 速度
-    uttr.pitch = 1.2 // 高さ
+    uttr.pitch = 1.3 // 高さ
     uttr.volume = 1 // 音量
 
     window.speechSynthesis.speak(uttr)  // 発言を再生 (必須)
@@ -106,7 +161,26 @@
 
     uttr.lang = "ja-JP" // 言語
     uttr.rate = 1.5  // 速度
-    uttr.pitch = 0.3 // 高さ
+    uttr.pitch = 0.9 // 高さ
+    uttr.volume = 1 // 音量
+
+    window.speechSynthesis.speak(uttr)  // 発言を再生 (必須)
+
+    }
+ }
+ 
+ 
+  function speech_img(){
+    if ('speechSynthesis' in window) {
+
+    const uttr = new SpeechSynthesisUtterance() // 発言を設定
+    
+    const number = new Array("おい！","やぁ！","なんだよ！","ねむい！","おすな！","へい！","ん？","え？");
+    uttr.text = number[Math.floor( Math.random()*8)]; // 読み上げる内容を設定
+
+    uttr.lang = "ja-JP" // 言語
+    uttr.rate = 1.8  // 速度
+    uttr.pitch = 0 // 高さ
     uttr.volume = 1 // 音量
 
     window.speechSynthesis.speak(uttr)  // 発言を再生 (必須)
