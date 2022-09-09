@@ -52,7 +52,7 @@
 </div>
 </div>
 
-    <h1 class="DotGothic16" class="DotGothic16">しゃべる電卓</h1>
+    <h1 class="DotGothic16" class="DotGothic16" style="padding-bottom: 10px;">しゃべる電卓</h1>
     <div class="calculator">
       <div class="input" id="input"></div>
       <div class="buttons">
