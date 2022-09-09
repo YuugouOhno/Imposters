@@ -186,7 +186,8 @@ input[type="button"].input_button{
 /*========= particle js を描画するエリア設定 ===============*/
 
 html,body{
-  height: 100%;/*高さを100%にして描画エリアをとる*/
+  padding-top:0;
+  margin-top:0;
 }
 
 #particles-js{ 
