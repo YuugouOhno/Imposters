@@ -145,7 +145,7 @@ h1{
   margin: 10px 4px 10px 0;
   cursor: pointer;
   border-radius: 25px;
-  background-color: #84ffff; /*電卓の数字部分のカラー*/
+  background-color: #86c17a; /*電卓の数字部分のカラー*/
   transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
   color: #404040;
 }
@@ -172,7 +172,7 @@ div.equal {
   vertical-align: top;
   cursor: pointer;
   color: #FFF;
-  background-color: #3399ff;
+  background-color: #d33f41;
   transition: all .2s ease-in-out;
 }
 
