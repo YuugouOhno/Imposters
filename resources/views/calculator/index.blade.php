@@ -21,21 +21,21 @@
 　　　
    <div class="calculator" style="display: grid; width:80%; margin: 0 auto; grid-template-columns: 1fr 1fr 1fr;">
       <div style="margin: 15px 15px 30px 15px;  text-align:center;">
-      <img src="https://2.bp.blogspot.com/--BYLyPduBgM/WaPvldUDt9I/AAAAAAABGNw/XTkwA_fBEC86bpvy2z7-1jZ9-dEc_6_jQCLcBGAs/s400/dentaku_syoumen_small.png" />
-      <br />
-       <a style="text-decoration: none; font-size: xx-large; color:#3399ff;" class="DotGothic16" href='/calculator/1'>ちょうどいい電卓</a>
+     
+      <img style="width:500px; heigth:400px; border-radius:10px; border: 5px #dfdfdf solid;" src="{{asset('img/calc1.jpg')}}" />
+       <p><a style="text-decoration: none; font-size: xx-large; color:#3399ff;" class="DotGothic16" href='/calculator/1'>ちょうどいい電卓</a></p>
       </div>
       
       <div style="margin: 15px 15px 30px 15px;  text-align:center;">
-      <img src="https://2.bp.blogspot.com/--BYLyPduBgM/WaPvldUDt9I/AAAAAAABGNw/XTkwA_fBEC86bpvy2z7-1jZ9-dEc_6_jQCLcBGAs/s400/dentaku_syoumen_small.png" />
+      <img style="width:500px; heigth:400px; border-radius:10px; border: 5px #dfdfdf solid;" src="{{asset('img/calc2.jpg')}}" />
        <br />
-       <a style="text-decoration: none; font-size: xx-large; color:#cc0000;" class="DotGothic16" href='/calculator/2'>ランダム電卓</a>
+       <p><a style="text-decoration: none; font-size: xx-large; color:#cc0000;" class="DotGothic16" href='/calculator/2'>ランダム電卓</a></p>
       </div>
       
       <div style="margin: 15px 15px 30px 15px; text-align:center;">
-           <img src="https://2.bp.blogspot.com/--BYLyPduBgM/WaPvldUDt9I/AAAAAAABGNw/XTkwA_fBEC86bpvy2z7-1jZ9-dEc_6_jQCLcBGAs/s400/dentaku_syoumen_small.png" />
+            <img style="width:500px; heigth:400px; border-radius:10px; border: 5px #dfdfdf solid;" src="{{asset('img/calc3.jpg')}}" />
             <br />
-            <a style="text-decoration: none; font-size: xx-large; color:#fcc800;" class="DotGothic16" href='/calculator/3'>しゃべる電卓</a>
+            <p><a style="text-decoration: none; font-size: xx-large; color:#fcc800;" class="DotGothic16" href='/calculator/3'>しゃべる電卓</a></p>
       </div>
        
       <div style="margin: 15px;  text-align:center;">
