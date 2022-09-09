@@ -16,7 +16,7 @@ function starSet(clone) {
     //星の位置（left）、アニメーションの遅延時間（animation-delay）、サイズ（font-size）をランダムで指定
     starStyle.left = 100 * Math.random() + "%";
     starStyle.animationDelay = 8 * Math.random() + "s";
-    starStyle.fontSize = ~~(50 * Math.random() + 20) + "px";
+    starStyle.fontSize = ~~(60 * Math.random() + 20) + "px";
     document.body.appendChild(starClone);
 
     //星一つのアニメーションが終わったら新しい星を生成
@@ -29,5 +29,5 @@ function starSet(clone) {
     }, false)
 }
 
-//使用例。星を50個ふらせます。
-starMaker(80)
+//星を90個ふらせます。
+starMaker(130)

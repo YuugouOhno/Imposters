@@ -16,42 +16,43 @@
     <script src="{{asset('js/calc_index.js')}}" defer></script>
   </head>
   
-<body>
-  <h1 style="text-align:center; font-size: xxx-large; color:#44617b;" class="DotGothic16">電卓一覧</h1>
+<body style="background-color:#9ee8ff;">
+
+  <h1 style="text-align:center; font-size: 70px; color:#44617b;" class="DotGothic16">電卓一覧</h1>
 　　　
    <div class="calculator" style="display: grid; width:80%; margin: 0 auto; grid-template-columns: 1fr 1fr 1fr;">
       <div style="margin: 15px 15px 30px 15px;  text-align:center;">
      
-      <img style="width:500px; heigth:400px; border-radius:10px; border: 5px #dfdfdf solid;" src="{{asset('img/calc1.jpg')}}" />
+      <img style="width:600px; heigth:500px; border-radius:30px; border: 5px #dfdfdf solid;" src="{{asset('img/calc1.jpg')}}" />
        <p><a style="text-decoration: none; font-size: xx-large; color:#3399ff;" class="DotGothic16" href='/calculator/1'>ちょうどいい電卓</a></p>
       </div>
       
       <div style="margin: 15px 15px 30px 15px;  text-align:center;">
-      <img style="width:500px; heigth:400px; border-radius:10px; border: 5px #dfdfdf solid;" src="{{asset('img/calc2.jpg')}}" />
+      <img style="width:600px; heigth:500px; border-radius:30px; border: 5px #dfdfdf solid;" src="{{asset('img/calc2.jpg')}}" />
        <br />
        <p><a style="text-decoration: none; font-size: xx-large; color:#cc0000;" class="DotGothic16" href='/calculator/2'>ランダム電卓</a></p>
       </div>
       
       <div style="margin: 15px 15px 30px 15px; text-align:center;">
-            <img style="width:500px; heigth:400px; border-radius:10px; border: 5px #dfdfdf solid;" src="{{asset('img/calc3.jpg')}}" />
+            <img style="width:600px; heigth:500px; border-radius:30px; border: 5px #dfdfdf solid;" src="{{asset('img/calc3.jpg')}}" />
             <br />
             <p><a style="text-decoration: none; font-size: xx-large; color:#fcc800;" class="DotGothic16" href='/calculator/3'>しゃべる電卓</a></p>
       </div>
        
       <div style="margin: 15px;  text-align:center;">
-            <img src="https://2.bp.blogspot.com/--BYLyPduBgM/WaPvldUDt9I/AAAAAAABGNw/XTkwA_fBEC86bpvy2z7-1jZ9-dEc_6_jQCLcBGAs/s400/dentaku_syoumen_small.png" />
+             <img style="width:600px; heigth:500px; border-radius:30px; border: 5px #dfdfdf solid;" src="{{asset('img/calc4.jpg')}}" />
             <br />
             <a style="text-decoration: none; font-size: xx-large; color:#9900cc;" class="DotGothic16" href='/calculator/4'>消えゆく電卓</a>
       </div>
       
       <div style="margin: 15px;  text-align:center;">
-             <img src="https://2.bp.blogspot.com/--BYLyPduBgM/WaPvldUDt9I/AAAAAAABGNw/XTkwA_fBEC86bpvy2z7-1jZ9-dEc_6_jQCLcBGAs/s400/dentaku_syoumen_small.png" />
+              <img style="width:600px; heigth:500px; border-radius:30px; border: 5px #dfdfdf solid;" src="{{asset('img/calc5.jpg')}}" />
              <br />
              <a style="text-decoration: none; font-size: xx-large; color:#33cc00;" class="DotGothic16" href='/calculator/5'>暗算電卓</a>
       </div>
      
       <div style="margin: 15px;  text-align:center;">
-             <img src="https://2.bp.blogspot.com/--BYLyPduBgM/WaPvldUDt9I/AAAAAAABGNw/XTkwA_fBEC86bpvy2z7-1jZ9-dEc_6_jQCLcBGAs/s400/dentaku_syoumen_small.png" />
+             <img style="width:600px; heigth:500px; border-radius:30px; border: 5px #dfdfdf solid;" src="{{asset('img/calc6.jpg')}}" />
              <br />
              <a style="text-decoration: none; font-size: xx-large; color:#ff6600;" class="DotGothic16" href='/calculator/6'>Coming Soon...</a>
        </div>

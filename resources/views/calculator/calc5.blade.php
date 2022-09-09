@@ -16,6 +16,7 @@
     <script src="{{asset('js/calculator5.js')}}" defer></script>
   </head>
   <body>
+    
     <h1 class="DotGothic16">暗算電卓</h1>
     <div class="calculator">
       <div class="input" id="input"></div>
