@@ -69,8 +69,8 @@
         <div class="equal" id="result">=</div>
       </div>
     </div>
-    <div class="comment">
-      <p style="text-align:center; font-size:xxx-large;" id="neko"></p>
+    <div style="margin-top:40px;" class="comment">
+      <!--<p style="text-align:center; font-size:xxx-large;" id="neko"></p>-->
     </div>
     
     <button id="goBack" class="Button-style" type="button">戻る</button>
